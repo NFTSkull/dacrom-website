@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DACROM Asesores - Comercio Exterior | Monterrey, N.L.</title>
+    <meta name="description" content="Especialistas en comercio exterior en Monterrey. IMMEX, PROSEC, certificaciones, permisos y asesoría integral para tu operación internacional.">
+    <meta name="keywords" content="comercio exterior Monterrey, tramitología aduanal, asesoría IMMEX, PROSEC, certificación OEA, C-TPAT">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Chart.js for Data Visualization -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Swiper for Advanced Carousels -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-container">
+            <!-- Globe Animation -->
+            <div class="globe-container">
+                <div class="globe">
+                    <div class="globe-sphere">
+                        <div class="continents">
+                            <div class="continent america"></div>
+                            <div class="continent europe"></div>
+                            <div class="continent asia"></div>
+                        </div>
+                        <div class="globe-grid"></div>
+                    </div>
+                    <div class="globe-shadow"></div>
+                </div>
+            </div>
+
+            <!-- Animated Trade Icons -->
+            <div class="trade-animation">
+                <div class="trade-icon ship">
+                    <i class="fas fa-ship"></i>
+                    <div class="icon-trail ship-trail"></div>
+                </div>
+                <div class="trade-icon plane">
+                    <i class="fas fa-plane"></i>
+                    <div class="icon-trail plane-trail"></div>
+                </div>
+                <div class="trade-icon truck">
+                    <i class="fas fa-truck"></i>
+                    <div class="icon-trail truck-trail"></div>
+                </div>
+                <div class="trade-icon container">
+                    <i class="fas fa-cube"></i>
+                    <div class="icon-trail container-trail"></div>
+                </div>
+            </div>
+
+            <!-- Loading Text -->
+            <div class="loading-text">
+                <h2 class="loading-title">DACROM Asesores</h2>
+                <p class="loading-subtitle" id="loadingSubtitle">Conectando tu negocio con el mundo...</p>
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="loading-progress">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                <div class="progress-text">
+                    <span id="progressPercent">0%</span>
+                    <span class="progress-label">Cargando experiencia internacional</span>
+                </div>
+            </div>
+
+            <!-- Trade Route Lines -->
+            <div class="trade-routes">
+                <div class="route-line route-1"></div>
+                <div class="route-line route-2"></div>
+                <div class="route-line route-3"></div>
+                <div class="route-line route-4"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <span class="logo-d">D</span><span class="logo-acrom">ACROM</span>
+                    <span class="logo-subtitle">Asesores</span>
+                </div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item">
+                        <a href="#inicio" class="nav-link">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#servicios" class="nav-link">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#proceso" class="nav-link">Proceso</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#calculadora" class="nav-link">Calculadora</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#casos-exito" class="nav-link">Casos de Éxito</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contacto" class="nav-link">Contacto</a>
+                    </li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="#contacto" class="btn btn-primary">Solicita Asesoría</a>
+                    <div class="hamburger" id="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+            <div class="hero-geometric-pattern"></div>
+        </div>
+        
+        <!-- Elementos decorativos profesionales -->
+        <div class="hero-decorative-elements">
+            <div class="hero-corner-accent top-left"></div>
+            <div class="hero-corner-accent top-right"></div>
+            <div class="hero-corner-accent bottom-left"></div>
+            <div class="hero-corner-accent bottom-right"></div>
+        </div>
+
+        <div class="hero-content">
+            <div class="container">
+                <div class="hero-main">
+                    <!-- Logo central elegante -->
+                    <div class="hero-logo-section">
+                        <div class="hero-logo-enhanced">
+                            <span class="hero-logo-d">D</span><span class="hero-logo-acrom">ACROM</span>
+                            <span class="hero-logo-subtitle">Asesores</span>
+                        </div>
+                        <div class="hero-professional-lines">
+                            <div class="prof-line line-left"></div>
+                            <div class="prof-line line-right"></div>
+                            <div class="prof-line line-center"></div>
+                        </div>
+                    </div>
+
+                    <!-- Contenido textual restructurado -->
+                    <div class="hero-text-section">
+                        <div class="hero-text-decorative">
+                            <div class="text-accent-line"></div>
+                            <h1 class="hero-title">Impulsamos tu negocio más allá de las fronteras</h1>
+                            <div class="text-accent-line"></div>
+                        </div>
+                        <div class="hero-subtitle-wrapper">
+                            <p class="hero-subtitle">Estrategias, gestiones y autorizaciones clave para tu operación internacional</p>
+                        </div>
+                    </div>
+
+                    <!-- Botones con diseño corporativo -->
+                    <div class="hero-cta-section">
+                        <div class="cta-decorative-frame">
+                            <a href="#servicios" class="btn btn-primary btn-corporate">
+                                <span>Conoce nuestros servicios</span>
+                            </a>
+                            <a href="#contacto" class="btn btn-outline-corporate">
+                                <span>Solicita cotización</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stats section rediseñada con elegancia corporativa -->
+        <div class="hero-stats-corporate">
+            <div class="container">
+                <div class="stats-professional-frame">
+                    <div class="stats-header">
+                        <div class="stats-accent-line"></div>
+                        <h3>Nuestra Trayectoria Profesional</h3>
+                        <div class="stats-accent-line"></div>
+                    </div>
+                    <div class="stats-grid-corporate">
+                        <div class="stat-item-corporate">
+                            <div class="stat-content">
+                                <div class="stat-number">15+</div>
+                                <div class="stat-label">Años de experiencia</div>
+                            </div>
+                        </div>
+                        <div class="stat-item-corporate">
+                            <div class="stat-content">
+                                <div class="stat-number">500+</div>
+                                <div class="stat-label">Empresas atendidas</div>
+                            </div>
+                        </div>
+                        <div class="stat-item-corporate">
+                            <div class="stat-content">
+                                <div class="stat-number">17</div>
+                                <div class="stat-label">Servicios especializados</div>
+                            </div>
+                        </div>
+                        <div class="stat-item-corporate">
+                            <div class="stat-content">
+                                <div class="stat-number">100%</div>
+                                <div class="stat-label">Satisfacción</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Valores DACROM -->
+    <section class="dacrom-values">
+        <!-- Partículas flotantes -->
+        <div class="floating-particles">
+            <div class="particle particle-1"></div>
+            <div class="particle particle-2"></div>
+            <div class="particle particle-3"></div>
+            <div class="particle particle-4"></div>
+            <div class="particle particle-5"></div>
+            <div class="particle particle-6"></div>
+        </div>
+        <div class="container">
+            <div class="values-content">
+                <div class="logo-highlight">
+                    <div class="logo-enhanced">
+                        <span class="logo-d-enhanced">D</span><span class="logo-acrom-enhanced">ACROM</span>
+                        <span class="logo-subtitle-enhanced">Asesores</span>
+                    </div>
+                    <div class="decorative-lines">
+                        <div class="line line-1"></div>
+                        <div class="line line-2"></div>
+                        <div class="line line-3"></div>
+                        <div class="line line-4"></div>
+                    </div>
+                </div>
+                <div class="values-grid">
+                    <div class="value-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="value-line"></div>
+                        <div class="value-content">
+                            <i class="fas fa-user-tie"></i>
+                            <h3>Cuidado al Cliente</h3>
+                            <p>Atención personalizada y dedicada a cada uno de nuestros clientes con un enfoque profesional que garantiza resultados excepcionales</p>
+                        </div>
+                        <div class="value-line"></div>
+                    </div>
+                    <div class="value-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="value-line"></div>
+                        <div class="value-content">
+                            <i class="fas fa-info-circle"></i>
+                            <h3>Información y Alternativas</h3>
+                            <p>Brindamos alternativas integrales para el cuidado, mantenimiento y control eficiente de tus inventarios y operaciones comerciales</p>
+                        </div>
+                        <div class="value-line"></div>
+                    </div>
+                    <div class="value-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="value-line"></div>
+                        <div class="value-content">
+                            <i class="fas fa-globe-americas"></i>
+                            <h3>Integrado y Facilitador</h3>
+                            <p>Servicios integrados y facilitadores de comercio exterior para el crecimiento sostenible y expansión internacional de tu empresa</p>
+                        </div>
+                        <div class="value-line"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Nosotros -->
+    <section class="about" id="nosotros">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Tu aliado en Comercio Exterior</h2>
+                    <p class="about-description">Con base en Monterrey, DACROM Asesores se especializa en brindar estrategias y soluciones integrales para empresas que importan o exportan mercancías.</p>
+                    <p>Nuestra experiencia y conocimiento profundo del marco regulatorio mexicano nos permite ofrecer servicios de consultoría especializados que optimizan tus operaciones internacionales y garantizan el cumplimiento normativo.</p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Asesoría personalizada</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Cumplimiento normativo</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Optimización de procesos</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Soporte continuo</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <img src="Negocio.png" alt="Negocio DACROM Asesores" class="business-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section class="services" id="servicios">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nuestros Servicios</h2>
+                <p class="section-subtitle">Soluciones integrales de comercio exterior organizadas para tu éxito</p>
+            </div>
+            
+            <!-- Panel de Control de Servicios -->
+            <div class="services-dashboard">
+                <!-- Navegación de Categorías -->
+                <div class="services-nav">
+                    <button class="nav-tab active" data-category="programas">
+                        <i class="fas fa-industry"></i>
+                        <span>Programas y Esquemas</span>
+                        <div class="tab-indicator"></div>
+                    </button>
+                    <button class="nav-tab" data-category="certificaciones">
+                        <i class="fas fa-certificate"></i>
+                        <span>Certificaciones</span>
+                        <div class="tab-indicator"></div>
+                    </button>
+                    <button class="nav-tab" data-category="consultoria">
+                        <i class="fas fa-users"></i>
+                        <span>Consultoría</span>
+                        <div class="tab-indicator"></div>
+                    </button>
+                </div>
+
+                <!-- Contenido de Servicios -->
+                <div class="services-content">
+                    <!-- Programas y Esquemas -->
+                    <div class="services-grid active" id="programas">
+                        <div class="service-card" data-service="immex">
+                            <div class="card-header">
+                                <div class="service-icon">
+                                    <i class="fas fa-industry"></i>
+                                </div>
+                                <h3>IMMEX</h3>
+                            </div>
+                            <p>Programa de la Industria Manufacturera, Maquiladora y de Servicios de Exportación</p>
+                            <div class="card-footer">
+                                <span class="service-tag">Programa</span>
+                                <button class="info-btn" data-info="immex">
+                                    <i class="fas fa-info-circle"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="service-card" data-service="prosec">
+                            <div class="card-header">
+                                <div class="service-icon">
+                                    <i class="fas fa-handshake"></i>
+                                </div>
+                                <h3>PROSEC</h3>
+                            </div>
+                            <p>Programa de Promoción Sectorial para reducir aranceles de insumos</p>
+                            <div class="card-footer">
+                                <span class="service-tag">Programa</span>
+                                <button class="info-btn" data-info="prosec">
+                                    <i class="fas fa-info-circle"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="service-card" data-service="tramites">
+                            <div class="card-header">
+                                <div class="service-icon">
+                                    <i class="fas fa-cogs"></i>
+                                </div>
+                                <h3>Tramitología</h3>
+                            </div>
+                            <p>Gestión integral de trámites aduaneros y regulatorios</p>
+                            <div class="card-footer">
+                                <span class="service-tag">Gestión</span>
+                                <button class="info-btn" data-info="tramites">
+                                    <i class="fas fa-info-circle"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="service-card" data-service="cupos">
+                            <div class="card-header">
+                                <div class="service-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <h3>Cupos y Aranceles</h3>
+                            </div>
+                            <p>Gestión de cupos arancelarios y optimización de clasificaciones</p>
+                            <div class="card-footer">
+                                <span class="service-tag">Optimización</span>
+                                <button class="info-btn" data-info="cupos">
+                                    <i class="fas fa-info-circle"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="service-card" data-service="avisos">
+                            <div class="card-header">
+                                <div class="service-icon">
+                                    <i class="fas fa-bell"></i>
+                                </div>
+                                <h3>Avisos Automáticos</h3>
+                            </div>
+                            <p>Implementación de avisos automáticos de importación/exportación</p>
+                            <div class="card-footer">
+                                <span class="service-tag">Automatización</span>
+                                <button class="info-btn" data-info="avisos">
+                                    <i class="fas fa-info-circle"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="service-card" data-service="drawback">
+                            <div class="card-header">
+                                <div class="service-icon">
+                                    <i class="fas fa-undo"></i>
+                                </div>
+                                <h3>Drawback</h3>
+                            </div>
+                            <p>Recuperación de impuestos pagados en importaciones</p>
+                            <div class="card-footer">
+                                <span class="service-tag">Recuperación</span>
+                                <button class="info-btn" data-info="drawback">
+                                    <i class="fas fa-info-circle"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Certificaciones -->
+                    <div class="services-grid" id="certificaciones">
+                        <div class="service-card" data-service="iva-ieps">
+                            <div class="card-header">
+                                <div class="service-icon">
+                                    <i class="fas fa-receipt"></i>
+                                </div>
+                                <h3>Certificación IVA-IEPS</h3>
+                            </div>
+                            <p>Certificación en materia de IVA e IEPS para operaciones de comercio exterior</p>
+                            <div class="card-footer">
+                                <span class="service-tag">Certificación</span>
+                                <button class="info-btn" data-info="iva-ieps">
+                                    <i class="fas fa-info-circle"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="service-card" data-service="cert-origen">
+                            <div class="card-header">
+                                <div class="service-icon">
+                                    <i class="fas fa-certificate"></i>
+                                </div>
+                                <h3>Certificados de Origen</h3>
+                            </div>
+                            <p>Certificación de origen para aprovechamiento de tratados comerciales</p>
+                            <div class="card-footer">
+                                <span class="service-tag">Documentación</span>
+                                <button class="info-btn" data-info="cert-origen">
+                                    <i class="fas fa-info-circle"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="service-card" data-service="oea">
+                            <div class="card-header">
+                                <div class="service-icon">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <h3>Certificación OEA</h3>
+                            </div>
+                            <p>Operador Económico Autorizado para cadena de suministro segura</p>
+                            <div class="card-footer">
+                                <span class="service-tag">Seguridad</span>
+                                <button class="info-btn" data-info="oea">
+                                    <i class="fas fa-info-circle"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="service-card" data-service="ctpat">
+                            <div class="card-header">
+                                <div class="service-icon">
+                                    <i class="fas fa-flag-usa"></i>
+                                </div>
+                                <h3>C-TPAT</h3>
+                            </div>
+                            <p>Customs-Trade Partnership Against Terrorism para acceso preferencial a EE.UU.</p>
+                            <div class="card-footer">
+                                <span class="service-tag">Seguridad</span>
+                                <button class="info-btn" data-info="ctpat">
+                                    <i class="fas fa-info-circle"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="service-card" data-service="permisos">
+                            <div class="card-header">
+                                <div class="service-icon">
+                                    <i class="fas fa-file-contract"></i>
+                                </div>
+                                <h3>Permisos y Autorizaciones</h3>
+                            </div>
+                            <p>Gestión de permisos especiales ante diversas autoridades</p>
+                            <div class="card-footer">
+                                <span class="service-tag">Autorización</span>
+                                <button class="info-btn" data-info="permisos">
+                                    <i class="fas fa-info-circle"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="service-card" data-service="sanitarias">
+                            <div class="card-header">
+                                <div class="service-icon">
+                                    <i class="fas fa-heartbeat"></i>
+                                </div>
+                                <h3>Regulaciones Sanitarias</h3>
+                            </div>
+                            <p>Cumplimiento de regulaciones sanitarias y fitosanitarias</p>
+                            <div class="card-footer">
+                                <span class="service-tag">Regulación</span>
+                                <button class="info-btn" data-info="sanitarias">
+                                    <i class="fas fa-info-circle"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Consultoría -->
+                    <div class="services-grid" id="consultoria">
+                        <div class="service-card" data-service="regla-octava">
+                            <div class="card-header">
+                                <div class="service-icon">
+                                    <i class="fas fa-calculator"></i>
+                                </div>
+                                <h3>Regla Octava</h3>
+                            </div>
+                            <p>Análisis y aplicación de la regla octava para valor en aduana</p>
+                            <div class="card-footer">
+                                <span class="service-tag">Análisis</span>
+                                <button class="info-btn" data-info="regla-octava">
+                                    <i class="fas fa-info-circle"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="service-card" data-service="asesoria">
+                            <div class="card-header">
+                                <div class="service-icon">
+                                    <i class="fas fa-comments"></i>
+                                </div>
+                                <h3>Asesoría Especializada</h3>
+                            </div>
+                            <p>Consultoría integral en comercio exterior y regulaciones aduaneras</p>
+                            <div class="card-footer">
+                                <span class="service-tag">Consultoría</span>
+                                <button class="info-btn" data-info="asesoria">
+                                    <i class="fas fa-info-circle"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="service-card" data-service="proyectos">
+                            <div class="card-header">
+                                <div class="service-icon">
+                                    <i class="fas fa-project-diagram"></i>
+                                </div>
+                                <h3>Desarrollo de Proyectos</h3>
+                            </div>
+                            <p>Planificación y ejecución de proyectos de comercio exterior</p>
+                            <div class="card-footer">
+                                <span class="service-tag">Desarrollo</span>
+                                <button class="info-btn" data-info="proyectos">
+                                    <i class="fas fa-info-circle"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="service-card" data-service="auditorias">
+                            <div class="card-header">
+                                <div class="service-icon">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                                <h3>Auditorías</h3>
+                            </div>
+                            <p>Revisión exhaustiva de operaciones y cumplimiento normativo</p>
+                            <div class="card-footer">
+                                <span class="service-tag">Revisión</span>
+                                <button class="info-btn" data-info="auditorias">
+                                    <i class="fas fa-info-circle"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="service-card" data-service="inteligencia">
+                            <div class="card-header">
+                                <div class="service-icon">
+                                    <i class="fas fa-chart-bar"></i>
+                                </div>
+                                <h3>Inteligencia Comercial</h3>
+                            </div>
+                            <p>Análisis de mercados y oportunidades comerciales internacionales</p>
+                            <div class="card-footer">
+                                <span class="service-tag">Análisis</span>
+                                <button class="info-btn" data-info="inteligencia">
+                                    <i class="fas fa-info-circle"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Panel de Información -->
+                <div class="info-panel" id="info-panel">
+                    <div class="info-content">
+                        <button class="close-info" id="close-info">
+                            <i class="fas fa-times"></i>
+                        </button>
+                        <div class="info-header">
+                            <div class="info-icon">
+                                <i class="fas fa-info-circle"></i>
+                            </div>
+                            <h3 id="info-title">Información del Servicio</h3>
+                        </div>
+                        <div class="info-body">
+                            <p id="info-description">Selecciona un servicio para ver más información.</p>
+                            <div class="info-benefits" id="info-benefits">
+                                <!-- Se llena dinámicamente -->
+                            </div>
+                        </div>
+                        <div class="info-footer">
+                            <a href="#contacto" class="btn btn-primary">Solicitar Información</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline de Proceso Profesional -->
+    <section class="process-timeline" id="proceso">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Nuestro Proceso de Trabajo</h2>
+                <p class="section-subtitle">Metodología probada que garantiza resultados excepcionales</p>
+            </div>
+            <div class="timeline-container">
+                <div class="timeline-item" data-aos="fade-right" data-aos-delay="100">
+                    <div class="timeline-number">01</div>
+                    <div class="timeline-content">
+                        <div class="timeline-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3>Análisis Inicial</h3>
+                        <p>Evaluamos tu operación actual, identificamos oportunidades de optimización y diseñamos una estrategia personalizada.</p>
+                        <ul class="timeline-features">
+                            <li><i class="fas fa-check"></i> Diagnóstico integral</li>
+                            <li><i class="fas fa-check"></i> Análisis de riesgos</li>
+                            <li><i class="fas fa-check"></i> Propuesta de valor</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-left" data-aos-delay="200">
+                    <div class="timeline-number">02</div>
+                    <div class="timeline-content">
+                        <div class="timeline-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <h3>Preparación Documental</h3>
+                        <p>Preparamos toda la documentación necesaria con la más alta calidad y cumplimiento normativo.</p>
+                        <ul class="timeline-features">
+                            <li><i class="fas fa-check"></i> Documentación completa</li>
+                            <li><i class="fas fa-check"></i> Revisión jurídica</li>
+                            <li><i class="fas fa-check"></i> Control de calidad</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-right" data-aos-delay="300">
+                    <div class="timeline-number">03</div>
+                    <div class="timeline-content">
+                        <div class="timeline-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3>Tramitación y Gestión</h3>
+                        <p>Ejecutamos todos los trámites ante las autoridades competentes con seguimiento puntual y transparente.</p>
+                        <ul class="timeline-features">
+                            <li><i class="fas fa-check"></i> Gestión integral</li>
+                            <li><i class="fas fa-check"></i> Seguimiento en tiempo real</li>
+                            <li><i class="fas fa-check"></i> Comunicación constante</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-left" data-aos-delay="400">
+                    <div class="timeline-number">04</div>
+                    <div class="timeline-content">
+                        <div class="timeline-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h3>Implementación y Seguimiento</h3>
+                        <p>Aseguramos la correcta implementación y te acompañamos en el cumplimiento continuo de tus obligaciones.</p>
+                        <ul class="timeline-features">
+                            <li><i class="fas fa-check"></i> Capacitación personalizada</li>
+                            <li><i class="fas fa-check"></i> Soporte continuo</li>
+                            <li><i class="fas fa-check"></i> Monitoreo normativo</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calculadora de Ahorros Interactiva -->
+    <section class="savings-calculator" id="calculadora">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Calcula tus Ahorros Potenciales</h2>
+                <p class="section-subtitle">Descubre cuánto puedes ahorrar con nuestros servicios especializados</p>
+            </div>
+            <div class="calculator-container">
+                <div class="calculator-form" data-aos="fade-right">
+                    <div class="calculator-header">
+                        <h3>Calculadora de Beneficios</h3>
+                        <p>Ingresa tus datos para obtener una estimación personalizada</p>
+                        <div class="calculator-info">
+                            <i class="fas fa-lightbulb"></i>
+                            <small><strong>¿Cómo funciona?</strong> Esta calculadora estima tus ahorros basándose en datos reales de comercio exterior 2025. Los porcentajes varían según el servicio: IMMEX suspende 100% de aranceles en importación temporal, PROSEC reduce aranceles por sector específico, y los TLC eliminan aranceles con certificado de origen.</small>
+                        </div>
+                    </div>
+                    <form id="savingsCalculator">
+                        <div class="calc-group">
+                            <label for="monthlyImports">Valor mensual de importaciones (USD)</label>
+                            <input type="number" id="monthlyImports" placeholder="Ej: 100000" min="0">
+                        </div>
+                        <div class="calc-group">
+                            <label for="currentTariff">Arancel actual promedio (%)</label>
+                            <input type="number" id="currentTariff" placeholder="Ej: 15" min="0" max="100" step="0.1">
+                        </div>
+                        <div class="calc-group">
+                            <label for="serviceType">Tipo de servicio</label>
+                            <select id="serviceType">
+                                <option value="">Selecciona un servicio</option>
+                                <option value="immex" data-saving="100" data-description="Suspensión total de aranceles para importación temporal">IMMEX - Suspensión 100% de Aranceles</option>
+                                <option value="prosec-auto" data-saving="85" data-description="Reducción arancelaria para sector automotriz">PROSEC Automotriz - Arancel 0% a 5%</option>
+                                <option value="prosec-textil" data-saving="75" data-description="Reducción arancelaria para sector textil">PROSEC Textil - Arancel 0% a 8%</option>
+                                <option value="prosec-electronico" data-saving="90" data-description="Reducción arancelaria para sector electrónico">PROSEC Electrónico - Arancel 0% a 3%</option>
+                                <option value="tlc-usmca" data-saving="100" data-description="Eliminación total de aranceles por T-MEC">Certificado Origen T-MEC - 0% Arancel</option>
+                                <option value="tlc-cptpp" data-saving="100" data-description="Eliminación total de aranceles por CPTPP">Certificado Origen CPTPP - 0% Arancel</option>
+                                <option value="tlc-alianza" data-saving="100" data-description="Eliminación total de aranceles por Alianza Pacífico">Certificado Origen Alianza Pacífico - 0% Arancel</option>
+                                <option value="iva-ieps" data-saving="16" data-description="Manejo preferencial de IVA e IEPS">Certificación IVA-IEPS - Diferimiento 16%</option>
+                                <option value="drawback" data-saving="20" data-description="Devolución de impuestos pagados en importación">Drawback - Devolución hasta 20%</option>
+                                <option value="recinto-fiscal" data-saving="30" data-description="Diferimiento de impuestos en recinto fiscalizado">Recinto Fiscalizado - Diferimiento</option>
+                            </select>
+                        </div>
+                        <div class="calc-group">
+                            <label for="importType">Tipo de operación</label>
+                            <select id="importType">
+                                <option value="temporal">Importación Temporal (manufactura)</option>
+                                <option value="definitiva">Importación Definitiva</option>
+                                <option value="exportacion">Exportación</option>
+                            </select>
+                        </div>
+                        <button type="button" id="calculateBtn" class="btn btn-primary btn-large">
+                            <i class="fas fa-calculator"></i> Calcular Ahorros
+                        </button>
+                    </form>
+                </div>
+                <div class="calculator-results" data-aos="fade-left">
+                    <div class="results-container" id="resultsContainer">
+                        <div class="results-placeholder">
+                            <i class="fas fa-chart-line"></i>
+                            <h3>Resultados de tu Cálculo</h3>
+                            <p>Completa el formulario para ver tu potencial de ahorro</p>
+                        </div>
+                    </div>
+                    <div class="results-chart">
+                        <canvas id="savingsChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Casos de Éxito -->
+    <section class="success-cases" id="casos-exito">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Resultados que respaldan</h2>
+                <p class="section-subtitle">La confianza de nuestros clientes es nuestro mayor logro</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>"DACROM nos ayudó a obtener la certificación IMMEX en tiempo récord. Su profesionalismo y conocimiento del proceso fueron clave para nuestro éxito."</p>
+                        <div class="testimonial-author">
+                            <strong>Empresa Manufacturera</strong>
+                            <span>Sector Automotriz</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>"Gracias a su asesoría en PROSEC, hemos reducido significativamente nuestros costos de importación. Excelente servicio y seguimiento."</p>
+                        <div class="testimonial-author">
+                            <strong>Empresa Exportadora</strong>
+                            <span>Sector Textil</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>"La certificación OEA que obtuvimos con DACROM nos ha abierto nuevas oportunidades de negocio. Altamente recomendados."</p>
+                        <div class="testimonial-author">
+                            <strong>Empresa Logística</strong>
+                            <span>Sector Comercio</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clients-logos">
+                <div class="client-logo">
+                    <div class="logo-placeholder">Cliente 1</div>
+                </div>
+                <div class="client-logo">
+                    <div class="logo-placeholder">Cliente 2</div>
+                </div>
+                <div class="client-logo">
+                    <div class="logo-placeholder">Cliente 3</div>
+                </div>
+                <div class="client-logo">
+                    <div class="logo-placeholder">Cliente 4</div>
+                </div>
+                <div class="client-logo">
+                    <div class="logo-placeholder">Cliente 5</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Contacto -->
+    <section class="contact" id="contacto">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Cotiza tu Asesoría</h2>
+                <p class="section-subtitle">Estamos listos para impulsar tu negocio internacional</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nombre completo</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Empresa</label>
+                            <input type="text" id="company" name="company" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Correo electrónico</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Teléfono</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Servicio de interés</label>
+                            <select id="service" name="service" required>
+                                <option value="">Selecciona un servicio</option>
+                                <option value="immex">IMMEX</option>
+                                <option value="iva-ieps">Certificación IVA-IEPS</option>
+                                <option value="prosec">PROSEC</option>
+                                <option value="oea">Certificación OEA</option>
+                                <option value="c-tpat">C-TPAT</option>
+                                <option value="otros">Otros servicios</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Cuéntanos sobre tu proyecto o necesidad..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-large">Enviar solicitud</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-info-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Ubicación</h4>
+                            <p>Monterrey, Nuevo León<br>México</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Teléfono</h4>
+                            <p>+52 (81) 1234-5678</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>contacto@dacromasesores.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Horarios</h4>
+                            <p>Lun - Vie: 9:00 - 18:00<br>Sáb: 9:00 - 14:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-d">D</span><span class="logo-acrom">ACROM</span>
+                        <span class="logo-subtitle">Asesores</span>
+                    </div>
+                    <p class="footer-description">Especialistas en comercio exterior con base en Monterrey, impulsando tu negocio más allá de las fronteras.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Servicios</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">IMMEX</a></li>
+                        <li><a href="#">PROSEC</a></li>
+                        <li><a href="#">Certificación OEA</a></li>
+                        <li><a href="#">C-TPAT</a></li>
+                        <li><a href="#">Asesoría Comercial</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Empresa</h4>
+                    <ul class="footer-links">
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#casos-exito">Casos de Éxito</a></li>
+
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Contacto</h4>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Monterrey, N.L., México</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+52 (81) 1234-5678</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>contacto@dacromasesores.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 DACROM Asesores. Todos los derechos reservados.</p>
+                    <div class="footer-legal">
+                        <a href="#">Aviso de Privacidad</a>
+                        <a href="#">Términos y Condiciones</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/528112345678" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <!-- Initialize AOS Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>
+</html> 
