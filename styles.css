@@ -176,7 +176,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
     letter-spacing: 0.02em;
     line-height: 1;
-    margin-bottom: -1px;
+    margin-bottom: 2px;
 }
 
 .logo-tagline {
@@ -187,6 +187,7 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 0.15em;
     line-height: 1;
     opacity: 0.8;
+    margin-top: 1px;
 }
 
 .logo-image {
