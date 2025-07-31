@@ -174,6 +174,15 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
 }
 
+.logo-tagline {
+    font-size: 0.7rem;
+    color: #0F2B5B;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-top: 2px;
+}
+
 .logo-image {
     height: 50px;
     width: auto;
@@ -191,7 +200,8 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 2px;
+    gap: 3px;
+    padding-left: 8px;
 }
 
 .nav-menu {
@@ -451,6 +461,104 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     text-align: center;
     gap: 0.5rem;
+}
+
+/* Anexo 24-30 Section */
+.anexo-section {
+    margin: 4rem 0 2rem 0;
+    padding: 3rem 0;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.anexo-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.anexo-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.anexo-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.anexo-subtitle {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 300;
+    letter-spacing: 0.05em;
+}
+
+.anexo-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.anexo-item {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.anexo-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transition: left 0.6s ease;
+}
+
+.anexo-item:hover::before {
+    left: 100%;
+}
+
+.anexo-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+.anexo-item i {
+    font-size: 2.5rem;
+    color: #4A90E2;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 20px rgba(74, 144, 226, 0.5);
+}
+
+.anexo-item h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.anexo-item p {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.5;
+    font-weight: 300;
 }
 
 /* Líneas profesionales decorativas */
@@ -943,6 +1051,15 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 3.5rem;
     }
     
+    .anexo-title {
+        font-size: 2rem;
+    }
+    
+    .anexo-content {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+    }
+    
     .hero-professional-lines {
         width: 250px;
     }
@@ -1075,6 +1192,19 @@ h1, h2, h3, h4, h5, h6 {
     
     .hero-logo-brand {
         font-size: 2.8rem;
+    }
+    
+    .anexo-title {
+        font-size: 1.8rem;
+    }
+    
+    .anexo-content {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .anexo-item {
+        padding: 1.5rem;
     }
     
     .hero-logo-subtitle {
