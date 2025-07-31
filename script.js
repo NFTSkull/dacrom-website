@@ -938,6 +938,30 @@ document.addEventListener('DOMContentLoaded', function() {
                 'Ventaja competitiva en el mercado'
             ]
         },
+        'anexo24': {
+            title: 'Anexo 24 - Operador Económico Autorizado (OEA)',
+            description: 'Certificación que acredita a las empresas como operadores confiables en la cadena de suministro internacional, otorgando beneficios aduaneros preferenciales.',
+            benefits: [
+                'Facilitación aduanera preferencial',
+                'Reducción de inspecciones físicas',
+                'Reconocimiento internacional como operador confiable',
+                'Mejora de la competitividad en el mercado global',
+                'Acceso a programas de seguridad comercial',
+                'Optimización de tiempos de despacho aduanero'
+            ]
+        },
+        'anexo30': {
+            title: 'Anexo 30 - Programa de Drawback',
+            description: 'Programa que permite la devolución de impuestos pagados en la importación de mercancías que se incorporan a productos de exportación.',
+            benefits: [
+                'Recuperación de impuestos pagados en importación',
+                'Mejora significativa del flujo de efectivo',
+                'Incremento de competitividad en exportaciones',
+                'Proceso de solicitud especializado y eficiente',
+                'Seguimiento completo hasta la devolución',
+                'Optimización de costos operativos'
+            ]
+        },
         'ctpat': {
             title: 'Programa C-TPAT',
             description: 'Customs-Trade Partnership Against Terrorism, programa de seguridad voluntario para facilitar el comercio con Estados Unidos.',
