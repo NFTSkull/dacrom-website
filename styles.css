@@ -264,6 +264,9 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: space-between;
     position: relative;
     z-index: 1001;
+    background: transparent;
+    border: none;
+    outline: none;
 }
 
 .hamburger .bar {
@@ -1531,6 +1534,10 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .hamburger {
+        display: flex !important;
+    }
+    
+    .hamburger {
         display: flex;
         margin-left: 10px;
         padding: 10px;
@@ -1588,6 +1595,11 @@ h1, h2, h3, h4, h5, h6 {
     .nav-actions .btn {
         padding: 6px 12px;
         font-size: 0.8rem;
+        display: none;
+    }
+    
+    .hamburger {
+        display: flex !important;
     }
     
     .hamburger {
