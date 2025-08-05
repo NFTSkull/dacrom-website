@@ -167,7 +167,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.3rem;
     letter-spacing: 0.08em;
     line-height: 1;
-    margin-bottom: -2px;
+    margin-bottom: 2px;
 }
 
 .logo-subtitle {
@@ -176,7 +176,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
     letter-spacing: 0.02em;
     line-height: 1;
-    margin-bottom: 2px;
+    margin-bottom: 3px;
 }
 
 .logo-tagline {
@@ -187,7 +187,7 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 0.15em;
     line-height: 1;
     opacity: 0.8;
-    margin-top: 1px;
+    margin-top: 0px;
 }
 
 .logo-image {
@@ -210,8 +210,9 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 1px;
-    padding-left: 6px;
+    gap: 3px;
+    padding-left: 8px;
+    justify-content: center;
 }
 
 .nav-menu {
