@@ -1535,6 +1535,9 @@ h1, h2, h3, h4, h5, h6 {
     
     .hamburger {
         display: flex !important;
+        margin-left: auto;
+        z-index: 1002;
+        position: relative;
     }
     
     .hamburger {
@@ -1609,6 +1612,7 @@ h1, h2, h3, h4, h5, h6 {
     
     .hamburger .bar {
         height: 2px;
+        background-color: #0F2B5B !important;
     }
 }
 
