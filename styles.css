@@ -973,7 +973,7 @@ h1, h2, h3, h4, h5, h6 {
 
     
     .hero-content {
-        padding: 25px 0 10px;
+        padding: 70px 0 10px;
     }
     
     .hero-logo-section {
@@ -1455,11 +1455,11 @@ h1, h2, h3, h4, h5, h6 {
 /* Header Mobile Optimization */
 @media (max-width: 768px) {
     .header {
-        padding: 0.05rem 0;
-        min-height: 25px;
-        background: rgba(255, 255, 255, 0.98);
-        backdrop-filter: blur(15px);
-        border-bottom: 1px solid rgba(15, 43, 91, 0.15);
+        padding: 0.5rem 0;
+        min-height: 60px;
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid rgba(15, 43, 91, 0.1);
     }
     
     .navbar {
@@ -1467,15 +1467,15 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .nav-container {
-        padding: 0 6px;
-        min-height: 20px;
+        padding: 0 15px;
+        min-height: 50px;
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
     
     .logo {
-        transform: scale(0.6);
+        transform: scale(0.9);
         margin-right: 0;
         flex-shrink: 0;
         display: flex;
@@ -1486,37 +1486,40 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .logo-image {
-        height: 35px;
-        margin-bottom: 1px;
+        height: 50px;
+        margin-bottom: 3px;
     }
     
     .logo-brand {
-        font-size: 1.0rem;
+        font-size: 1.3rem;
         font-weight: 700;
-        line-height: 1.0;
+        line-height: 1.1;
         margin: 0;
+        color: #0F2B5B;
     }
     
     .logo-subtitle {
-        font-size: 0.7rem;
+        font-size: 0.85rem;
         font-weight: 500;
-        line-height: 1.0;
+        line-height: 1.1;
         margin: 0;
+        color: #2A3B7D;
     }
     
     .logo-tagline {
-        font-size: 0.55rem;
+        font-size: 0.7rem;
         font-weight: 400;
-        line-height: 1.0;
+        line-height: 1.1;
         margin: 0;
+        color: #4A90E2;
     }
     
     .nav-menu {
         position: fixed;
-        top: 25px;
+        top: 60px;
         left: 0;
         width: 100%;
-        height: calc(100vh - 25px);
+        height: calc(100vh - 60px);
         background: rgba(255, 255, 255, 0.98);
         backdrop-filter: blur(15px);
         display: flex;
@@ -1615,17 +1618,17 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 480px) {
     .header {
-        padding: 0.03rem 0;
-        min-height: 20px;
+        padding: 0.4rem 0;
+        min-height: 50px;
     }
     
     .nav-container {
-        padding: 0 4px;
-        min-height: 15px;
+        padding: 0 12px;
+        min-height: 40px;
     }
     
     .logo {
-        transform: scale(0.5);
+        transform: scale(0.8);
         margin-right: 0;
         display: flex;
         flex-direction: column;
@@ -1635,34 +1638,37 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .logo-image {
-        height: 25px;
-        margin-bottom: 1px;
+        height: 40px;
+        margin-bottom: 2px;
     }
     
     .logo-brand {
-        font-size: 0.8rem;
+        font-size: 1.1rem;
         font-weight: 700;
-        line-height: 1.0;
+        line-height: 1.1;
         margin: 0;
+        color: #0F2B5B;
     }
     
     .logo-subtitle {
-        font-size: 0.6rem;
+        font-size: 0.75rem;
         font-weight: 500;
-        line-height: 1.0;
+        line-height: 1.1;
         margin: 0;
+        color: #2A3B7D;
     }
     
     .logo-tagline {
-        font-size: 0.45rem;
+        font-size: 0.6rem;
         font-weight: 400;
-        line-height: 1.0;
+        line-height: 1.1;
         margin: 0;
+        color: #4A90E2;
     }
     
     .nav-menu {
-        top: 20px;
-        height: calc(100vh - 20px);
+        top: 50px;
+        height: calc(100vh - 50px);
     }
     
     .nav-actions {
