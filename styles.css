@@ -156,9 +156,10 @@ h1, h2, h3, h4, h5, h6 {
 .logo {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 15px;
     font-size: 1.5rem;
     font-weight: 700;
+    position: relative;
 }
 
 .logo-brand {
@@ -191,7 +192,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo-image {
-    height: 50px;
+    height: 65px;
     width: auto;
     object-fit: contain;
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
@@ -211,7 +212,7 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     align-items: flex-start;
     gap: 3px;
-    padding-left: 8px;
+    padding-left: 0px;
     justify-content: center;
 }
 
@@ -1475,7 +1476,7 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .logo-image {
-        height: 50px;
+        height: 60px;
     }
     
     .logo-brand {
@@ -1560,7 +1561,7 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .logo-image {
-        height: 45px;
+        height: 55px;
     }
     
     .logo-brand {
