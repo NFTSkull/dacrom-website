@@ -196,6 +196,9 @@ h1, h2, h3, h4, h5, h6 {
     object-fit: contain;
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
     transition: all 0.3s ease;
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
 }
 
 .logo:hover .logo-image {
@@ -411,6 +414,14 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     animation: heroMainEnter 1.5s cubic-bezier(0.23, 1, 0.32, 1) forwards;
     opacity: 0;
+    /* Mejorando la alineación del hero */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    position: relative;
+    z-index: 2;
 }
 
 /* Logo central elegante */
@@ -456,10 +467,11 @@ h1, h2, h3, h4, h5, h6 {
     filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
     transition: all 0.3s ease;
     margin-bottom: 1rem;
-    background: rgba(255, 255, 255, 0.95);
-    padding: 12px;
-    border-radius: 12px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    /* Eliminando el fondo y padding para un look más limpio */
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
 }
 
 .hero-logo-enhanced:hover .hero-logo-image {
@@ -539,12 +551,14 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.15;
     letter-spacing: -0.02em;
     text-shadow: 
-        0 2px 4px rgba(0, 0, 0, 0.4),
-        0 8px 16px rgba(15, 43, 91, 0.3),
-        0 16px 32px rgba(0, 0, 0, 0.2);
+        0 2px 4px rgba(0, 0, 0, 0.6),
+        0 8px 16px rgba(15, 43, 91, 0.4),
+        0 16px 32px rgba(0, 0, 0, 0.3);
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
+    /* Mejorando la visibilidad del texto */
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.1));
 }
 
 .hero-subtitle-wrapper {
@@ -556,13 +570,15 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero-subtitle {
     font-size: 1.3rem;
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 0.95);
     line-height: 1.6;
     font-weight: 400;
     letter-spacing: 0.01em;
-    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
     max-width: 650px;
     text-align: center;
+    /* Mejorando la visibilidad del subtítulo */
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.1));
 }
 
 /* Botones corporativos */
