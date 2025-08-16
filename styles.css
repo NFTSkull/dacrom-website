@@ -5753,6 +5753,21 @@ img:not([src]) {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
+/* Estilos para la imagen del logo en lugar del texto */
+.logo-enhanced-image {
+    height: 60px; /* Altura similar al texto del logo */
+    width: auto; /* Mantener proporción de aspecto */
+    max-width: 200px; /* Ancho máximo para evitar que sea muy ancha */
+    object-fit: contain; /* Mantener proporción sin distorsionar */
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2)); /* Sombra sutil */
+    transition: all 0.3s ease; /* Transición suave */
+}
+
+.logo-enhanced-image:hover {
+    transform: scale(1.05); /* Efecto hover sutil */
+    filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.3));
+}
+
 .decorative-lines {
     position: absolute;
     top: 50%;
@@ -6052,6 +6067,12 @@ img:not([src]) {
         border-radius: 12px;
     }
     
+    /* Estilos responsivos para la imagen del logo */
+    .logo-enhanced-image {
+        height: 45px; /* Altura reducida para móviles */
+        max-width: 150px; /* Ancho máximo reducido para móviles */
+    }
+    
     .decorative-lines {
         width: 500px;
         height: 500px;
@@ -6149,6 +6170,12 @@ img:not([src]) {
     
     .logo-d-enhanced {
         padding: 10px 14px;
+    }
+    
+    /* Estilos para pantallas muy pequeñas */
+    .logo-enhanced-image {
+        height: 35px; /* Altura muy reducida para pantallas pequeñas */
+        max-width: 120px; /* Ancho máximo muy reducido */
     }
     
     .decorative-lines {
