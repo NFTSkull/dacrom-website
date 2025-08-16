@@ -5755,8 +5755,8 @@ img:not([src]) {
 
 /* Estilos para la imagen del logo en lugar del texto */
 .logo-enhanced-image {
-    width: 183px; /* Ancho exacto especificado */
-    height: 65px; /* Alto exacto especificado */
+    width: 279px; /* Ancho exacto especificado */
+    height: 111px; /* Alto exacto especificado */
     object-fit: contain; /* Mantener proporción sin distorsionar */
     filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.1)); /* Sombra muy sutil */
     transition: all 0.3s ease; /* Transición suave */
@@ -6069,8 +6069,8 @@ img:not([src]) {
     
     /* Estilos responsivos para la imagen del logo */
     .logo-enhanced-image {
-        width: 120px; /* Ancho reducido para tablets */
-        height: 43px; /* Alto proporcional para tablets */
+        width: 180px; /* Ancho reducido para tablets */
+        height: 72px; /* Alto proporcional para tablets (279:111) */
         opacity: 0.7; /* Transparencia sutil en móviles */
     }
     
@@ -6175,8 +6175,8 @@ img:not([src]) {
     
     /* Estilos para pantallas muy pequeñas */
     .logo-enhanced-image {
-        width: 90px; /* Ancho muy reducido para móviles pequeños */
-        height: 32px; /* Alto proporcional para móviles pequeños */
+        width: 140px; /* Ancho muy reducido para móviles pequeños */
+        height: 56px; /* Alto proporcional para móviles pequeños (279:111) */
         opacity: 0.6; /* Transparencia sutil en pantallas pequeñas */
     }
     
