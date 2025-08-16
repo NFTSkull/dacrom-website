@@ -5755,8 +5755,8 @@ img:not([src]) {
 
 /* Estilos para la imagen del logo en lugar del texto */
 .logo-enhanced-image {
-    width: 366px; /* Ancho exacto especificado */
-    height: 171px; /* Alto exacto especificado */
+    width: 366px !important; /* Ancho exacto especificado - FORZAR */
+    height: 171px !important; /* Alto exacto especificado - FORZAR */
     object-fit: contain; /* Mantener proporción sin distorsionar */
     filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.1)); /* Sombra muy sutil */
     transition: all 0.3s ease; /* Transición suave */
