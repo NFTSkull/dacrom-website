@@ -5754,7 +5754,7 @@ img:not([src]) {
 }
 
 /* Estilos para la imagen del logo en lugar del texto */
-.logo-enhanced-image {
+.logo-enhanced-image-new {
     width: 366px !important; /* Ancho exacto especificado - FORZAR */
     height: 171px !important; /* Alto exacto especificado - FORZAR */
     object-fit: contain; /* Mantener proporción sin distorsionar */
@@ -5763,7 +5763,7 @@ img:not([src]) {
     opacity: 0.8; /* Transparencia sutil */
 }
 
-.logo-enhanced-image:hover {
+.logo-enhanced-image-new:hover {
     transform: scale(1.05); /* Efecto hover sutil */
     filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.3));
 }
@@ -6068,7 +6068,7 @@ img:not([src]) {
     }
     
     /* Estilos responsivos para la imagen del logo */
-    .logo-enhanced-image {
+    .logo-enhanced-image-new {
         width: 240px; /* Ancho reducido para tablets */
         height: 112px; /* Alto proporcional para tablets (366:171) */
         opacity: 0.7; /* Transparencia sutil en móviles */
@@ -6174,7 +6174,7 @@ img:not([src]) {
     }
     
     /* Estilos para pantallas muy pequeñas */
-    .logo-enhanced-image {
+    .logo-enhanced-image-new {
         width: 180px; /* Ancho muy reducido para móviles pequeños */
         height: 84px; /* Alto proporcional para móviles pequeños (366:171) */
         opacity: 0.6; /* Transparencia sutil en pantallas pequeñas */
