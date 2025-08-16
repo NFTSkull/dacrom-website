@@ -5755,9 +5755,8 @@ img:not([src]) {
 
 /* Estilos para la imagen del logo en lugar del texto */
 .logo-enhanced-image {
-    height: 12px; /* Altura extremadamente pequeña como título sutil */
-    width: auto; /* Mantener proporción de aspecto */
-    max-width: 40px; /* Ancho máximo muy reducido para título sutil */
+    width: 183px; /* Ancho exacto especificado */
+    height: 65px; /* Alto exacto especificado */
     object-fit: contain; /* Mantener proporción sin distorsionar */
     filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.1)); /* Sombra muy sutil */
     transition: all 0.3s ease; /* Transición suave */
@@ -6070,8 +6069,8 @@ img:not([src]) {
     
     /* Estilos responsivos para la imagen del logo */
     .logo-enhanced-image {
-        height: 10px; /* Altura extremadamente pequeña para móviles */
-        max-width: 35px; /* Ancho máximo muy reducido para móviles */
+        width: 120px; /* Ancho reducido para tablets */
+        height: 43px; /* Alto proporcional para tablets */
         opacity: 0.7; /* Transparencia sutil en móviles */
     }
     
@@ -6176,8 +6175,8 @@ img:not([src]) {
     
     /* Estilos para pantallas muy pequeñas */
     .logo-enhanced-image {
-        height: 8px; /* Altura mínima para pantallas pequeñas */
-        max-width: 30px; /* Ancho máximo mínimo */
+        width: 90px; /* Ancho muy reducido para móviles pequeños */
+        height: 32px; /* Alto proporcional para móviles pequeños */
         opacity: 0.6; /* Transparencia sutil en pantallas pequeñas */
     }
     
