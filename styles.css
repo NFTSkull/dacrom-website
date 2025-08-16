@@ -5755,11 +5755,11 @@ img:not([src]) {
 
 /* Estilos para la imagen del logo en lugar del texto */
 .logo-enhanced-image {
-    height: 60px; /* Altura similar al texto del logo */
+    height: 25px; /* Altura mucho más pequeña */
     width: auto; /* Mantener proporción de aspecto */
-    max-width: 200px; /* Ancho máximo para evitar que sea muy ancha */
+    max-width: 80px; /* Ancho máximo mucho más reducido */
     object-fit: contain; /* Mantener proporción sin distorsionar */
-    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2)); /* Sombra sutil */
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2)); /* Sombra más sutil */
     transition: all 0.3s ease; /* Transición suave */
 }
 
@@ -6069,8 +6069,8 @@ img:not([src]) {
     
     /* Estilos responsivos para la imagen del logo */
     .logo-enhanced-image {
-        height: 45px; /* Altura reducida para móviles */
-        max-width: 150px; /* Ancho máximo reducido para móviles */
+        height: 20px; /* Altura mucho más reducida para móviles */
+        max-width: 60px; /* Ancho máximo mucho más reducido para móviles */
     }
     
     .decorative-lines {
@@ -6174,8 +6174,8 @@ img:not([src]) {
     
     /* Estilos para pantallas muy pequeñas */
     .logo-enhanced-image {
-        height: 35px; /* Altura muy reducida para pantallas pequeñas */
-        max-width: 120px; /* Ancho máximo muy reducido */
+        height: 18px; /* Altura extremadamente reducida para pantallas pequeñas */
+        max-width: 50px; /* Ancho máximo extremadamente reducido */
     }
     
     .decorative-lines {
