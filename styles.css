@@ -498,7 +498,7 @@ h1, h2, h3, h4, h5, h6 {
 .hero-professional-lines {
     position: relative;
     height: 2px;
-    margin: 2rem auto;
+    margin: 1rem auto; /* Reducido de 2rem a 1rem para acercar el contenido */
     width: 300px;
 }
 
@@ -532,6 +532,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Sección de texto restructurada */
 .hero-text-section {
+    margin-top: 1rem; /* Agregado margen superior reducido para acercar a las líneas */
     margin-bottom: 3rem;
 }
 
@@ -570,7 +571,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem; /* Reducido de 2rem a 1.5rem para acercar a los botones */
 }
 
 .hero-subtitle {
@@ -588,7 +589,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Botones corporativos */
 .hero-cta-section {
-    margin-top: 2rem;
+    margin-top: 1.5rem; /* Reducido de 2rem a 1.5rem para acercar al texto */
 }
 
 .cta-decorative-frame {
