@@ -466,8 +466,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-logo-image {
-    height: 80px;
-    width: auto;
+    height: 120px; /* Aumentado a 120px como solicitaste */
+    width: 120px; /* Ancho fijo para mantener proporción cuadrada */
     object-fit: contain;
     filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
     transition: all 0.3s ease;
