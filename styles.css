@@ -2822,23 +2822,39 @@ h1, h2, h3, h4, h5, h6 {
 .footer-logo {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    font-size: 1.5rem;
-    font-weight: 700;
+    gap: 1rem;
     margin-bottom: 1rem;
 }
 
-.footer-logo .logo-d {
-    background-color: white;
-    color: #0F2B5B;
+.footer-logo .logo-image {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+    filter: brightness(0) invert(1); /* Hacer el logo blanco para el footer */
 }
 
-.footer-logo .logo-acrom {
+.footer-logo .logo-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.footer-logo .logo-brand {
+    font-size: 1.5rem;
+    font-weight: 700;
     color: white;
 }
 
 .footer-logo .logo-subtitle {
-    color: rgba(255, 255, 255, 0.8);
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.footer-logo .logo-tagline {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .footer-description {
