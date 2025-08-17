@@ -465,7 +465,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 0.3rem;
 }
 
-.hero-logo-image {
+.hero-logo-final-120x120 {
     height: 120px !important; /* Aumentado a 120px como solicitaste - FORZAR */
     width: 120px !important; /* Ancho fijo para mantener proporción cuadrada - FORZAR */
     object-fit: contain;
@@ -479,7 +479,7 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: none;
 }
 
-.hero-logo-enhanced:hover .hero-logo-image {
+.hero-logo-enhanced:hover .hero-logo-final-120x120 {
     transform: scale(1.05);
     filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.4));
 }
