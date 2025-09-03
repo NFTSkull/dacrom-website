@@ -1,5 +1,37 @@
 # DEVLOG
 
+## 2025-01-03 - Corrección de Visualización de Imagen en Móvil
+
+### Problema Identificado
+
+**Situación:** A pesar de los cambios anteriores en el layout móvil, la imagen seguía sin mostrarse correctamente en dispositivos móviles.
+
+**Análisis técnico:**
+- El `object-fit: cover` estaba recortando partes importantes de la imagen
+- La altura del contenedor era insuficiente para mostrar la imagen completa
+- Las proporciones de la imagen no se mantenían correctamente
+
+### Decisión de Implementación
+
+**Solución elegida:**
+- Cambiar de `object-fit: cover` a `object-fit: contain`
+- Añadir `object-position: center` para centrado perfecto
+- Aumentar la altura del contenedor para acomodar la imagen completa
+- Mantener `border-radius` consistente
+
+**Razones técnicas:**
+- `object-fit: contain` asegura que toda la imagen sea visible
+- `object-position: center` centra la imagen dentro del contenedor
+- Mayor altura permite mejor visualización sin recortes
+
+### Resultados de la Implementación
+
+**Mejoras logradas:**
+- Imagen completamente visible en todos los dispositivos móviles
+- Mantenimiento de las proporciones originales
+- Presentación profesional y consistente
+- Sin afectar la funcionalidad desktop
+
 ## 2025-01-03 - Optimización Responsive Sección About
 
 ### Decisión de Diseño
@@ -54,6 +86,7 @@
 - La estructura visual debe adaptarse al contexto de uso
 - El orden de los elementos afecta significativamente la experiencia
 - El centrado mejora la legibilidad en pantallas pequeñas
+- `object-fit: contain` es crucial para mostrar imágenes completas
 
 **Próximas mejoras consideradas:**
 - Aplicar principios similares a otras secciones

@@ -1,5 +1,30 @@
 # CHANGELOG
 
+## [1.0.2] - 2025-01-03
+
+### Corrección de Visualización de Imagen en Móvil
+
+**Problema identificado:**
+- La imagen en la sección "Tu aliado en Comercio Exterior" no se mostraba completa en versión móvil
+- El `object-fit: cover` estaba recortando partes importantes de la imagen
+- La imagen no mantenía las proporciones correctas
+
+**Solución implementada:**
+- Cambio de `object-fit: cover` a `object-fit: contain` para mostrar la imagen completa
+- Añadido `object-position: center` para centrar la imagen
+- Aumento de altura del contenedor de 300px a 350px en móvil (768px)
+- Aumento de altura del contenedor de 260px a 320px en móvil pequeño (480px)
+- Aplicación de `border-radius: 20px` a la imagen para consistencia visual
+
+**Archivos modificados:**
+- `styles.css`: Media queries para móvil (líneas 1760-1860)
+
+**Resultado:**
+- ✅ Imagen completa y visible en dispositivos móviles
+- ✅ Mantenimiento de proporciones originales
+- ✅ Mejor presentación visual profesional
+- ✅ Consistencia con el diseño desktop
+
 ## [1.0.1] - 2025-01-03
 
 ### Cambios Realizados
