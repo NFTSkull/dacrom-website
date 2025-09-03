@@ -1,5 +1,38 @@
 # DEVLOG
 
+## 2025-01-03 - Corrección del Hamburger Menu
+
+### Problema Identificado
+
+**Situación:** El hamburger menu mostraba una X "chueca" (torcida) cuando estaba en estado activo, afectando la estética y profesionalismo del sitio.
+
+**Análisis técnico:**
+- Los valores de `translate` en las transformaciones CSS estaban causando desalineación
+- La combinación de `rotate` y `translate` creaba una X asimétrica
+- La barra central no tenía una animación suave de desaparición
+
+### Decisión de Implementación
+
+**Solución elegida:**
+- Eliminar completamente los valores `translate` problemáticos
+- Usar solo `rotate` para las transformaciones de las barras
+- Añadir `position: relative` para mejor control del posicionamiento
+- Mejorar la animación de la barra central con `scale(0)`
+
+**Razones técnicas:**
+- `rotate` solo mantiene las barras en su posición original
+- `position: relative` permite mejor control del layout
+- `scale(0)` proporciona una animación más suave para la barra central
+- Eliminación de `translate` evita cálculos complejos de posicionamiento
+
+### Resultados de la Implementación
+
+**Mejoras logradas:**
+- X perfecta y simétrica en estado activo
+- Animación más suave y profesional
+- Consistencia visual en todos los breakpoints
+- Mejor experiencia de usuario
+
 ## 2025-01-03 - Optimización del Header Móvil
 
 ### Problema Identificado

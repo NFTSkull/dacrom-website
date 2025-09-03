@@ -278,15 +278,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hamburger.active .bar:nth-child(1) {
-    transform: rotate(45deg) translate(8px, 8px);
+    transform: rotate(45deg);
 }
 
 .hamburger.active .bar:nth-child(2) {
     opacity: 0;
+    transform: scale(0);
 }
 
 .hamburger.active .bar:nth-child(3) {
-    transform: rotate(-45deg) translate(8px, -8px);
+    transform: rotate(-45deg);
 }
 
 .header.scrolled .hamburger .bar {
@@ -1609,20 +1610,21 @@ h1, h2, h3, h4, h5, h6 {
         border-radius: 3px;
         transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+        position: relative;
     }
     
     .hamburger.active .bar:nth-child(1) {
-        transform: rotate(45deg) translate(6px, 6px);
+        transform: rotate(45deg);
         background-color: #FFFFFF !important;
     }
     
     .hamburger.active .bar:nth-child(2) {
         opacity: 0;
-        transform: translateX(-20px);
+        transform: scale(0);
     }
     
     .hamburger.active .bar:nth-child(3) {
-        transform: rotate(-45deg) translate(6px, -6px);
+        transform: rotate(-45deg);
         background-color: #FFFFFF !important;
     }
 }
@@ -1725,14 +1727,20 @@ h1, h2, h3, h4, h5, h6 {
         border-radius: 3px;
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
         transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+        position: relative;
     }
     
     .hamburger.active .bar:nth-child(1) {
-        transform: rotate(45deg) translate(7px, 7px);
+        transform: rotate(45deg);
+    }
+    
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+        transform: scale(0);
     }
     
     .hamburger.active .bar:nth-child(3) {
-        transform: rotate(-45deg) translate(7px, -7px);
+        transform: rotate(-45deg);
     }
 }
 

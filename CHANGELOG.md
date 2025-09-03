@@ -1,5 +1,36 @@
 # CHANGELOG
 
+## [1.0.4] - 2025-01-03
+
+### Corrección del Hamburger Menu - X Perfecta
+
+**Problema identificado:**
+- La X del hamburger menu se veía "chueca" (torcida) cuando estaba activo
+- Los valores de `translate` estaban causando desalineación
+- La transformación no formaba una X perfecta y simétrica
+
+**Solución implementada:**
+- Eliminación de valores `translate` problemáticos
+- Simplificación de las transformaciones a solo `rotate`
+- Añadido `position: relative` a las barras para mejor control
+- Mejora de la animación de la barra central con `scale(0)`
+- Aplicación consistente en todos los breakpoints
+
+**Cambios específicos:**
+- `.hamburger.active .bar:nth-child(1)`: `rotate(45deg)` sin translate
+- `.hamburger.active .bar:nth-child(2)`: `opacity: 0` + `scale(0)`
+- `.hamburger.active .bar:nth-child(3)`: `rotate(-45deg)` sin translate
+- Añadido `position: relative` a todas las barras
+
+**Archivos modificados:**
+- `styles.css`: Estilos del hamburger menu en todos los breakpoints
+
+**Resultado:**
+- ✅ X perfecta y simétrica cuando el menu está activo
+- ✅ Animación suave y profesional
+- ✅ Consistencia visual en todos los dispositivos
+- ✅ Mejor experiencia de usuario
+
 ## [1.0.3] - 2025-01-03
 
 ### Optimización del Header Móvil
