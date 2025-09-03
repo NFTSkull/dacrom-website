@@ -1476,16 +1476,17 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .logo {
-        transform: scale(0.8);
+        transform: scale(0.85);
         margin-right: 0;
         flex-shrink: 0;
         display: flex;
         align-items: center;
         justify-content: flex-start;
+        gap: 10px;
     }
     
     .logo-image {
-        height: 40px;
+        height: 42px;
         margin-right: 8px;
     }
     
@@ -1494,30 +1495,34 @@ h1, h2, h3, h4, h5, h6 {
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
+        gap: 3px;
     }
     
     .logo-brand {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         font-weight: 700;
-        line-height: 1.0;
+        line-height: 1.1;
         margin: 0;
         color: #0F2B5B;
+        letter-spacing: 0.04em;
     }
     
     .logo-subtitle {
-        font-size: 0.75rem;
+        font-size: 0.8rem;
         font-weight: 500;
-        line-height: 1.0;
+        line-height: 1.1;
         margin: 0;
         color: #2A3B7D;
     }
     
     .logo-tagline {
-        font-size: 0.6rem;
-        font-weight: 400;
-        line-height: 1.0;
+        font-size: 0.65rem;
+        font-weight: 600;
+        line-height: 1.1;
         margin: 0;
         color: #4A90E2;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
     }
     
     .nav-menu {
@@ -1624,26 +1629,27 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 480px) {
     .header {
-        padding: 0.2rem 0;
-        min-height: 35px;
+        padding: 0.5rem 0;
+        min-height: 50px;
     }
     
     .nav-container {
-        padding: 0 8px;
-        min-height: 30px;
+        padding: 0 15px;
+        min-height: 45px;
     }
     
     .logo {
-        transform: scale(0.7);
+        transform: scale(0.9);
         margin-right: 0;
         display: flex;
         align-items: center;
         justify-content: flex-start;
+        gap: 12px;
     }
     
     .logo-image {
-        height: 30px;
-        margin-right: 6px;
+        height: 45px;
+        margin-right: 8px;
     }
     
     .logo-text {
@@ -1651,70 +1657,82 @@ h1, h2, h3, h4, h5, h6 {
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
+        gap: 4px;
     }
     
     .logo-brand {
-        font-size: 0.9rem;
+        font-size: 1.3rem;
         font-weight: 700;
-        line-height: 1.0;
+        line-height: 1.1;
         margin: 0;
         color: #0F2B5B;
+        letter-spacing: 0.05em;
     }
     
     .logo-subtitle {
-        font-size: 0.65rem;
+        font-size: 0.85rem;
         font-weight: 500;
-        line-height: 1.0;
+        line-height: 1.1;
         margin: 0;
         color: #2A3B7D;
     }
     
     .logo-tagline {
-        font-size: 0.5rem;
-        font-weight: 400;
-        line-height: 1.0;
+        font-size: 0.65rem;
+        font-weight: 600;
+        line-height: 1.1;
         margin: 0;
         color: #4A90E2;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
     }
     
     .nav-menu {
-        top: 35px;
-        height: calc(100vh - 35px);
+        top: 50px;
+        height: calc(100vh - 50px);
     }
     
     .nav-actions {
-        gap: 0.5rem;
+        gap: 0.8rem;
     }
     
     .nav-actions .btn {
         display: none;
     }
     
-    /* HAMBURGER PARA MÓVIL PEQUEÑO */
+    /* HAMBURGER PARA MÓVIL PEQUEÑO - OPTIMIZADO */
     .hamburger {
         display: flex !important;
-        width: 40px;
-        height: 35px;
-        padding: 8px;
+        width: 48px;
+        height: 42px;
+        padding: 10px;
         background: #0F2B5B;
         border: 2px solid #0F2B5B;
-        border-radius: 6px;
-        box-shadow: 0 2px 6px rgba(15, 43, 91, 0.3);
+        border-radius: 8px;
+        box-shadow: 0 3px 10px rgba(15, 43, 91, 0.4);
+        transition: all 0.3s ease;
+    }
+    
+    .hamburger:hover {
+        background: #1A3B6B;
+        transform: scale(1.05);
+        box-shadow: 0 4px 15px rgba(15, 43, 91, 0.5);
     }
     
     .hamburger .bar {
-        height: 4px;
+        height: 5px;
         background-color: #FFFFFF !important;
-        border-radius: 2px;
-        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+        border-radius: 3px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
     }
     
     .hamburger.active .bar:nth-child(1) {
-        transform: rotate(45deg) translate(6px, 6px);
+        transform: rotate(45deg) translate(7px, 7px);
     }
     
     .hamburger.active .bar:nth-child(3) {
-        transform: rotate(-45deg) translate(6px, -6px);
+        transform: rotate(-45deg) translate(7px, -7px);
     }
 }
 

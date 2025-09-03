@@ -1,5 +1,46 @@
 # CHANGELOG
 
+## [1.0.3] - 2025-01-03
+
+### Optimización del Header Móvil
+
+**Problema identificado:**
+- Los textos del header en versión móvil eran demasiado pequeños
+- Falta de atractivo visual en dispositivos móviles
+- Necesidad de mejorar la legibilidad y estética del header
+
+**Solución implementada:**
+- Aumento significativo de tamaños de fuente en móvil
+- Optimización del logo y textos para mejor visibilidad
+- Mejora del hamburger menu con efectos hover
+- Ajuste de espaciado y proporciones para mejor estética
+
+**Cambios específicos:**
+
+**Para pantallas de 768px:**
+- Logo brand: 1.1rem → 1.2rem
+- Logo subtitle: 0.75rem → 0.8rem
+- Logo tagline: 0.6rem → 0.65rem
+- Logo image: 40px → 42px
+- Añadido letter-spacing y text-transform
+
+**Para pantallas de 480px:**
+- Logo brand: 0.9rem → 1.3rem
+- Logo subtitle: 0.65rem → 0.85rem
+- Logo tagline: 0.5rem → 0.65rem
+- Logo image: 30px → 45px
+- Header height: 35px → 50px
+- Hamburger menu: 40x35px → 48x42px
+
+**Archivos modificados:**
+- `styles.css`: Media queries para header móvil
+
+**Resultado:**
+- ✅ Textos más grandes y legibles en móvil
+- ✅ Header más atractivo y profesional
+- ✅ Mejor experiencia de usuario en dispositivos móviles
+- ✅ Mantenimiento de funcionalidad desktop
+
 ## [1.0.2] - 2025-01-03
 
 ### Corrección de Visualización de Imagen en Móvil

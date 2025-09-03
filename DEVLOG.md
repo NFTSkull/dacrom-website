@@ -1,5 +1,39 @@
 # DEVLOG
 
+## 2025-01-03 - Optimización del Header Móvil
+
+### Problema Identificado
+
+**Situación:** El header en versión móvil tenía textos demasiado pequeños y falta de atractivo visual, contrastando negativamente con el resto del sitio web.
+
+**Análisis del problema:**
+- Los tamaños de fuente eran insuficientes para legibilidad móvil
+- El logo y textos no tenían el impacto visual necesario
+- El hamburger menu carecía de atractivo visual
+- La estética general no era consistente con la calidad del resto del sitio
+
+### Decisión de Implementación
+
+**Solución elegida:**
+- Aumentar significativamente los tamaños de fuente en móvil
+- Optimizar el logo con mejor espaciado y proporciones
+- Mejorar el hamburger menu con efectos hover y mejor diseño
+- Mantener la estructura pero con mejor estética
+
+**Razones técnicas:**
+- Mayor legibilidad en dispositivos móviles
+- Mejor jerarquía visual
+- Consistencia con el diseño profesional del resto del sitio
+- Mejor experiencia de usuario
+
+### Resultados de la Implementación
+
+**Mejoras logradas:**
+- Textos significativamente más grandes y legibles
+- Header más atractivo y profesional
+- Mejor contraste visual con el resto del contenido
+- Consistencia estética en toda la aplicación
+
 ## 2025-01-03 - Corrección de Visualización de Imagen en Móvil
 
 ### Problema Identificado
