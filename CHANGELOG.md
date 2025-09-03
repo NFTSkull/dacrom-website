@@ -1,5 +1,41 @@
 # CHANGELOG
 
+## [1.0.6] - 2025-01-03
+
+### Corrección Final del Hamburger Menu - Barras Dentro del Contenedor
+
+**Problema crítico identificado:**
+- Las barras del hamburger menu se salían del contenedor de 45x40px
+- El `position: absolute` con `left: 10px` y `right: 10px` causaba overflow
+- Las barras se veían fuera de los límites del botón, no profesional
+
+**Solución implementada:**
+- Regreso a `flex-direction: column` con `justify-content: space-between`
+- Eliminación completa del `position: absolute` problemático
+- Uso de `translateY` simple para mover las barras al centro
+- Mantenimiento de las barras dentro del contenedor
+
+**Cambios específicos:**
+
+**Sistema de layout:**
+- Contenedor: `flex-direction: column` + `justify-content: space-between`
+- Barras: `width: 100%` sin posicionamiento absoluto
+- Eliminación de `left`, `right`, `top`, `bottom` problemáticos
+
+**Transformaciones activas:**
+- Barra 1: `rotate(45deg) translateY(8px)` (768px) / `translateY(9px)` (480px) / `translateY(6px)` (base)
+- Barra 2: `scale(0)` + `opacity: 0`
+- Barra 3: `rotate(-45deg) translateY(-8px)` (768px) / `translateY(-9px)` (480px) / `translateY(-6px)` (base)
+
+**Archivos modificados:**
+- `styles.css`: Sistema de layout flexbox para hamburger menu
+
+**Resultado:**
+- ✅ Barras completamente dentro del contenedor
+- ✅ X perfecta y simétrica
+- ✅ Apariencia profesional y limpia
+- ✅ Funcionamiento correcto en todos los dispositivos
+
 ## [1.0.5] - 2025-01-03
 
 ### Solución Definitiva del Hamburger Menu - X Perfecta
