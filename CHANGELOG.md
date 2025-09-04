@@ -1,5 +1,33 @@
 # CHANGELOG
 
+## [1.0.7] - 2025-01-03
+
+### Ajuste de Proporciones de Logos
+
+**Solicitud del cliente:**
+- Ajustar las proporciones de los logos para que se vean mejor en relación al espacio disponible
+- Optimizar el logo del HERO y el logo de la sección "Cuidado al Cliente"
+
+**Cambios implementados:**
+
+**Logo del HERO:**
+- Tamaño anterior: 120x120px
+- Tamaño nuevo: 100x100px
+- Mejor proporción con el texto "DACROM Asesores"
+
+**Logo de la sección "Cuidado al Cliente":**
+- Tamaño anterior: 366x250px
+- Tamaño nuevo: 300x200px
+- Mejor proporción con el contenido de la sección
+
+**Archivos modificados:**
+- `index.html`: Ajuste de dimensiones de logos
+
+**Resultado:**
+- ✅ Logos con mejor proporción al espacio disponible
+- ✅ Mejor balance visual en ambas secciones
+- ✅ Apariencia más profesional y equilibrada
+
 ## [1.0.6] - 2025-01-03
 
 ### Corrección Final del Hamburger Menu - Barras Dentro del Contenedor

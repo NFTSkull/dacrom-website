@@ -1,5 +1,35 @@
 # DEVLOG
 
+## 2025-01-03 - Ajuste de Proporciones de Logos
+
+### Solicitud del Cliente
+
+**Situación:** El cliente solicitó ajustar las proporciones de los logos para que se vean mejor en relación al espacio disponible.
+
+**Logos identificados:**
+1. Logo del HERO: 120x120px con texto "DACROM Asesores"
+2. Logo de la sección "Cuidado al Cliente": 366x250px
+
+### Decisión de Implementación
+
+**Solución elegida:**
+- Reducir el logo del HERO de 120x120px a 100x100px
+- Reducir el logo de "Cuidado al Cliente" de 366x250px a 300x200px
+- Mantener las proporciones originales pero con mejor balance visual
+
+**Razones técnicas:**
+- Los logos eran demasiado grandes para el espacio disponible
+- Mejor proporción con el contenido circundante
+- Balance visual más equilibrado
+- Apariencia más profesional
+
+### Resultados de la Implementación
+
+**Mejoras logradas:**
+- Logos con mejor proporción al espacio disponible
+- Mejor balance visual en ambas secciones
+- Apariencia más profesional y equilibrada
+
 ## 2025-01-03 - Corrección Final del Hamburger Menu
 
 ### Problema Crítico Identificado
