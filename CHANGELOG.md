@@ -125,6 +125,53 @@
 - ✅ Estructura visual mejorada
 - ✅ Apariencia más profesional y elegante
 
+### Optimización del Hero - Eliminación del Recuadro y Mejora de Proporciones
+
+**Solicitud del cliente:**
+- Eliminar solo el recuadro/rectángulo del contenedor del logo
+- Mantener logo y texto sin cambios
+- Hacer el logo más grande y mejor proporcionado
+- Mejorar el texto principal para que se vea más grande
+- Abarcar mejor el espacio en la versión web
+- No tocar nada del móvil
+
+**Cambios implementados:**
+
+**Eliminación del Recuadro:**
+- Removido fondo semitransparente del contenedor
+- Eliminado border-radius y border
+- Removido backdrop-filter y box-shadow
+- Mantenido solo el padding básico
+
+**Logo Más Grande:**
+- Tamaño aumentado de 120-180px a 150-220px
+- Mejor proporción con el espacio disponible
+- Mantenida la responsividad
+
+**Texto Principal Mejorado:**
+- Título: aumentado a clamp(3rem, 6vw, 4.5rem)
+- Font-weight aumentado a 800
+- Max-width aumentado a 800px
+- Text-shadow más pronunciado
+- Mejor espaciado con margin 1.5rem
+
+**Subtítulo Mejorado:**
+- Tamaño aumentado a clamp(1.3rem, 3vw, 1.8rem)
+- Font-weight aumentado a 400
+- Max-width aumentado a 700px
+- Text-shadow mejorado
+- Mejor letter-spacing
+
+**Archivos modificados:**
+- `styles.css`: Optimización del hero sin afectar móvil
+
+**Resultado:**
+- ✅ Recuadro eliminado, diseño más limpio
+- ✅ Logo más grande y proporcionado
+- ✅ Texto principal más prominente
+- ✅ Mejor aprovechamiento del espacio web
+- ✅ Diseño más elegante y profesional
+
 ## [1.0.7] - 2025-01-03
 
 ### Ajuste de Proporciones de Logos
