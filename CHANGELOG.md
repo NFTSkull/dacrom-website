@@ -2,29 +2,30 @@
 
 ## [1.0.8] - 2025-01-27
 
-### Reorganización de Servicios - Agrupación Correcta
+### Corrección Final de Servicios - Solo Anexo 24 y 31
 
 **Solicitud del cliente:**
-- Los servicios "Anexo 24" y "Anexo 30" deben ir juntos en un mismo esquema
-- Eliminar duplicación de servicios relacionados
-- Mejor organización lógica de servicios
+- Solo deben ir "Anexo 24" y "Anexo 31" juntos en la misma sección
+- Eliminar completamente "Drawback" de esta sección
+- Corregir "Anexo 30" a "Anexo 31"
+- Solo gestión de anexos, nada más
 
 **Cambios implementados:**
 
-**Reorganización de servicios:**
-- Movido "Drawback" de "Programas y Esquemas" a "Anexo 24-30"
-- "Anexo 24" (Certificación OEA) y "Anexo 30" (Programa Drawback) ahora aparecen juntos
-- "Drawback" agregado como servicio complementario en la misma sección
-- Eliminación de duplicación de servicios
+**Corrección de servicios:**
+- Eliminado completamente "Drawback" de la sección
+- Corregido "Anexo 30" a "Anexo 31"
+- Solo quedan "Anexo 24" (Certificación OEA) y "Anexo 31" (Gestión de Anexo 31)
+- Actualizado nombre de pestaña a "Anexo 24-31"
 
 **Archivos modificados:**
-- `index.html`: Reorganización de servicios en sección "Anexo 24-30"
+- `index.html`: Corrección de servicios en sección "Anexo 24-31"
 
 **Resultado:**
-- ✅ Servicios relacionados agrupados correctamente
-- ✅ Eliminación de confusión por servicios duplicados
-- ✅ Mejor organización lógica de servicios
-- ✅ Estructura más clara y profesional
+- ✅ Solo Anexo 24 y Anexo 31 juntos
+- ✅ Eliminación completa de Drawback
+- ✅ Corrección de numeración (30 → 31)
+- ✅ Sección limpia y específica
 
 ## [1.0.7] - 2025-01-03
 
