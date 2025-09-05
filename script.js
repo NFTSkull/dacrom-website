@@ -1043,12 +1043,31 @@ document.addEventListener('DOMContentLoaded', function() {
     };
 
     // Info Panel Functionality
-    infoBtns.forEach(btn => {
+    console.log('Botones de información encontrados:', infoBtns.length); // Debug
+    
+    // Función de prueba directa
+    function testInfoPanel() {
+        console.log('Probando panel de información...');
+        const testInfo = {
+            title: 'Prueba - Anexo 24 y 31',
+            description: 'Esta es una prueba del panel de información.',
+            benefits: ['Beneficio 1', 'Beneficio 2', 'Beneficio 3']
+        };
+        showServiceInfo(testInfo);
+    }
+    
+    // Agregar evento de prueba a todos los botones
+    infoBtns.forEach((btn, index) => {
+        console.log(`Botón ${index}:`, btn.dataset.info); // Debug
+        
+        // Evento principal
         btn.addEventListener('click', function(e) {
             e.preventDefault();
             e.stopPropagation();
             const serviceKey = this.dataset.info;
             console.log('Botón clickeado:', serviceKey); // Debug
+            console.log('Panel de información:', infoPanel); // Debug
+            
             const info = serviceInfo[serviceKey];
             
             if (info) {
@@ -1056,34 +1075,66 @@ document.addEventListener('DOMContentLoaded', function() {
                 showServiceInfo(info);
             } else {
                 console.log('No se encontró información para:', serviceKey); // Debug
+                console.log('Servicios disponibles:', Object.keys(serviceInfo)); // Debug
+                // Usar información de prueba si no se encuentra
+                testInfoPanel();
             }
         });
+        
+        // Evento de prueba adicional
+        btn.addEventListener('click', function(e) {
+            console.log('Evento de prueba activado');
+        });
+    });
+    
+    // Agregar evento global para debugging
+    document.addEventListener('click', function(e) {
+        if (e.target.closest('.info-btn')) {
+            console.log('Click detectado en botón de información');
+        }
     });
 
     function showServiceInfo(info) {
+        console.log('Mostrando información:', info); // Debug
+        
         const titleElement = document.getElementById('info-title');
         const descriptionElement = document.getElementById('info-description');
         const benefitsElement = document.getElementById('info-benefits');
         
+        console.log('Elementos encontrados:', {
+            title: titleElement,
+            description: descriptionElement,
+            benefits: benefitsElement,
+            panel: infoPanel
+        }); // Debug
+        
         // Update content
-        titleElement.textContent = info.title;
-        descriptionElement.textContent = info.description;
+        if (titleElement) titleElement.textContent = info.title;
+        if (descriptionElement) descriptionElement.textContent = info.description;
         
         // Clear and populate benefits
-        benefitsElement.innerHTML = '';
-        if (info.benefits && info.benefits.length > 0) {
-            const benefitsList = document.createElement('ul');
-            info.benefits.forEach(benefit => {
-                const listItem = document.createElement('li');
-                listItem.textContent = benefit;
-                benefitsList.appendChild(listItem);
-            });
-            benefitsElement.appendChild(benefitsList);
+        if (benefitsElement) {
+            benefitsElement.innerHTML = '';
+            if (info.benefits && info.benefits.length > 0) {
+                const benefitsList = document.createElement('ul');
+                info.benefits.forEach(benefit => {
+                    const listItem = document.createElement('li');
+                    listItem.textContent = benefit;
+                    benefitsList.appendChild(listItem);
+                });
+                benefitsElement.appendChild(benefitsList);
+            }
         }
         
         // Show panel with animation
-        infoPanel.classList.add('active');
-        document.body.style.overflow = 'hidden';
+        if (infoPanel) {
+            console.log('Activando panel...'); // Debug
+            infoPanel.classList.add('active');
+            document.body.style.overflow = 'hidden';
+            console.log('Panel activado, clases:', infoPanel.classList.toString()); // Debug
+        } else {
+            console.error('Panel de información no encontrado!'); // Debug
+        }
     }
 
     function hideServiceInfo() {
