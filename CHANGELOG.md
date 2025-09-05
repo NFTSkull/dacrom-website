@@ -1,5 +1,32 @@
 # CHANGELOG
 
+## [1.0.8] - 2025-01-27
+
+### Corrección Final - Solo Anexo 24 y 31
+
+**Solicitud del cliente:**
+- Solo deben aparecer "Anexo 24" y "Anexo 31" juntos
+- Eliminar completamente "Drawback" de la sección
+- Corregir "Anexo 30" a "Anexo 31"
+- Solo gestión de anexos, nada más
+
+**Cambios implementados:**
+
+**Corrección de servicios:**
+- Eliminado completamente "Drawback" de la sección
+- Corregido "Anexo 30" a "Anexo 31"
+- Solo quedan "Anexo 24" (Certificación OEA) y "Anexo 31" (Gestión de Anexo 31)
+- Actualizado nombre de pestaña a "Anexo 24-31"
+
+**Archivos modificados:**
+- `index.html`: Corrección de servicios en sección "Anexo 24-31"
+
+**Resultado:**
+- ✅ Solo Anexo 24 y Anexo 31 juntos
+- ✅ Eliminación completa de Drawback
+- ✅ Corrección de numeración (30 → 31)
+- ✅ Sección limpia y específica
+
 ## [1.0.7] - 2025-01-03
 
 ### Ajuste de Proporciones de Logos
