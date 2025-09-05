@@ -47,6 +47,30 @@
 - ✅ Información completa y detallada
 - ✅ Beneficios específicos de ambos anexos
 
+### Corrección de Efectos Hover y Funcionalidad
+
+**Problema identificado:**
+- Las casillas se movían demasiado al pasar el mouse
+- El botón de información no era completamente funcional
+- Efectos hover excesivos causaban problemas visuales
+
+**Solución implementada:**
+- Efecto hover sutil y controlado para las tarjetas de servicios
+- Movimiento reducido a solo 2px hacia arriba
+- Efecto hover mejorado para el botón de información
+- Agregado z-index para asegurar clickeabilidad
+- Debugging agregado al JavaScript para verificar funcionalidad
+
+**Archivos modificados:**
+- `styles.css`: Efectos hover controlados
+- `script.js`: Mejoras en funcionalidad del botón
+
+**Resultado:**
+- ✅ Efectos hover sutiles y profesionales
+- ✅ Botón de información completamente funcional
+- ✅ Movimiento controlado y elegante
+- ✅ Mejor experiencia de usuario
+
 ## [1.0.7] - 2025-01-03
 
 ### Ajuste de Proporciones de Logos

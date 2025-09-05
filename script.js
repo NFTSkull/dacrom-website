@@ -1044,12 +1044,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Info Panel Functionality
     infoBtns.forEach(btn => {
-        btn.addEventListener('click', function() {
+        btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
             const serviceKey = this.dataset.info;
+            console.log('Botón clickeado:', serviceKey); // Debug
             const info = serviceInfo[serviceKey];
             
             if (info) {
+                console.log('Información encontrada:', info); // Debug
                 showServiceInfo(info);
+            } else {
+                console.log('No se encontró información para:', serviceKey); // Debug
             }
         });
     });
