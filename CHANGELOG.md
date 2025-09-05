@@ -264,6 +264,30 @@
 - ✅ Mejor presencia visual y profesional
 - ✅ Responsividad optimizada para todos los dispositivos
 
+### Aumento de Tamaño del Logo del Header
+
+**Solicitud del cliente:**
+- Hacer más grande el logo del header (logo-image)
+- Restaurar tamaño como estaba antes
+- Sin modificar nada más
+
+**Cambios implementados:**
+
+**Variable CSS del Header:**
+- `--logo-header-h`: Cambiado de `clamp(28px, 3vw, 36px)` a `clamp(36px, 4vw, 48px)`
+- Aumento del tamaño mínimo: 28px → 36px (+28.6%)
+- Aumento del tamaño máximo: 36px → 48px (+33.3%)
+- Aumento del viewport width: 3vw → 4vw (+33.3%)
+
+**Archivos modificados:**
+- `styles.css`: Aumento de la variable --logo-header-h
+
+**Resultado:**
+- ✅ Logo del header más grande como estaba antes
+- ✅ Mejor visibilidad del logo en el header
+- ✅ Cambio aplicado automáticamente a todas las versiones (web, tablet, móvil)
+- ✅ Sin afectar otros elementos del diseño
+
 ## [1.0.7] - 2025-01-03
 
 ### Ajuste de Proporciones de Logos
