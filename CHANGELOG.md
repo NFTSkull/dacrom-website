@@ -363,6 +363,34 @@
 - ✅ Web y tablet mantienen sus tamaños originales
 - ✅ Cambio específico y dirigido
 
+### Acercamiento del Texto al Logo en el Hero
+
+**Solicitud del cliente:**
+- Acercar el texto "DACROM Asesores" al logo en el Hero
+- Reducir el espacio entre el logo y el texto
+- Hacer que se vean más juntos
+
+**Cambios implementados:**
+
+**Contenedor del Logo (.hero-logo-enhanced):**
+- Gap reducido: 1.5rem → 0.8rem
+- Reducción del 47% en el espacio entre elementos
+- Mejor cohesión visual entre logo y texto
+
+**Contenedor del Texto (.hero-logo-text):**
+- Margin-top reducido: 1rem → 0.3rem
+- Reducción del 70% en el espacio superior
+- Texto más cerca del logo
+
+**Archivos modificados:**
+- `styles.css`: Reducción del espaciado en el Hero
+
+**Resultado:**
+- ✅ Texto "DACROM Asesores" más cerca del logo
+- ✅ Mejor cohesión visual en el Hero
+- ✅ Espaciado más compacto y elegante
+- ✅ Diseño más unificado
+
 ## [1.0.7] - 2025-01-03
 
 ### Ajuste de Proporciones de Logos
