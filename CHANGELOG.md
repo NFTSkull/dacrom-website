@@ -340,6 +340,29 @@
 - ✅ Líneas decorativas más refinadas
 - ✅ Diseño más sofisticado y distinguido
 
+### Aumento del Logo del Header Solo en Versión Móvil
+
+**Solicitud del cliente:**
+- Aumentar el tamaño del logo del header solo en la versión móvil
+- Mantener el tamaño actual en web y tablet
+
+**Cambios implementados:**
+
+**Breakpoint Móvil (480px):**
+- Multiplicador del logo-image: 0.9 → 1.1
+- Aumento del 22% en el tamaño del logo
+- Solo afecta la versión móvil (480px y menos)
+- Web y tablet mantienen sus tamaños originales
+
+**Archivos modificados:**
+- `styles.css`: Aumento del multiplicador en breakpoint móvil
+
+**Resultado:**
+- ✅ Logo del header más grande solo en versión móvil
+- ✅ Mejor visibilidad del logo en dispositivos móviles
+- ✅ Web y tablet mantienen sus tamaños originales
+- ✅ Cambio específico y dirigido
+
 ## [1.0.7] - 2025-01-03
 
 ### Ajuste de Proporciones de Logos
