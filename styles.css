@@ -440,49 +440,51 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-logo-enhanced {
-    font-size: 4rem;
-    font-weight: 800;
-    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
     position: relative;
+    padding: 1.5rem;
     animation: logoEnhancedGlow 3s ease-in-out infinite;
+    flex-wrap: wrap;
 }
 
 .hero-logo-brand {
     color: white;
     font-weight: 800;
-    font-size: 4.5rem;
+    font-size: 3.5rem;
     letter-spacing: 0.1em;
     text-shadow: 
         0 2px 4px rgba(0, 0, 0, 0.4),
         0 0 20px rgba(255, 255, 255, 0.2);
-    margin-bottom: 0.5rem;
+    line-height: 1;
+    margin: 0;
 }
 
 .hero-logo-subtitle {
     display: block;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 300;
     color: rgba(255, 255, 255, 0.9);
     letter-spacing: 0.2em;
     text-transform: uppercase;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-    margin-top: 0.3rem;
+    line-height: 1;
+    margin: 0;
 }
 
 .hero-logo-final-120x120 {
-    height: 120px !important; /* Dimensiones exactas según especificaciones */
-    width: 120px !important; /* Proporción cuadrada perfecta */
+    height: 100px !important;
+    width: 100px !important;
     object-fit: contain;
     filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
     transition: all 0.3s ease;
-    margin-bottom: 1rem;
     background: transparent;
     padding: 0;
     border-radius: 0;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: none;
+    flex-shrink: 0;
 }
 
 .hero-logo-enhanced:hover .hero-logo-final-120x120 {
@@ -493,9 +495,10 @@ h1, h2, h3, h4, h5, h6 {
 .hero-logo-text {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 0.5rem;
+    align-items: flex-start;
+    text-align: left;
+    gap: 0.3rem;
+    margin-left: 0.5rem;
 }
 
 
@@ -922,7 +925,8 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .hero-logo-enhanced {
-        font-size: 3.5rem;
+        gap: 1rem;
+        padding: 1rem;
     }
     
     .hero-title {
@@ -988,7 +992,8 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .hero-logo-enhanced {
-        font-size: 2.8rem;
+        gap: 1rem;
+        padding: 1rem;
     }
     
     .hero-logo-brand {
@@ -1124,7 +1129,16 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .hero-logo-enhanced {
-        font-size: 2.2rem;
+        gap: 0.8rem;
+        padding: 0.8rem;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .hero-logo-text {
+        align-items: center;
+        text-align: center;
+        margin-left: 0;
     }
     
     .hero-logo-brand {
@@ -5790,13 +5804,12 @@ img:not([src]) {
 
 .logo-enhanced {
     display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 0.5rem;
-    font-size: 3.5rem;
-    font-weight: 700;
     position: relative;
     z-index: 3;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
+    padding: 2rem;
 }
 
 .logo-d-enhanced {
@@ -5839,15 +5852,14 @@ img:not([src]) {
 
 /* Estilos para la imagen del logo con dimensiones finales */
 .logo-final-366x250 {
-    width: 366px !important; /* Ancho exacto según especificaciones */
-    height: 250px !important; /* Alto exacto según especificaciones */
-    object-fit: contain; /* Mantener proporción sin distorsionar */
-    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.1)); /* Sombra muy sutil */
-    transition: all 0.3s ease; /* Transición suave */
-    opacity: 0.8; /* Transparencia sutil */
+    max-width: 280px !important;
+    height: auto !important;
+    object-fit: contain;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.15));
+    transition: all 0.3s ease;
+    opacity: 0.85;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
 
 .logo-final-366x250:hover {
@@ -5860,9 +5872,10 @@ img:not([src]) {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 600px;
-    height: 600px;
+    width: 450px;
+    height: 450px;
     pointer-events: none;
+    z-index: 1;
 }
 
 .line {
@@ -6156,14 +6169,14 @@ img:not([src]) {
     
     /* Estilos responsivos para la imagen del logo */
     .logo-final-366x250 {
-        width: 240px !important; /* Ancho reducido para tablets */
-        height: 164px !important; /* Alto proporcional para tablets (366:250) */
-        opacity: 0.7; /* Transparencia sutil en móviles */
+        max-width: 200px !important;
+        height: auto !important;
+        opacity: 0.8;
     }
     
     .decorative-lines {
-        width: 500px;
-        height: 500px;
+        width: 350px;
+        height: 350px;
     }
     
     .line {
@@ -6262,14 +6275,14 @@ img:not([src]) {
     
     /* Estilos para pantallas muy pequeñas */
     .logo-final-366x250 {
-        width: 180px !important; /* Ancho muy reducido para móviles pequeños */
-        height: 123px !important; /* Alto proporcional para móviles pequeños (366:250) */
-        opacity: 0.6; /* Transparencia sutil en pantallas pequeñas */
+        max-width: 160px !important;
+        height: auto !important;
+        opacity: 0.75;
     }
     
     .decorative-lines {
-        width: 350px;
-        height: 350px;
+        width: 280px;
+        height: 280px;
     }
     
         .values-grid {
