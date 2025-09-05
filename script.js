@@ -938,28 +938,18 @@ document.addEventListener('DOMContentLoaded', function() {
                 'Ventaja competitiva en el mercado'
             ]
         },
-        'anexo24': {
-            title: 'Anexo 24 - Operador Económico Autorizado (OEA)',
-            description: 'Certificación que acredita a las empresas como operadores confiables en la cadena de suministro internacional, otorgando beneficios aduaneros preferenciales.',
+        'anexo24-31': {
+            title: 'Anexo 24 y 31 - Certificación OEA y Gestión',
+            description: 'Servicios integrales que incluyen la Certificación de Operador Económico Autorizado (OEA) y la Gestión especializada del Anexo 31 para optimizar las operaciones de comercio exterior.',
             benefits: [
-                'Facilitación aduanera preferencial',
-                'Reducción de inspecciones físicas',
+                'Certificación OEA para facilitación aduanera preferencial',
+                'Reducción de inspecciones físicas en aduanas',
                 'Reconocimiento internacional como operador confiable',
+                'Gestión especializada del Anexo 31',
+                'Optimización de tiempos de despacho aduanero',
                 'Mejora de la competitividad en el mercado global',
                 'Acceso a programas de seguridad comercial',
-                'Optimización de tiempos de despacho aduanero'
-            ]
-        },
-        'anexo30': {
-            title: 'Anexo 30 - Programa de Drawback',
-            description: 'Programa que permite la devolución de impuestos pagados en la importación de mercancías que se incorporan a productos de exportación.',
-            benefits: [
-                'Recuperación de impuestos pagados en importación',
-                'Mejora significativa del flujo de efectivo',
-                'Incremento de competitividad en exportaciones',
-                'Proceso de solicitud especializado y eficiente',
-                'Seguimiento completo hasta la devolución',
-                'Optimización de costos operativos'
+                'Asesoría integral en cumplimiento normativo'
             ]
         },
         'ctpat': {

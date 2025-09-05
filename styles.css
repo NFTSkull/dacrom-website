@@ -416,61 +416,53 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-main {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
     text-align: center;
     animation: heroMainEnter 1.5s cubic-bezier(0.23, 1, 0.32, 1) forwards;
     opacity: 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 85vh;
     position: relative;
     z-index: 2;
-    padding: 4rem 2rem;
+    padding: 2rem 1.5rem;
+    gap: 3rem;
 }
 
 /* Logo central elegante */
 .hero-logo-section {
     position: relative;
-    padding: 3rem 0 2rem;
+    padding: 1rem 0;
     flex-shrink: 0;
-    width: 100%;
-    margin-bottom: 4rem;
 }
 
 .hero-logo-enhanced {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2.5rem;
-    margin-bottom: 3rem;
+    gap: 1rem;
+    margin-bottom: 2rem;
     position: relative;
-    padding: 2.5rem;
-    animation: logoEnhancedGlow 3s ease-in-out infinite;
-    flex-wrap: wrap;
-    background: linear-gradient(135deg, rgba(255,255,255,0.03) 0%, rgba(74,144,226,0.08) 100%);
-    border-radius: 20px;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255,255,255,0.1);
+    padding: 1.5rem;
 }
 
 .hero-logo-brand {
     color: white;
-    font-weight: 800;
-    font-size: 3.5rem;
+    font-weight: 700;
+    font-size: 2.5rem;
     letter-spacing: 0.1em;
-    text-shadow: 
-        0 2px 4px rgba(0, 0, 0, 0.4),
-        0 0 20px rgba(255, 255, 255, 0.2);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
     line-height: 1;
     margin: 0;
 }
 
 .hero-logo-subtitle {
     display: block;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 300;
     color: rgba(255, 255, 255, 0.9);
     letter-spacing: 0.2em;
@@ -481,15 +473,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-logo-final-120x120 {
-    height: 100px !important;
-    width: 100px !important;
+    height: 80px !important;
+    width: 80px !important;
     object-fit: contain;
-    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
     transition: all 0.3s ease;
     background: transparent;
     padding: 0;
     border-radius: 0;
-    flex-shrink: 0;
+    margin-bottom: 0.5rem;
 }
 
 .hero-logo-enhanced:hover .hero-logo-final-120x120 {
@@ -500,10 +492,10 @@ h1, h2, h3, h4, h5, h6 {
 .hero-logo-text {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
-    gap: 0.3rem;
-    margin-left: 0.5rem;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
 }
 
 
@@ -549,13 +541,8 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 900px;
-    margin: 0 auto 5rem;
-    padding: 3rem 2rem;
-    background: linear-gradient(135deg, rgba(255,255,255,0.02) 0%, rgba(0,0,0,0.1) 100%);
-    border-radius: 25px;
-    border: 1px solid rgba(255,255,255,0.05);
-    backdrop-filter: blur(15px);
+    max-width: 700px;
+    margin: 0 auto;
 }
 
 .hero-text-decorative {
@@ -574,24 +561,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-title {
-    font-size: 4rem;
-    font-weight: 800;
+    font-size: 2.5rem;
+    font-weight: 700;
     color: white;
-    margin: 2rem 0 2.5rem;
-    line-height: 1.1;
-    letter-spacing: -0.03em;
-    text-shadow: 
-        0 4px 8px rgba(0, 0, 0, 0.7),
-        0 12px 24px rgba(15, 43, 91, 0.5),
-        0 24px 48px rgba(0, 0, 0, 0.4);
-    max-width: 800px;
+    margin: 1rem 0;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    max-width: 600px;
     margin-left: auto;
     margin-right: auto;
-    filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.2));
-    background: linear-gradient(135deg, #ffffff 0%, rgba(255,255,255,0.8) 50%, #ffffff 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    animation: titleShimmer 4s ease-in-out infinite;
 }
 
 .hero-subtitle-wrapper {
@@ -602,40 +581,31 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-subtitle {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     color: rgba(255, 255, 255, 0.9);
-    line-height: 1.6;
+    line-height: 1.5;
     font-weight: 300;
-    letter-spacing: 0.02em;
-    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
-    max-width: 700px;
+    letter-spacing: 0.01em;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    max-width: 500px;
     text-align: center;
     margin: 0 auto;
-    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.15));
-    padding: 0 1rem;
 }
 
 /* Botones corporativos */
 .hero-cta-section {
     flex-shrink: 0;
-    margin-top: 2rem;
-    padding: 2rem;
-    width: 100%;
-    max-width: 600px;
+    margin-top: 1rem;
 }
 
 .cta-decorative-frame {
     display: flex;
-    gap: 2.5rem;
+    gap: 1.5rem;
     justify-content: center;
     flex-wrap: wrap;
     position: relative;
-    padding: 2rem;
+    padding: 1rem;
     align-items: center;
-    background: linear-gradient(135deg, rgba(74,144,226,0.05) 0%, rgba(255,255,255,0.02) 100%);
-    border-radius: 20px;
-    border: 1px solid rgba(74,144,226,0.2);
-    backdrop-filter: blur(10px);
 }
 
 .cta-decorative-frame::before {
@@ -652,24 +622,21 @@ h1, h2, h3, h4, h5, h6 {
 .btn-corporate,
 .btn-outline-corporate {
     display: inline-block;
-    padding: 1.2rem 2.5rem;
-    border-radius: 15px;
-    font-weight: 700;
-    font-size: 1.1rem;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
     text-decoration: none;
     text-align: center;
-    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
     position: relative;
     overflow: hidden;
     border: 2px solid;
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(10px);
     opacity: 0;
-    transform: translateY(50px) scale(0.9);
-    animation: btnCorporateEnter 1s cubic-bezier(0.23, 1, 0.32, 1) 2s forwards;
-    min-width: 220px;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    transform: translateY(20px);
+    animation: btnCorporateEnter 0.8s cubic-bezier(0.23, 1, 0.32, 1) 1.5s forwards;
+    min-width: 160px;
 }
 
 .btn-corporate {

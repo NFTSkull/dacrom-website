@@ -27,6 +27,26 @@
 - ✅ Presentación simplificada
 - ✅ Mejor organización visual
 
+### Corrección del Botón de Información
+
+**Problema identificado:**
+- El botón de información (i) no funcionaba al hacer clic
+- Faltaba la información correspondiente a "anexo24-31" en el JavaScript
+
+**Solución implementada:**
+- Agregada información completa para "anexo24-31" en script.js
+- Título: "Anexo 24 y 31 - Certificación OEA y Gestión"
+- Descripción unificada de ambos servicios
+- 8 beneficios específicos combinados
+
+**Archivos modificados:**
+- `script.js`: Información del servicio "anexo24-31"
+
+**Resultado:**
+- ✅ Botón de información funcional
+- ✅ Información completa y detallada
+- ✅ Beneficios específicos de ambos anexos
+
 ## [1.0.7] - 2025-01-03
 
 ### Ajuste de Proporciones de Logos
