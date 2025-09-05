@@ -434,7 +434,9 @@ h1, h2, h3, h4, h5, h6 {
 /* Logo central elegante */
 .hero-logo-section {
     margin-bottom: 3rem;
+    margin-top: 2rem;
     position: relative;
+    padding: 20px 0;
 }
 
 .hero-logo-enhanced {
@@ -468,16 +470,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-logo-final-120x120 {
-    height: 120px !important; /* Aumentado a 120px como solicitaste - FORZAR */
-    width: 120px !important; /* Ancho fijo para mantener proporción cuadrada - FORZAR */
+    height: 120px !important; /* Dimensiones exactas según especificaciones */
+    width: 120px !important; /* Proporción cuadrada perfecta */
     object-fit: contain;
     filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
     transition: all 0.3s ease;
     margin-bottom: 1rem;
-    /* Eliminando el fondo y padding para un look más limpio */
     background: transparent;
     padding: 0;
     border-radius: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     box-shadow: none;
 }
 
@@ -5778,8 +5782,10 @@ img:not([src]) {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
+    margin-top: 40px;
     position: relative;
+    padding: 40px 20px;
 }
 
 .logo-enhanced {
@@ -5833,12 +5839,15 @@ img:not([src]) {
 
 /* Estilos para la imagen del logo con dimensiones finales */
 .logo-final-366x250 {
-    width: 366px !important; /* Ancho exacto especificado - FORZAR */
-    height: 250px !important; /* Alto exacto especificado - FORZAR */
+    width: 366px !important; /* Ancho exacto según especificaciones */
+    height: 250px !important; /* Alto exacto según especificaciones */
     object-fit: contain; /* Mantener proporción sin distorsionar */
     filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.1)); /* Sombra muy sutil */
     transition: all 0.3s ease; /* Transición suave */
     opacity: 0.8; /* Transparencia sutil */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .logo-final-366x250:hover {
@@ -6147,8 +6156,8 @@ img:not([src]) {
     
     /* Estilos responsivos para la imagen del logo */
     .logo-final-366x250 {
-        width: 240px; /* Ancho reducido para tablets */
-        height: 164px; /* Alto proporcional para tablets (366:250) */
+        width: 240px !important; /* Ancho reducido para tablets */
+        height: 164px !important; /* Alto proporcional para tablets (366:250) */
         opacity: 0.7; /* Transparencia sutil en móviles */
     }
     
@@ -6253,8 +6262,8 @@ img:not([src]) {
     
     /* Estilos para pantallas muy pequeñas */
     .logo-final-366x250 {
-        width: 180px; /* Ancho muy reducido para móviles pequeños */
-        height: 123px; /* Alto proporcional para móviles pequeños (366:250) */
+        width: 180px !important; /* Ancho muy reducido para móviles pequeños */
+        height: 123px !important; /* Alto proporcional para móviles pequeños (366:250) */
         opacity: 0.6; /* Transparencia sutil en pantallas pequeñas */
     }
     
