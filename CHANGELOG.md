@@ -71,6 +71,60 @@
 - ✅ Movimiento controlado y elegante
 - ✅ Mejor experiencia de usuario
 
+### Rediseño del Hero - Logo y Texto Profesional
+
+**Solicitud del cliente:**
+- Logo más grande y proporcional al espacio
+- Texto "DACROM" más grande y prominente
+- Texto "Asesores" más pequeño y elegante
+- Estructura profesional y muy elegante
+- Mejor proporción al espacio disponible
+
+**Cambios implementados:**
+
+**Logo del Hero:**
+- Tamaño aumentado de 80-120px a 120-180px
+- Mejor proporción con el espacio disponible
+- Efecto hover mejorado
+
+**Texto "DACROM":**
+- Tamaño aumentado a clamp(3rem, 8vw, 5rem)
+- Font-weight aumentado a 800
+- Letter-spacing mejorado a 0.15em
+- Text-shadow más pronunciado
+- Text-transform uppercase para mayor impacto
+
+**Texto "Asesores":**
+- Tamaño reducido a clamp(0.9rem, 2.5vw, 1.2rem)
+- Font-weight ajustado a 400
+- Letter-spacing aumentado a 0.25em
+- Color más sutil con opacity 0.85
+- Mejor espaciado con margin-top
+
+**Contenedor del Logo:**
+- Fondo semitransparente con blur
+- Border radius de 24px
+- Box-shadow elegante
+- Padding aumentado para mejor espaciado
+- Gap mejorado entre elementos
+
+**Líneas Profesionales:**
+- Ancho aumentado a 300px
+- Altura aumentada a 3px
+- Colores más vibrantes
+- Animaciones más suaves
+- Mejor espaciado
+
+**Archivos modificados:**
+- `styles.css`: Rediseño completo del hero logo
+
+**Resultado:**
+- ✅ Logo más grande y proporcional
+- ✅ "DACROM" prominente y elegante
+- ✅ "Asesores" sutil y profesional
+- ✅ Estructura visual mejorada
+- ✅ Apariencia más profesional y elegante
+
 ## [1.0.7] - 2025-01-03
 
 ### Ajuste de Proporciones de Logos
