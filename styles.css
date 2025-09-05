@@ -2,7 +2,7 @@
 :root {
     --logo-header-h: clamp(28px, 3vw, 36px);
     --logo-hero-w: clamp(150px, 25vw, 220px);
-    --logo-values-w: clamp(200px, 25vw, 280px);
+    --logo-values-w: clamp(280px, 35vw, 400px);
     --logo-footer-h: clamp(32px, 4vw, 48px);
     --logo-card: clamp(40px, 5vw, 60px);
 }
@@ -5948,16 +5948,19 @@ img:not([src]) {
     width: var(--logo-values-w);
     height: auto;
     object-fit: contain;
-    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.15));
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
     transition: all 0.3s ease;
-    opacity: 0.85;
+    opacity: 0.9;
     display: block;
     margin: 0 auto;
+    max-width: 100%;
+    border-radius: 8px;
 }
 
 .logo-final-366x250:hover {
-    transform: scale(1.02);
-    filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.3));
+    transform: scale(1.05);
+    filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.4));
+    opacity: 1;
 }
 
 .decorative-lines {
@@ -6262,9 +6265,9 @@ img:not([src]) {
     
     /* Estilos responsivos para la imagen del logo */
     .logo-final-366x250 {
-        width: calc(var(--logo-values-w) * 0.8);
+        width: calc(var(--logo-values-w) * 0.9);
         height: auto;
-        opacity: 0.8;
+        opacity: 0.85;
     }
     
     .decorative-lines {
@@ -6368,9 +6371,9 @@ img:not([src]) {
     
     /* Estilos para pantallas muy pequeñas */
     .logo-final-366x250 {
-        width: calc(var(--logo-values-w) * 0.6);
+        width: calc(var(--logo-values-w) * 0.75);
         height: auto;
-        opacity: 0.75;
+        opacity: 0.8;
     }
     
     .decorative-lines {

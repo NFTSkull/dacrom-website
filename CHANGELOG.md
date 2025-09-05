@@ -222,6 +222,48 @@
 - ✅ Mejor legibilidad y presentación
 - ✅ Diseño más sofisticado y refinado
 
+### Aumento de Tamaño del Logo en Sección "Cuidado al Cliente"
+
+**Solicitud del cliente:**
+- Hacer más grande el logo tanto en versión web como móvil
+- Mejor aprovechamiento del espacio disponible
+- Logo más atractivo y centrado
+- Mejor presencia visual
+
+**Cambios implementados:**
+
+**Variable CSS Principal:**
+- `--logo-values-w`: Cambiado de `clamp(200px, 25vw, 280px)` a `clamp(280px, 35vw, 400px)`
+- Aumento significativo del tamaño base del logo
+
+**Estilo Base del Logo:**
+- Opacity aumentada de 0.85 a 0.9 para mejor visibilidad
+- Drop-shadow mejorado: `0 4px 8px rgba(0, 0, 0, 0.2)`
+- Border-radius de 8px para suavizar bordes
+- Max-width: 100% para responsividad
+- Mejor centrado automático
+
+**Efecto Hover Mejorado:**
+- Scale aumentado de 1.02 a 1.05
+- Drop-shadow más pronunciado: `0 8px 16px rgba(0, 0, 0, 0.4)`
+- Opacity completa en hover
+
+**Responsividad Optimizada:**
+- **Tablet (768px)**: Multiplicador de 0.8 → 0.9 (más grande)
+- **Móvil (480px)**: Multiplicador de 0.6 → 0.75 (más grande)
+- Opacity mejorada en todos los breakpoints
+
+**Archivos modificados:**
+- `styles.css`: Aumento de tamaño del logo en todas las versiones
+
+**Resultado:**
+- ✅ Logo significativamente más grande en web
+- ✅ Logo más grande en versión móvil
+- ✅ Mejor aprovechamiento del espacio disponible
+- ✅ Logo más atractivo y centrado
+- ✅ Mejor presencia visual y profesional
+- ✅ Responsividad optimizada para todos los dispositivos
+
 ## [1.0.7] - 2025-01-03
 
 ### Ajuste de Proporciones de Logos
