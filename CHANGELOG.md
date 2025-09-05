@@ -288,6 +288,58 @@
 - ✅ Cambio aplicado automáticamente a todas las versiones (web, tablet, móvil)
 - ✅ Sin afectar otros elementos del diseño
 
+### Diferenciación Profesional del Texto Principal del Hero
+
+**Solicitud del cliente:**
+- El texto "Impulsamos tu negocio más allá de las fronteras" tenía el mismo estilo que "DACROM"
+- Necesitaba diferenciarse para verse más profesional
+- Crear un estilo más institucional y elegante
+
+**Cambios implementados:**
+
+**Texto Principal (Título):**
+- Font-family cambiado a 'Georgia', 'Times New Roman', serif (más elegante)
+- Font-style: italic para sofisticación
+- Font-size reducido: clamp(1.8rem, 3.5vw, 2.8rem)
+- Font-weight reducido: 600 → 400 (más sutil)
+- Color más sutil: rgba(255, 255, 255, 0.88)
+- Letter-spacing reducido: 0.01em
+- Text-shadow más sutil: 0 1px 3px rgba(0, 0, 0, 0.4)
+- Max-width reducido: 850px
+
+**Comillas Decorativas Elegantes:**
+- Comillas grandes antes y después del texto
+- Font-size: clamp(3rem, 6vw, 4rem)
+- Color sutil: rgba(255, 255, 255, 0.3)
+- Posicionamiento absoluto para elegancia
+- Misma fuente serif para consistencia
+
+**Subtítulo Profesional:**
+- Font-size ajustado: clamp(1rem, 2.2vw, 1.3rem)
+- Color más sutil: rgba(255, 255, 255, 0.75)
+- Letter-spacing aumentado: 0.05em
+- Text-transform: uppercase para profesionalismo
+- Opacity: 0.9 para sutileza
+- Max-width reducido: 750px
+
+**Líneas Decorativas Refinadas:**
+- Ancho reducido: 120px → 100px
+- Color más sutil: rgba(255, 255, 255, 0.2)
+- Animación más lenta: 3s → 4s
+- Opacity: 0.6 para elegancia
+- Margin aumentado: 2rem para mejor espaciado
+
+**Archivos modificados:**
+- `styles.css`: Estilo profesional diferenciado del texto principal
+
+**Resultado:**
+- ✅ Texto principal completamente diferenciado del estilo "DACROM"
+- ✅ Apariencia más profesional e institucional
+- ✅ Comillas decorativas elegantes
+- ✅ Subtítulo con estilo corporativo
+- ✅ Líneas decorativas más refinadas
+- ✅ Diseño más sofisticado y distinguido
+
 ## [1.0.7] - 2025-01-03
 
 ### Ajuste de Proporciones de Logos
