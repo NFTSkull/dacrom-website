@@ -172,6 +172,56 @@
 - ✅ Mejor aprovechamiento del espacio web
 - ✅ Diseño más elegante y profesional
 
+### Estilo Institucional para Texto Principal del Hero
+
+**Solicitud del cliente:**
+- Diferenciar el texto principal del estilo de "DACROM"
+- Crear un subtítulo más elegante y profesional
+- Estilo institucional y corporativo
+- Mejor presentación del mensaje de la empresa
+
+**Cambios implementados:**
+
+**Texto Principal (Título):**
+- Tamaño ajustado a clamp(2.2rem, 4.5vw, 3.2rem)
+- Font-weight reducido a 600 para elegancia
+- Color más sutil: rgba(255, 255, 255, 0.95)
+- Letter-spacing aumentado a 0.02em
+- Line-height mejorado a 1.3
+- Max-width aumentado a 900px
+
+**Subtítulo Institucional:**
+- Tamaño ajustado a clamp(1.1rem, 2.5vw, 1.5rem)
+- Font-weight reducido a 300 para sutileza
+- Color más sutil: rgba(255, 255, 255, 0.85)
+- Letter-spacing aumentado a 0.03em
+- Line-height mejorado a 1.5
+- Max-width aumentado a 800px
+
+**Contenedor del Texto:**
+- Fondo semitransparente sutil
+- Border-radius de 16px
+- Backdrop-filter blur(5px)
+- Border sutil con rgba(255, 255, 255, 0.08)
+- Box-shadow elegante
+- Padding aumentado para mejor espaciado
+
+**Líneas Decorativas:**
+- Ancho aumentado a 120px
+- Color más sutil: rgba(255, 255, 255, 0.3)
+- Animación más lenta (3s)
+- Mejor espaciado
+
+**Archivos modificados:**
+- `styles.css`: Estilo institucional del texto principal
+
+**Resultado:**
+- ✅ Texto principal más elegante y profesional
+- ✅ Diferenciación clara del estilo "DACROM"
+- ✅ Apariencia institucional y corporativa
+- ✅ Mejor legibilidad y presentación
+- ✅ Diseño más sofisticado y refinado
+
 ## [1.0.7] - 2025-01-03
 
 ### Ajuste de Proporciones de Logos
