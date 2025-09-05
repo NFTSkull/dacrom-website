@@ -2,30 +2,30 @@
 
 ## [1.0.8] - 2025-01-27
 
-### Corrección Final - Solo Anexo 24 y 31
+### Unificación de Servicios - Una Sola Casilla para Anexo 24 y 31
 
 **Solicitud del cliente:**
-- Solo deben aparecer "Anexo 24" y "Anexo 31" juntos
-- Eliminar completamente "Drawback" de la sección
-- Corregir "Anexo 30" a "Anexo 31"
-- Solo gestión de anexos, nada más
+- Cambiar de 2 casillas separadas a solo 1 casilla
+- Unificar "Anexo 24" y "Anexo 31" en una sola tarjeta
+- Contener toda la información en una sola casilla
+- Simplificar la presentación de servicios
 
 **Cambios implementados:**
 
-**Corrección de servicios:**
-- Eliminado completamente "Drawback" de la sección
-- Corregido "Anexo 30" a "Anexo 31"
-- Solo quedan "Anexo 24" (Certificación OEA) y "Anexo 31" (Gestión de Anexo 31)
-- Actualizado nombre de pestaña a "Anexo 24-31"
+**Unificación de servicios:**
+- Eliminadas las 2 casillas separadas
+- Creada 1 sola casilla: "Anexo 24 y 31"
+- Descripción unificada: "Certificación de Operador Económico Autorizado (OEA) y Gestión de Anexo 31"
+- Tag unificado: "Certificación y Gestión"
 
 **Archivos modificados:**
-- `index.html`: Corrección de servicios en sección "Anexo 24-31"
+- `index.html`: Unificación de servicios en sección "Anexo 24-31"
 
 **Resultado:**
-- ✅ Solo Anexo 24 y Anexo 31 juntos
-- ✅ Eliminación completa de Drawback
-- ✅ Corrección de numeración (30 → 31)
-- ✅ Sección limpia y específica
+- ✅ Una sola casilla para ambos anexos
+- ✅ Información unificada y clara
+- ✅ Presentación simplificada
+- ✅ Mejor organización visual
 
 ## [1.0.7] - 2025-01-03
 

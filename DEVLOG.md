@@ -1,45 +1,46 @@
 # DEVLOG
 
-## 2025-01-27 - Corrección Final - Solo Anexo 24 y 31
+## 2025-01-27 - Unificación de Servicios - Una Sola Casilla
 
 ### Análisis Técnico
 
-**Situación:** El cliente corrigió que solo deben aparecer "Anexo 24" y "Anexo 31" juntos, eliminando completamente "Drawback" y corrigiendo la numeración.
+**Situación:** El cliente solicitó cambiar de 2 casillas separadas a solo 1 casilla que contenga tanto el Anexo 24 como el Anexo 31 juntos.
 
 **Problema identificado:**
-- "Drawback" no tenía relación con los anexos
-- "Anexo 30" era incorrecto, debía ser "Anexo 31"
-- La sección debía ser específica solo para gestión de anexos
+- Había 2 casillas separadas para servicios relacionados
+- La información estaba fragmentada
+- Necesidad de simplificar la presentación
+- Mejor organización visual requerida
 
 ### Decisión de Implementación
 
 **Solución elegida:**
-- Eliminar completamente "Drawback" de la sección
-- Corregir "Anexo 30" a "Anexo 31"
-- Mantener solo los dos anexos relacionados
-- Actualizar nombre de pestaña a "Anexo 24-31"
+- Unificar ambas casillas en una sola tarjeta
+- Combinar la información de ambos anexos
+- Crear un título unificado: "Anexo 24 y 31"
+- Descripción combinada de ambos servicios
 
 **Razones técnicas:**
-- Claridad específica en la sección
-- Eliminación de servicios no relacionados
-- Corrección de numeración correcta
-- Enfoque específico en gestión de anexos
+- Simplificación de la interfaz
+- Mejor organización visual
+- Información más clara y concisa
+- Reducción de complejidad para el usuario
 
 ### Resultados de la Implementación
 
 **Mejoras logradas:**
-- Solo Anexo 24 y Anexo 31 juntos
-- Eliminación completa de Drawback
-- Corrección de numeración (30 → 31)
-- Sección limpia y específica
+- Una sola casilla para ambos anexos
+- Información unificada y clara
+- Presentación simplificada
+- Mejor organización visual
 
 ### Lecciones Aprendidas
 
-**Especificidad en organización:**
-- La claridad específica es mejor que la agrupación general
-- Eliminar servicios no relacionados mejora la comprensión
-- La numeración correcta es fundamental
-- El enfoque específico es más efectivo
+**Simplificación de interfaz:**
+- Menos elementos visuales pueden ser más efectivos
+- La unificación mejora la comprensión
+- La simplicidad reduce la carga cognitiva
+- Una sola casilla puede contener información relacionada eficientemente
 
 ## 2025-01-03 - Ajuste de Proporciones de Logos
 
