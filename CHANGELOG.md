@@ -1,5 +1,31 @@
 # CHANGELOG
 
+## [1.0.8] - 2025-01-27
+
+### Reorganización de Servicios - Agrupación Correcta
+
+**Solicitud del cliente:**
+- Los servicios "Anexo 24" y "Anexo 30" deben ir juntos en un mismo esquema
+- Eliminar duplicación de servicios relacionados
+- Mejor organización lógica de servicios
+
+**Cambios implementados:**
+
+**Reorganización de servicios:**
+- Movido "Drawback" de "Programas y Esquemas" a "Anexo 24-30"
+- "Anexo 24" (Certificación OEA) y "Anexo 30" (Programa Drawback) ahora aparecen juntos
+- "Drawback" agregado como servicio complementario en la misma sección
+- Eliminación de duplicación de servicios
+
+**Archivos modificados:**
+- `index.html`: Reorganización de servicios en sección "Anexo 24-30"
+
+**Resultado:**
+- ✅ Servicios relacionados agrupados correctamente
+- ✅ Eliminación de confusión por servicios duplicados
+- ✅ Mejor organización lógica de servicios
+- ✅ Estructura más clara y profesional
+
 ## [1.0.7] - 2025-01-03
 
 ### Ajuste de Proporciones de Logos

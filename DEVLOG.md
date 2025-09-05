@@ -1,5 +1,45 @@
 # DEVLOG
 
+## 2025-01-27 - Reorganización de Servicios - Agrupación Correcta
+
+### Análisis Técnico
+
+**Situación:** El cliente identificó que los servicios "Anexo 24" y "Anexo 30" deben ir juntos en un mismo esquema, ya que están relacionados conceptualmente.
+
+**Problema identificado:**
+- "Drawback" aparecía duplicado en diferentes secciones
+- "Anexo 24" (Certificación OEA) y "Anexo 30" (Programa Drawback) estaban separados
+- Falta de agrupación lógica de servicios relacionados
+
+### Decisión de Implementación
+
+**Solución elegida:**
+- Agrupar servicios relacionados en la misma categoría
+- Mover "Drawback" de "Programas y Esquemas" a "Anexo 24-30"
+- Mantener la estructura de tarjetas y funcionalidad existente
+
+**Razones técnicas:**
+- Mejor organización lógica de servicios
+- Eliminación de confusión por duplicación
+- Agrupación temática más efectiva que agrupación por tipo
+- Mejor experiencia de usuario
+
+### Resultados de la Implementación
+
+**Mejoras logradas:**
+- Servicios relacionados agrupados correctamente
+- Eliminación de duplicación de servicios
+- Mejor organización lógica de servicios
+- Estructura más clara y profesional
+
+### Lecciones Aprendidas
+
+**Organización de contenido:**
+- La agrupación temática es más efectiva que la agrupación por tipo
+- Evitar duplicación de servicios reduce confusión
+- La organización lógica mejora la experiencia del usuario
+- La estructura debe reflejar las relaciones conceptuales
+
 ## 2025-01-03 - Ajuste de Proporciones de Logos
 
 ### Solicitud del Cliente
