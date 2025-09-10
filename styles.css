@@ -520,9 +520,26 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0.5rem;
 }
 
+.hero-logo-dacrom {
+    width: clamp(300px, 40vw, 500px);
+    height: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.4));
+    transition: all 0.3s ease;
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
+    margin-bottom: 1rem;
+}
+
 .hero-logo-enhanced:hover .hero-logo-final-120x120 {
     transform: scale(1.02);
     filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.4));
+}
+
+.hero-logo-enhanced:hover .hero-logo-dacrom {
+    transform: scale(1.02);
+    filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.5));
 }
 
 .hero-logo-text {
@@ -1233,6 +1250,11 @@ h1, h2, h3, h4, h5, h6 {
         padding: 0.8rem;
         flex-direction: column;
         text-align: center;
+    }
+    
+    .hero-logo-dacrom {
+        width: clamp(250px, 50vw, 400px);
+        margin-bottom: 0.8rem;
     }
     
     .hero-logo-text {
