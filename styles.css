@@ -1,6 +1,6 @@
 /* Logo sizing variables - Frontend Lead implementation */
 :root {
-    --logo-header-h: clamp(36px, 4vw, 48px);
+    --logo-header-h: clamp(48px, 6vw, 64px);
     --logo-hero-w: clamp(150px, 25vw, 220px);
     --logo-values-w: clamp(400px, 50vw, 600px);
     --logo-footer-h: clamp(32px, 4vw, 48px);
