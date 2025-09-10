@@ -1637,7 +1637,7 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .logo-image {
-        height: calc(var(--logo-header-h) * 0.8);
+        height: calc(var(--logo-header-h) * 1.2);
         margin-right: 8px;
     }
     
@@ -5390,7 +5390,7 @@ img:not([src]) {
     }
     
     .footer-logo .logo-image {
-        height: var(--logo-header-h);
+        height: calc(var(--logo-header-h) * 1.2);
     }
     
     .footer-description {
