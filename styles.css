@@ -5772,7 +5772,7 @@ img:not([src]) {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('Cuidado.png');
+    background-image: url('nuevo.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -6198,7 +6198,7 @@ img:not([src]) {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('Cuidado.png');
+    background-image: url('nuevo.png');
     background-size: 200px;
     background-position: right center;
     background-repeat: no-repeat;
