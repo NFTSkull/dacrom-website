@@ -468,8 +468,9 @@ h1, h2, h3, h4, h5, h6 {
 /* Logo central elegante */
 .hero-logo-section {
     position: relative;
-    padding: 1rem 0;
+    padding: 0.5rem 0;
     flex-shrink: 0;
+    margin-bottom: -1rem;
 }
 
 .hero-logo-enhanced {
@@ -597,7 +598,7 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     max-width: 900px;
     margin: 0 auto;
-    padding: 2rem 1.5rem;
+    padding: 1rem 1.5rem;
     background: rgba(255, 255, 255, 0.03);
     border-radius: 16px;
     backdrop-filter: blur(5px);
