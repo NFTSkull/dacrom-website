@@ -872,17 +872,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 'Soporte técnico especializado'
             ]
         },
-        'cupos': {
-            title: 'Cupos y Aranceles',
-            description: 'Gestión especializada de cupos arancelarios y optimización de clasificaciones para reducir costos de importación.',
-            benefits: [
-                'Aprovechamiento de cupos disponibles',
-                'Clasificación arancelaria óptima',
-                'Reducción de costos de importación',
-                'Monitoreo continuo de oportunidades',
-                'Estrategias de planificación anual'
-            ]
-        },
         'avisos': {
             title: 'Avisos Automáticos',
             description: 'Implementación de sistemas de avisos automáticos para cumplir con obligaciones de comercio exterior de manera eficiente.',
