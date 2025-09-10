@@ -939,17 +939,17 @@ document.addEventListener('DOMContentLoaded', function() {
             ]
         },
         'anexo24-31': {
-            title: 'Anexo 24 y 31 - Certificación OEA y Gestión',
-            description: 'Servicios integrales que incluyen la Certificación de Operador Económico Autorizado (OEA) y la Gestión especializada del Anexo 31 para optimizar las operaciones de comercio exterior.',
+            title: 'Control de Inventarios Anexo 24 y 31',
+            description: 'Cumplimiento, control y eficiencia para tu operación IMMEX. En DACROM Asesores sabemos que cumplir con el Anexo 24 y 31 no solo es un requisito legal: es la clave para mantener tu programa IMMEX seguro y evitar multas o cancelaciones. Nuestro servicio de control de inventarios te ofrece una solución integral para que tu empresa tenga trazabilidad completa, información confiable y procesos automatizados que faciliten las auditorías y reduzcan riesgos.',
             benefits: [
-                'Certificación OEA para facilitación aduanera preferencial',
-                'Reducción de inspecciones físicas en aduanas',
-                'Reconocimiento internacional como operador confiable',
-                'Gestión especializada del Anexo 31',
-                'Optimización de tiempos de despacho aduanero',
-                'Mejora de la competitividad en el mercado global',
-                'Acceso a programas de seguridad comercial',
-                'Asesoría integral en cumplimiento normativo'
+                'Cumplimiento legal garantizado con las disposiciones del SAT',
+                'Automatización en la conciliación de pedimentos, facturas y movimientos de inventario',
+                'Reportes claros y en tiempo real para responder con rapidez ante cualquier revisión',
+                'Soporte experto en comercio exterior y sistemas de control',
+                'Evita sanciones y recargos por errores en tus reportes',
+                'Ahorra tiempo y recursos con procesos digitales y eficientes',
+                'Ten tranquilidad ante auditorías del SAT o revisiones internas',
+                'Mejora la planificación de tus insumos para la producción'
             ]
         },
         'ctpat': {
@@ -986,58 +986,73 @@ document.addEventListener('DOMContentLoaded', function() {
             ]
         },
         'regla-octava': {
-            title: 'Regla Octava',
-            description: 'Análisis y aplicación especializada de la regla octava para determinación correcta del valor en aduana de mercancías.',
+            title: 'Regla Octava: Ahorro y Cumplimiento para tu Empresa',
+            description: '¿Sabías que puedes reducir costos de importación y optimizar tu operación IMMEX aplicando correctamente la Regla 8ª? En DACROM Asesores te ayudamos a identificar fracciones arancelarias aplicables, gestionar trámites ante la Secretaría de Economía y el SAT, garantizar cumplimiento y evitar sanciones, y lograr ahorros significativos en impuestos y tiempos de operación. Convierte la Regla Octava en tu aliado estratégico para importar insumos y maquinaria con ventajas arancelarias, sin complicaciones.',
             benefits: [
-                'Determinación correcta de valores',
-                'Optimización de base gravable',
-                'Reducción de riesgos aduaneros',
-                'Asesoría técnica especializada',
-                'Cumplimiento de regulaciones'
+                'Identificar fracciones arancelarias aplicables',
+                'Gestionar trámites ante la Secretaría de Economía y el SAT',
+                'Garantizar cumplimiento y evitar sanciones',
+                'Lograr ahorros significativos en impuestos y tiempos de operación',
+                'Importar insumos y maquinaria con ventajas arancelarias',
+                'Operar con total tranquilidad y sin complicaciones',
+                'Convertir la Regla Octava en tu aliado estratégico',
+                'Optimizar tu operación IMMEX con ahorros reales'
             ]
         },
         'asesoria': {
-            title: 'Asesoría Especializada',
-            description: 'Consultoría integral en comercio exterior con enfoque personalizado para optimizar sus operaciones internacionales.',
+            title: 'Asesoría Especializada en Comercio Exterior',
+            description: 'Cumplimiento, Ahorro y Eficiencia para tu Empresa. En DACROM Asesores brindamos asesoría integral en comercio exterior para que tus operaciones de importación y exportación sean seguras, rápidas y rentables. Te ayudamos a cumplir con SAT, Secretaría de Economía y Aduanas sin errores ni retrasos, obtener beneficios fiscales y aduaneros (IMMEX, PROSEC, Regla Octava, TLCs), optimizar procesos y reducir costos en tus operaciones internacionales, y prepararte para auditorías y revisiones con total confianza. Convierte tu comercio exterior en una ventaja estratégica con el respaldo de expertos.',
             benefits: [
-                'Consultoría personalizada',
-                'Análisis integral de operaciones',
-                'Estrategias de optimización',
-                'Soporte técnico continuo',
-                'Soluciones innovadoras'
+                'Cumplir con SAT, Secretaría de Economía y Aduanas sin errores ni retrasos',
+                'Obtener beneficios fiscales y aduaneros (IMMEX, PROSEC, Regla Octava, TLCs)',
+                'Optimizar procesos y reducir costos en tus operaciones internacionales',
+                'Prepararte para auditorías y revisiones con total confianza',
+                'Convertir tu comercio exterior en una ventaja estratégica',
+                'Crecer sin riesgos con el respaldo de expertos',
+                'Operaciones de importación y exportación seguras, rápidas y rentables',
+                'Asesoría integral personalizada para tu empresa'
             ]
         },
         'proyectos': {
-            title: 'Desarrollo de Proyectos',
-            description: 'Planificación, desarrollo e implementación de proyectos estratégicos de comercio exterior adaptados a sus necesidades.',
+            title: 'Desarrollo Integral de Proyectos en Comercio Exterior',
+            description: 'De la importación a la exportación, todo bajo control. En DACROM Asesores diseñamos y ejecutamos proyectos integrales que garantizan el éxito de tus operaciones de comercio exterior: verificación de aranceles y fracciones para evitar pagos innecesarios, protección de gastos y correcta aplicación de costos incrementables, criterios de origen para aprovechar TLCs y determinar impuestos con precisión, y cumplimiento fiscal y aduanero con reportes claros y trazabilidad total. Nuestro objetivo: reducir riesgos, optimizar costos y asegurar que tu operación esté blindada ante cualquier auditoría o revisión.',
             benefits: [
-                'Planificación estratégica integral',
-                'Implementación paso a paso',
-                'Seguimiento y control de avances',
-                'Adaptación a necesidades específicas',
-                'Resultados medibles y sostenibles'
+                'Verificación de aranceles y fracciones para evitar pagos innecesarios',
+                'Protección de gastos y correcta aplicación de costos incrementables',
+                'Criterios de origen para aprovechar TLCs y determinar impuestos con precisión',
+                'Cumplimiento fiscal y aduanero con reportes claros y trazabilidad total',
+                'Reducir riesgos y optimizar costos en tus operaciones',
+                'Asegurar que tu operación esté blindada ante auditorías o revisiones',
+                'Proyectos integrales que garantizan el éxito de tus operaciones',
+                'Llevar tu operación al siguiente nivel con expertos'
             ]
         },
         'auditorias': {
-            title: 'Auditorías Especializadas',
-            description: 'Revisión exhaustiva de operaciones de comercio exterior para garantizar cumplimiento normativo y optimización de procesos.',
+            title: 'Auditorías Internas en Comercio Exterior',
+            description: 'Prevención, Cumplimiento y Ahorro para tu Empresa. En DACROM Asesores realizamos auditorías internas integrales para que tu empresa tenga la tranquilidad de cumplir con todas las regulaciones de comercio exterior. Te ayudamos a detectar riesgos y errores antes de una auditoría oficial, cumplir con SAT, Aduanas y Secretaría de Economía sin contratiempos, optimizar procesos y reducir costos por multas o recargos, y tener informes claros con planes de acción concretos. Evita sanciones y protege tu operación con una auditoría interna profesional.',
             benefits: [
-                'Identificación de oportunidades de mejora',
-                'Verificación de cumplimiento normativo',
-                'Detección de riesgos operativos',
-                'Recomendaciones de optimización',
-                'Informes detallados y ejecutivos'
+                'Detectar riesgos y errores antes de una auditoría oficial',
+                'Cumplir con SAT, Aduanas y Secretaría de Economía sin contratiempos',
+                'Optimizar procesos y reducir costos por multas o recargos',
+                'Tener informes claros con planes de acción concretos',
+                'Evitar sanciones y proteger tu operación',
+                'Auditorías internas integrales profesionales',
+                'Tranquilidad de cumplir con todas las regulaciones',
+                'Fortalecer tu cumplimiento en comercio exterior'
             ]
         },
         'inteligencia': {
-            title: 'Inteligencia Comercial',
-            description: 'Análisis profundo de mercados internacionales y oportunidades comerciales para toma de decisiones estratégicas.',
+            title: 'Inteligencia Comercial para tu Empresa',
+            description: 'Decisiones estratégicas basadas en datos reales. En DACROM Asesores transformamos datos de comercio exterior en información valiosa para ayudarte a identificar oportunidades de negocio en nuevos mercados, optimizar costos en importaciones, exportaciones y logística, conocer a tus competidores y proveedores con datos actualizados, y tomar decisiones estratégicas para hacer crecer tu empresa. Con nuestra inteligencia comercial, tendrás una visión clara y accionable para competir con éxito en el mercado global.',
             benefits: [
-                'Análisis de mercados objetivo',
-                'Identificación de oportunidades',
-                'Estudios de competitividad',
-                'Información estratégica actualizada',
-                'Soporte en toma de decisiones'
+                'Identificar oportunidades de negocio en nuevos mercados',
+                'Optimizar costos en importaciones, exportaciones y logística',
+                'Conocer a tus competidores y proveedores con datos actualizados',
+                'Tomar decisiones estratégicas para hacer crecer tu empresa',
+                'Transformar datos de comercio exterior en información valiosa',
+                'Tener una visión clara y accionable para competir con éxito',
+                'Competir con éxito en el mercado global',
+                'Decisiones estratégicas basadas en datos reales'
             ]
         }
     };
