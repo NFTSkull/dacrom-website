@@ -5389,6 +5389,10 @@ img:not([src]) {
         margin-bottom: 1.25rem;
     }
     
+    .footer-logo .logo-image {
+        height: var(--logo-header-h);
+    }
+    
     .footer-description {
         font-size: 14px;
         line-height: 1.5;
