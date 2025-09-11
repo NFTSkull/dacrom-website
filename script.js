@@ -1952,3 +1952,77 @@ function monitorPerformance() {
         console.log(`Página cargada en ${Math.round(loadTime)}ms`);
     });
 }
+
+// ===== NAVEGACIÓN DESDE FOOTER A PESTAÑAS ESPECÍFICAS =====
+function handleFooterServiceLinks() {
+    // Función para activar una pestaña específica
+    function activateServiceTab(tabCategory) {
+        const navTabs = document.querySelectorAll('.nav-tab');
+        const serviceGrids = document.querySelectorAll('.services-grid');
+        
+        // Remover clase active de todas las pestañas y grids
+        navTabs.forEach(tab => tab.classList.remove('active'));
+        serviceGrids.forEach(grid => grid.classList.remove('active'));
+        
+        // Activar la pestaña específica
+        const targetTab = document.querySelector(`[data-category="${tabCategory}"]`);
+        const targetGrid = document.getElementById(tabCategory);
+        
+        if (targetTab && targetGrid) {
+            targetTab.classList.add('active');
+            targetGrid.classList.add('active');
+            
+            // Efecto de transición suave
+            targetGrid.style.animation = 'fadeInUp 0.4s ease-out';
+            setTimeout(() => {
+                targetGrid.style.animation = '';
+            }, 400);
+        }
+    }
+    
+    // Manejar clicks en enlaces del footer con parámetros de pestaña
+    document.addEventListener('click', function(e) {
+        const link = e.target.closest('a[href*="#servicios?tab="]');
+        if (link) {
+            e.preventDefault();
+            
+            // Extraer el parámetro de la pestaña del href
+            const href = link.getAttribute('href');
+            const tabParam = href.split('tab=')[1];
+            
+            if (tabParam) {
+                // Navegar a la sección de servicios primero
+                const serviciosSection = document.getElementById('servicios');
+                if (serviciosSection) {
+                    serviciosSection.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    
+                    // Esperar un poco para que termine el scroll y luego activar la pestaña
+                    setTimeout(() => {
+                        activateServiceTab(tabParam);
+                    }, 800);
+                }
+            }
+        }
+    });
+    
+    // Manejar parámetros de URL al cargar la página
+    window.addEventListener('load', function() {
+        const urlParams = new URLSearchParams(window.location.hash.split('?')[1] || '');
+        const tabParam = urlParams.get('tab');
+        
+        if (tabParam && document.getElementById('servicios')) {
+            // Si hay un parámetro de pestaña en la URL, activarlo
+            setTimeout(() => {
+                activateServiceTab(tabParam);
+            }, 500);
+        }
+    });
+}
+
+// Inicializar la funcionalidad de navegación del footer
+document.addEventListener('DOMContentLoaded', function() {
+    handleFooterServiceLinks();
+});
