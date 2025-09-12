@@ -1940,23 +1940,24 @@ h1, h2, h3, h4, h5, h6 {
     flex-shrink: 0;
     width: 80px;
     height: 80px;
-    background: linear-gradient(135deg, #C1A264 0%, #D4B87A 100%);
+    background: #FFFFFF;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 8px 24px rgba(193, 162, 100, 0.2);
+    box-shadow: 0 8px 24px rgba(75, 75, 75, 0.2);
     transition: all 0.3s ease;
+    border: 2px solid #4B4B4B;
 }
 
 .philosophy-block:hover .philosophy-icon {
     transform: scale(1.1);
-    box-shadow: 0 12px 32px rgba(193, 162, 100, 0.3);
+    box-shadow: 0 12px 32px rgba(75, 75, 75, 0.3);
 }
 
 .philosophy-icon i {
     font-size: 2.2rem;
-    color: #FFFFFF;
+    color: #4B4B4B;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -2368,7 +2369,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: #4B4B4B;
     font-size: 28px;
     flex-shrink: 0;
     position: relative;
