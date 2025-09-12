@@ -1955,28 +1955,42 @@ function monitorPerformance() {
 
 // ===== NAVEGACIÓN DESDE FOOTER A PESTAÑAS ESPECÍFICAS =====
 function handleFooterServiceLinks() {
-    // Función para activar una pestaña específica
+    // Función mejorada para activar una pestaña específica
     function activateServiceTab(tabCategory) {
+        console.log('Activando pestaña:', tabCategory); // Debug
+        
         const navTabs = document.querySelectorAll('.nav-tab');
         const serviceGrids = document.querySelectorAll('.services-grid');
         
         // Remover clase active de todas las pestañas y grids
-        navTabs.forEach(tab => tab.classList.remove('active'));
-        serviceGrids.forEach(grid => grid.classList.remove('active'));
+        navTabs.forEach(tab => {
+            tab.classList.remove('active');
+            console.log('Removiendo active de:', tab.dataset.category);
+        });
+        serviceGrids.forEach(grid => {
+            grid.classList.remove('active');
+            console.log('Removiendo active de grid:', grid.id);
+        });
         
         // Activar la pestaña específica
         const targetTab = document.querySelector(`[data-category="${tabCategory}"]`);
         const targetGrid = document.getElementById(tabCategory);
         
+        console.log('Target tab encontrado:', targetTab);
+        console.log('Target grid encontrado:', targetGrid);
+        
         if (targetTab && targetGrid) {
             targetTab.classList.add('active');
             targetGrid.classList.add('active');
+            console.log('Pestaña activada correctamente:', tabCategory);
             
             // Efecto de transición suave
             targetGrid.style.animation = 'fadeInUp 0.4s ease-out';
             setTimeout(() => {
                 targetGrid.style.animation = '';
             }, 400);
+        } else {
+            console.error('No se encontró la pestaña o grid para:', tabCategory);
         }
     }
     
@@ -1985,15 +1999,19 @@ function handleFooterServiceLinks() {
         const link = e.target.closest('a[href*="#servicios?tab="]');
         if (link) {
             e.preventDefault();
+            console.log('Click detectado en enlace del footer:', link.href);
             
             // Extraer el parámetro de la pestaña del href
             const href = link.getAttribute('href');
             const tabParam = href.split('tab=')[1];
             
+            console.log('Parámetro de pestaña extraído:', tabParam);
+            
             if (tabParam) {
                 // Navegar a la sección de servicios primero
                 const serviciosSection = document.getElementById('servicios');
                 if (serviciosSection) {
+                    console.log('Navegando a sección de servicios...');
                     serviciosSection.scrollIntoView({
                         behavior: 'smooth',
                         block: 'start'
@@ -2001,8 +2019,9 @@ function handleFooterServiceLinks() {
                     
                     // Esperar un poco para que termine el scroll y luego activar la pestaña
                     setTimeout(() => {
+                        console.log('Activando pestaña después del scroll...');
                         activateServiceTab(tabParam);
-                    }, 800);
+                    }, 1000); // Aumenté el tiempo para asegurar que termine el scroll
                 }
             }
         }
@@ -2014,6 +2033,7 @@ function handleFooterServiceLinks() {
         const tabParam = urlParams.get('tab');
         
         if (tabParam && document.getElementById('servicios')) {
+            console.log('Parámetro de URL detectado:', tabParam);
             // Si hay un parámetro de pestaña en la URL, activarlo
             setTimeout(() => {
                 activateServiceTab(tabParam);
