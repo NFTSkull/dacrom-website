@@ -1396,9 +1396,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .about-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -1445,6 +1444,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .image-placeholder {
@@ -1457,6 +1457,7 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     overflow: hidden;
     padding: 0;
+    margin: 0 auto;
 }
 
 .business-image {
