@@ -6912,6 +6912,7 @@ body.loaded section {
     margin-top: -60px;
     z-index: 5;
     overflow: hidden;
+    min-height: 100vh; /* Asegurar que cubra toda la altura de la pantalla */
 }
 
 /* Transiciones permitidas en la sección import-confidence */
@@ -6928,6 +6929,8 @@ body.loaded section {
     /* Extender más allá del padding para cubrir toda la sección */
     top: -120px;
     height: calc(100% + 240px);
+    object-fit: cover;
+    object-position: center;
 }
 
 .port-image {
@@ -6935,7 +6938,7 @@ body.loaded section {
     height: 100%;
     object-fit: cover;
     object-position: center;
-    opacity: 0.6; /* Reducir opacidad para que se vea mejor con overlay */
+    opacity: 0.4; /* Reducir más la opacidad para que resalte más el texto */
     min-height: 100vh; /* Asegurar que cubra toda la altura */
 }
 
@@ -6945,7 +6948,7 @@ body.loaded section {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(15, 43, 91, 0.4); /* Opacidad media para cubrir partes azules */
+    background: rgba(15, 43, 91, 0.7); /* Aumentar opacidad para que resalte más el texto */
     z-index: 2;
     /* Extender más allá del padding para cubrir toda la sección */
     top: -120px;
