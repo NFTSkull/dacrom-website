@@ -6935,7 +6935,7 @@ img:not([src]) {
     right: 1rem;
     width: 40px;
     height: 40px;
-    background: linear-gradient(135deg, #0F2B5B 0%, #1e3a6b 100%);
+    background: rgba(255, 255, 255, 0.2);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -6943,7 +6943,8 @@ img:not([src]) {
     font-size: 1.2rem;
     font-weight: 700;
     color: #FFFFFF;
-    box-shadow: 0 4px 12px rgba(15, 43, 91, 0.3);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.3);
 }
 
 .import-service-icon {
@@ -6971,7 +6972,7 @@ img:not([src]) {
 .import-service-content h3 {
     font-size: 1.4rem;
     font-weight: 700;
-    color: #0F2B5B;
+    color: #FFFFFF;
     margin-bottom: 0.5rem;
     line-height: 1.2;
 }
@@ -6979,14 +6980,14 @@ img:not([src]) {
 .service-subtitle {
     font-size: 1rem;
     font-weight: 500;
-    color: #C1A264;
+    color: #FFFFFF;
     margin-bottom: 1rem;
     font-style: italic;
 }
 
 .import-service-content p {
     font-size: 1rem;
-    color: #4B4B4B;
+    color: #FFFFFF;
     line-height: 1.6;
     margin: 0;
 }
