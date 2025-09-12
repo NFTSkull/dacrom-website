@@ -277,54 +277,14 @@ if ('IntersectionObserver' in window) {
     lazyImages.forEach(img => imageObserver.observe(img));
 }
 
-// Service Cards Advanced Hover Effects
+// Service Cards Simple Hover Effects
 document.querySelectorAll('.service-card').forEach(card => {
-    const icon = card.querySelector('.service-icon');
-    
     card.addEventListener('mouseenter', function() {
-        this.style.transform = 'translateY(-10px) scale(1.02)';
-        if (icon) {
-            icon.style.transform = 'scale(1.1) rotate(5deg)';
-        }
-        
-        // Add subtle glow effect
-        this.style.boxShadow = `
-            0 20px 60px rgba(15, 43, 91, 0.2),
-            0 8px 16px rgba(0, 0, 0, 0.1),
-            inset 0 1px 0 rgba(255, 255, 255, 0.8)
-        `;
+        this.style.transform = 'translateY(-2px)';
     });
     
     card.addEventListener('mouseleave', function() {
-        this.style.transform = 'translateY(0) scale(1)';
-        if (icon) {
-            icon.style.transform = 'scale(1) rotate(0deg)';
-        }
-        
-        // Reset shadow
-        this.style.boxShadow = `
-            0 10px 30px rgba(15, 43, 91, 0.1),
-            0 4px 8px rgba(0, 0, 0, 0.05),
-            inset 0 1px 0 rgba(255, 255, 255, 0.6)
-        `;
-    });
-    
-    // Add mouse move effect for cards
-    card.addEventListener('mousemove', function(e) {
-        const rect = this.getBoundingClientRect();
-        const x = e.clientX - rect.left - rect.width / 2;
-        const y = e.clientY - rect.top - rect.height / 2;
-        
-        this.style.transform = `
-            translateY(-10px) 
-            scale(1.02) 
-            rotateX(${y / 10}deg) 
-            rotateY(${x / 10}deg)
-        `;
-    });
-    
-    card.addEventListener('mouseleave', function() {
-        this.style.transform = 'translateY(0) scale(1) rotateX(0) rotateY(0)';
+        this.style.transform = 'translateY(0)';
     });
 });
 
@@ -1163,17 +1123,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Add hover effects to service cards
-    const serviceCards = document.querySelectorAll('.service-card');
-    serviceCards.forEach(card => {
-        card.addEventListener('mouseenter', function() {
-            this.style.transform = 'translateY(-8px)';
-        });
-        
-        card.addEventListener('mouseleave', function() {
-            this.style.transform = 'translateY(0)';
-        });
-    });
+    // Service cards hover effects are already handled above
 
     // Smooth scrolling for navigation
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
