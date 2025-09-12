@@ -2022,11 +2022,11 @@ h1, h2, h3, h4, h5, h6 {
 .philosophy-block:hover .philosophy-icon {
     transform: scale(1.15) rotate(5deg);
     box-shadow: 0 16px 40px rgba(15, 43, 91, 0.5);
-    border-color: #D4B87A;
+    border-color: #0F2B5B;
 }
 
 .philosophy-block:hover .philosophy-icon::before {
-    opacity: 0.6;
+    opacity: 0.3;
 }
 
 .philosophy-icon i {
