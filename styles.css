@@ -6891,6 +6891,14 @@ img:not([src]) {
     overflow: hidden;
 }
 
+/* Deshabilitar todas las transiciones en esta sección */
+.import-confidence *,
+.import-confidence *:before,
+.import-confidence *:after {
+    transition: none !important;
+    animation: none !important;
+}
+
 .port-background {
     position: absolute;
     top: 0;
@@ -7011,16 +7019,12 @@ img:not([src]) {
     border-radius: 16px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    transition: all 0.3s ease;
-    backdrop-filter: blur(5px);
+    /* transition: all 0.3s ease; - ELIMINADA */
+    /* backdrop-filter: blur(5px); - ELIMINADO PARA EVITAR PROBLEMAS */
     overflow: hidden;
 }
 
-.import-service-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.2);
-    background: rgba(255, 255, 255, 0.1);
-}
+/* .import-service-card:hover - ELIMINADO PARA EVITAR PROBLEMAS DE VISIBILIDAD */
 
 .service-number {
     position: absolute;
