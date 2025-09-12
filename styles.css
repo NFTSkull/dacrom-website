@@ -6207,18 +6207,15 @@ img:not([src]) {
     width: var(--logo-values-w);
     height: auto;
     object-fit: contain;
-    object-position: center;
-    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.4));
     transition: all 0.3s ease;
-    opacity: 0.9;
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
-    border-radius: 0;
     background: transparent;
     padding: 0;
-    image-rendering: -webkit-optimize-contrast;
-    image-rendering: crisp-edges;
+    border-radius: 0;
+    margin: 0 auto;
+    max-width: 100%;
+    display: block;
+    opacity: 0.9;
 }
 
 .logo-final-366x250:hover {
@@ -6536,8 +6533,7 @@ img:not([src]) {
     }
     
     .decorative-lines {
-        width: 350px;
-        height: 350px;
+        display: none;
     }
     
     .line {
@@ -6642,8 +6638,7 @@ img:not([src]) {
     }
     
     .decorative-lines {
-        width: 280px;
-        height: 280px;
+        display: none;
     }
     
         .values-grid {
