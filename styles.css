@@ -6925,6 +6925,9 @@ body.loaded section {
     height: 100%;
     z-index: 1;
     min-height: 100vh; /* Asegurar que cubra toda la altura de la sección */
+    /* Extender más allá del padding para cubrir toda la sección */
+    top: -120px;
+    height: calc(100% + 240px);
 }
 
 .port-image {
@@ -6944,6 +6947,9 @@ body.loaded section {
     height: 100%;
     background: rgba(15, 43, 91, 0.4); /* Opacidad media para cubrir partes azules */
     z-index: 2;
+    /* Extender más allá del padding para cubrir toda la sección */
+    top: -120px;
+    height: calc(100% + 240px);
 }
 
 .import-content {
@@ -7167,6 +7173,12 @@ body.loaded section {
         padding: 80px 0;
     }
     
+    .port-background,
+    .port-overlay {
+        top: -80px;
+        height: calc(100% + 160px);
+    }
+    
     .import-header .section-title {
         font-size: 2rem;
     }
@@ -7280,6 +7292,12 @@ body.loaded section {
     .import-confidence {
         padding: 60px 0;
         margin-top: -30px;
+    }
+    
+    .port-background,
+    .port-overlay {
+        top: -60px;
+        height: calc(100% + 120px);
     }
     
     .import-header .section-title {
