@@ -2369,18 +2369,19 @@ h1, h2, h3, h4, h5, h6 {
 .service-icon {
     width: 70px;
     height: 70px;
-    background: linear-gradient(135deg, #0F2B5B 0%, #1e3a6b 100%);
+    background: #FFFFFF;
     border-radius: 18px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #FFFFFF;
+    color: #0F2B5B;
     font-size: 28px;
     flex-shrink: 0;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 8px 20px rgba(15, 43, 91, 0.25);
+    box-shadow: 0 8px 20px rgba(15, 43, 91, 0.15);
     transition: none;
+    border: 2px solid #0F2B5B;
 }
 
 
