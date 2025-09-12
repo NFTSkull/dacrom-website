@@ -5,12 +5,6 @@
     /* Optimización de rendering para hosting compartido */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    /* Mejorar compatibilidad de transiciones */
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    /* Optimizar transformaciones 3D */
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
 }
 
 /* Optimizar transiciones para mejor rendimiento */
@@ -6930,14 +6924,20 @@ img:not([src]) {
     text-align: center;
     position: relative;
     z-index: 10;
+    /* Asegurar que el contenido esté visible */
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
 }
 
 .import-header .section-title {
-    color: #FFFFFF;
+    color: #FFFFFF !important;
     font-size: 2.5rem;
     font-weight: 600;
     margin-bottom: 2rem;
     letter-spacing: -0.5px;
+    /* Asegurar visibilidad */
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
 }
 
 .import-description {
@@ -6954,17 +6954,21 @@ img:not([src]) {
 }
 
 .import-problem h3 {
-    color: #C1A264;
+    color: #C1A264 !important;
     font-size: 1.4rem;
     font-weight: 600;
     margin-bottom: 1rem;
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
 }
 
 .import-problem p {
     font-size: 1.1rem;
     line-height: 1.7;
-    color: #E8E8E8;
+    color: #E8E8E8 !important;
     margin: 0;
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
 }
 
 .import-solution {
@@ -6975,17 +6979,21 @@ img:not([src]) {
 }
 
 .import-solution h3 {
-    color: #FFFFFF;
+    color: #FFFFFF !important;
     font-size: 1.4rem;
     font-weight: 600;
     margin-bottom: 1rem;
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
 }
 
 .import-solution p {
     font-size: 1.1rem;
     line-height: 1.7;
-    color: #E8E8E8;
+    color: #E8E8E8 !important;
     margin: 0;
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
 }
 
 .import-services-grid {
