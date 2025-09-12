@@ -1,4 +1,52 @@
 /* Logo sizing variables - Frontend Lead implementation */
+
+/* ===== OPTIMIZACIONES PARA CPANEL Y HOSTING COMPARTIDO ===== */
+* {
+    /* Optimización de rendering para hosting compartido */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* Mejorar compatibilidad de transiciones */
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    /* Optimizar transformaciones 3D */
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+/* Optimizar transiciones para mejor rendimiento */
+*[class*="transition"], *[style*="transition"] {
+    will-change: auto;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+/* Optimizar animaciones para cPanel */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { 
+        opacity: 0; 
+        transform: translateY(20px);
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideDown {
+    from { 
+        opacity: 0; 
+        transform: translateY(-20px);
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0);
+    }
+}
 :root {
     --logo-header-h: auto;
     --logo-hero-w: clamp(150px, 25vw, 220px);
@@ -86,7 +134,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 0.95rem;
     font-weight: 600;
     text-decoration: none;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.3s ease;
     cursor: pointer;
     gap: 10px;
     position: relative;
@@ -121,10 +169,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn-primary:hover {
     background: linear-gradient(135deg, #1a3a70 0%, #2e4a85 50%, #0F2B5B 100%);
-    transform: translateY(-3px) scale(1.05);
-    box-shadow: 
-        0 12px 35px rgba(15, 43, 91, 0.4),
-        inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(15, 43, 91, 0.3);
 }
 
 .btn-outline {
@@ -137,10 +183,8 @@ h1, h2, h3, h4, h5, h6 {
 .btn-outline:hover {
     background: linear-gradient(135deg, #0F2B5B 0%, #1a3a70 50%, #2e4a85 100%);
     color: white;
-    transform: translateY(-3px) scale(1.05);
-    box-shadow: 
-        0 12px 35px rgba(15, 43, 91, 0.4),
-        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(15, 43, 91, 0.3);
 }
 
 .btn-large {
@@ -162,7 +206,7 @@ h1, h2, h3, h4, h5, h6 {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 8px 32px rgba(15, 43, 91, 0.1);
     z-index: 1000;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.3s ease;
 }
 
 .header.scrolled {
@@ -310,7 +354,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     height: 3px;
     background-color: #0F2B5B;
-    transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+    transition: all 0.3s ease;
     border-radius: 2px;
 }
 
@@ -722,7 +766,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 0.9rem;
     text-decoration: none;
     text-align: center;
-    transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+    transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
     border: 2px solid;
@@ -857,7 +901,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 2rem;
     text-align: center;
     position: relative;
-    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+    transition: all 0.4s ease;
     overflow: hidden;
     opacity: 0;
     transform: translateY(30px);
@@ -1470,6 +1514,32 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 auto;
 }
 
+/* ===== OPTIMIZACIONES ESPECÍFICAS PARA CPANEL ===== */
+/* Mejorar compatibilidad con hosting compartido */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    * {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+    }
+}
+
+/* Optimizar para navegadores antiguos */
+@media screen and (max-width: 1px) {
+    .no-js * {
+        transition: none !important;
+        animation: none !important;
+    }
+}
+
+/* Fallback para transiciones complejas */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
 /* ===== RESPONSIVE OPTIMIZATIONS ===== */
 
 /* Hero Section Mobile Optimization */
@@ -1700,7 +1770,7 @@ h1, h2, h3, h4, h5, h6 {
         align-items: center;
         padding: 2rem 0;
         transform: translateX(-100%);
-        transition: transform 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+        transition: transform 0.3s ease;
         z-index: 1000;
         border-top: 1px solid rgba(15, 43, 91, 0.1);
     }
@@ -1768,7 +1838,7 @@ h1, h2, h3, h4, h5, h6 {
         height: 5px;
         background-color: #FFFFFF !important;
         border-radius: 3px;
-        transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+        transition: all 0.3s ease;
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
     }
     
@@ -1890,7 +1960,7 @@ h1, h2, h3, h4, h5, h6 {
         background-color: #FFFFFF !important;
         border-radius: 3px;
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-        transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+        transition: all 0.3s ease;
         width: 100%;
     }
     
@@ -3504,7 +3574,7 @@ h1, h2, h3, h4, h5, h6 {
         0 8px 25px rgba(37, 211, 102, 0.4),
         0 4px 12px rgba(0, 0, 0, 0.1),
         inset 0 1px 0 rgba(255, 255, 255, 0.3);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.3s ease;
     z-index: 1000;
     animation: whatsappPulse 3s ease-in-out infinite;
 }
@@ -3921,7 +3991,7 @@ img:not([src]) {
 
 /* Enhanced Card Interactions */
 .testimonial-card {
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.3s ease;
     transform-style: preserve-3d;
 }
 
