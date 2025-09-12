@@ -6691,20 +6691,50 @@ img:not([src]) {
 /* ===== SECCIÓN: IMPORTA CON CONFIANZA ===== */
 .import-confidence {
     padding: 120px 0;
-    background: #F8F9FA;
+    background: #0F2B5B;
     position: relative;
     margin-top: -60px;
     z-index: 5;
+    overflow: hidden;
+}
+
+.port-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.port-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.3;
+}
+
+.port-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 43, 91, 0.8);
+    z-index: 2;
 }
 
 .import-content {
     max-width: 1000px;
     margin: 0 auto;
     text-align: center;
+    position: relative;
+    z-index: 10;
 }
 
 .import-header .section-title {
-    color: #0F2B5B;
+    color: #FFFFFF;
     font-size: 2.5rem;
     font-weight: 600;
     margin-bottom: 2rem;
@@ -6719,14 +6749,14 @@ img:not([src]) {
 .import-description p {
     font-size: 1.1rem;
     line-height: 1.7;
-    color: #4B4B4B;
+    color: #E8E8E8;
     margin: 0 0 1.5rem 0;
 }
 
 .import-intro {
     font-size: 1.3rem;
     font-weight: 600;
-    color: #0F2B5B;
+    color: #C1A264;
     margin-top: 2rem;
 }
 
@@ -6743,16 +6773,18 @@ img:not([src]) {
     align-items: flex-start;
     gap: 1.5rem;
     padding: 2rem;
-    background: white;
+    background: rgba(255, 255, 255, 0.95);
     border-radius: 12px;
-    box-shadow: 0 8px 32px rgba(15, 43, 91, 0.08);
-    border: 1px solid rgba(15, 43, 91, 0.05);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
 }
 
 .import-service-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 16px 48px rgba(15, 43, 91, 0.12);
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 1);
 }
 
 .service-icon {
@@ -6802,10 +6834,11 @@ img:not([src]) {
     max-width: 900px;
     margin: 3rem auto 0 auto;
     padding: 2.5rem;
-    background: white;
+    background: rgba(255, 255, 255, 0.95);
     border-radius: 12px;
-    box-shadow: 0 8px 32px rgba(15, 43, 91, 0.08);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
     border-left: 4px solid #C1A264;
+    backdrop-filter: blur(10px);
 }
 
 .import-conclusion p {
