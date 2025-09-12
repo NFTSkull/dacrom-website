@@ -111,16 +111,48 @@ function animateCounter(element, start, end, duration, isPercentage, isPlusSign)
     requestAnimationFrame(updateCounter);
 }
 
-// Contact Form Handling - WhatsApp Integration
-contactForm.addEventListener('submit', (e) => {
+// WhatsApp Form Submission Function
+function sendToWhatsApp(formData, formName) {
+    const whatsappNumber = "528130962602"; // +52 (81) 3096-2602
+    let message = `📋 *Nueva solicitud desde ${formName}*\n\n`;
+    
+    // Add form fields to message
+    for (const [key, value] of formData.entries()) {
+        const fieldName = getFieldDisplayName(key);
+        message += `*${fieldName}:* ${value}\n`;
+    }
+    
+    message += `\n📅 Fecha: ${new Date().toLocaleString('es-MX')}`;
+    
+    // Encode message for URL
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+    
+    // Open WhatsApp
+    window.open(whatsappUrl, '_blank');
+}
+
+// Field display names mapping
+function getFieldDisplayName(fieldKey) {
+    const fieldNames = {
+        'name': 'Nombre completo',
+        'company': 'Empresa',
+        'email': 'Correo electrónico',
+        'phone': 'Teléfono',
+        'service': 'Servicio de interés',
+        'message': 'Mensaje',
+        'monthlyImports': 'Valor mensual de importaciones (USD)',
+        'currentTariff': 'Arancel actual promedio (%)',
+        'serviceType': 'Tipo de servicio'
+    };
+    return fieldNames[fieldKey] || fieldKey;
+}
+
+// Contact Form Handling
+contactForm.addEventListener('submit', async (e) => {
     e.preventDefault();
     
     const formData = new FormData(contactForm);
-    const formObject = {};
-    
-    formData.forEach((value, key) => {
-        formObject[key] = value;
-    });
     
     // Show loading state
     const submitButton = contactForm.querySelector('button[type="submit"]');
@@ -129,108 +161,26 @@ contactForm.addEventListener('submit', (e) => {
     submitButton.disabled = true;
     
     try {
-        // Create WhatsApp message
-        const whatsappMessage = createWhatsAppMessage(formObject);
+        // Send to WhatsApp
+        sendToWhatsApp(formData, 'Formulario de Contacto');
         
-        // Open WhatsApp with the message
-        const whatsappUrl = `https://wa.me/528130962602?text=${encodeURIComponent(whatsappMessage)}`;
+        // Show success message
+        showNotification('¡Formulario enviado! Te redirigiremos a WhatsApp para completar el contacto.', 'success');
         
-        // Show success message and redirect
-        showNotification('Redirigiendo a WhatsApp...', 'success');
-        
+        // Reset form after a delay
         setTimeout(() => {
-            window.open(whatsappUrl, '_blank');
             contactForm.reset();
-            submitButton.textContent = originalText;
-            submitButton.disabled = false;
-        }, 1500);
+        }, 2000);
         
     } catch (error) {
         // Show error message
-        showNotification('Error al procesar el formulario. Por favor, inténtalo de nuevo.', 'error');
+        showNotification('Error al enviar el formulario. Por favor, inténtalo de nuevo.', 'error');
+    } finally {
+        // Reset button state
         submitButton.textContent = originalText;
         submitButton.disabled = false;
     }
 });
-
-// Function to create WhatsApp message
-function createWhatsAppMessage(formData) {
-    const message = `🏢 *Nueva Solicitud de Contacto - DACROM Asesores*
-
-👤 *Nombre:* ${formData.name}
-🏢 *Empresa:* ${formData.company}
-📧 *Email:* ${formData.email}
-📞 *Teléfono:* ${formData.phone}
-🔧 *Servicio de interés:* ${getServiceName(formData.service)}
-💬 *Mensaje:* ${formData.message || 'Sin mensaje adicional'}
-
----
-📅 *Fecha:* ${new Date().toLocaleString('es-MX')}
-🌐 *Origen:* Sitio Web DACROM`;
-
-    return message;
-}
-
-// Function to get service name
-function getServiceName(serviceValue) {
-    const services = {
-        'immex': 'IMMEX',
-        'iva-ieps': 'Certificación IVA-IEPS',
-        'prosec': 'PROSEC',
-        'oea': 'Certificación OEA',
-        'c-tpat': 'C-TPAT',
-        'otros': 'Otros servicios'
-    };
-    return services[serviceValue] || serviceValue;
-}
-
-// Function to send calculator results to WhatsApp
-function sendCalculatorResultsToWhatsApp() {
-    const monthlyImports = parseFloat(document.getElementById('monthlyImports').value) || 0;
-    const currentTariff = parseFloat(document.getElementById('currentTariff').value) || 0;
-    const serviceType = document.getElementById('serviceType');
-    const importType = document.getElementById('importType').value;
-    const selectedOption = serviceType.options[serviceType.selectedIndex];
-    
-    if (!monthlyImports || !currentTariff || !selectedOption.dataset.saving) {
-        showNotification('Por favor, completa la calculadora primero.', 'error');
-        return;
-    }
-    
-    const savingPercentage = parseFloat(selectedOption.dataset.saving);
-    const serviceName = selectedOption.textContent;
-    const currentMonthlyCost = (monthlyImports * currentTariff) / 100;
-    const monthlySavings = (currentMonthlyCost * savingPercentage) / 100;
-    const annualSavings = monthlySavings * 12;
-    
-    const message = `💰 *Solicitud de Análisis Detallado - Calculadora DACROM*
-
-📊 *Datos del Cálculo:*
-• Valor mensual de importaciones: $${monthlyImports.toLocaleString()} USD
-• Arancel actual promedio: ${currentTariff}%
-• Servicio de interés: ${serviceName}
-• Tipo de operación: ${importType}
-
-💵 *Resultados Estimados:*
-• Ahorro mensual estimado: $${monthlySavings.toLocaleString()} USD
-• Ahorro anual estimado: $${annualSavings.toLocaleString()} USD
-• Porcentaje de ahorro: ${savingPercentage}%
-
-🔍 *Solicito:*
-Análisis detallado personalizado para mi empresa con:
-• Evaluación específica de mi sector
-• Estrategia de implementación
-• Cronograma de beneficios
-• Asesoría especializada
-
----
-📅 *Fecha:* ${new Date().toLocaleString('es-MX')}
-🌐 *Origen:* Calculadora Web DACROM`;
-
-    const whatsappUrl = `https://wa.me/528130962602?text=${encodeURIComponent(message)}`;
-    window.open(whatsappUrl, '_blank');
-    showNotification('Redirigiendo a WhatsApp con tu análisis...', 'success');
-}
 
 // Notification System
 function showNotification(message, type = 'info') {
@@ -1464,9 +1414,13 @@ class SavingsCalculator {
                 
                 <div class="results-actions">
                     <button class="btn btn-primary" onclick="sendCalculatorResultsToWhatsApp()">
-                        <i class="fas fa-whatsapp"></i>
-                        Solicitar Análisis Detallado
+                        <i class="fab fa-whatsapp"></i>
+                        Enviar a WhatsApp
                     </button>
+                    <a href="#contacto" class="btn btn-outline">
+                        <i class="fas fa-calculator"></i>
+                        Solicitar Análisis Detallado
+                    </a>
                     <button class="btn btn-outline" onclick="window.print()">
                         <i class="fas fa-print"></i>
                         Imprimir Estimación
@@ -1559,6 +1513,51 @@ class SavingsCalculator {
 
 // Initialize Calculator
 const savingsCalculator = new SavingsCalculator();
+
+// Function to send calculator results to WhatsApp
+function sendCalculatorResultsToWhatsApp() {
+    const monthlyImports = document.getElementById('monthlyImports').value;
+    const currentTariff = document.getElementById('currentTariff').value;
+    const serviceType = document.getElementById('serviceType');
+    const selectedOption = serviceType.options[serviceType.selectedIndex];
+    const importType = document.getElementById('importType').value;
+    
+    if (!monthlyImports || !currentTariff || !selectedOption.dataset.saving) {
+        showNotification('Por favor, completa el cálculo primero.', 'error');
+        return;
+    }
+    
+    // Get the results from the displayed data
+    const resultsContainer = document.querySelector('.results-display');
+    if (!resultsContainer) {
+        showNotification('No hay resultados para enviar.', 'error');
+        return;
+    }
+    
+    const monthlySavings = resultsContainer.querySelector('.result-value').textContent.replace('$', '').replace(',', '');
+    const annualSavings = resultsContainer.querySelectorAll('.result-value')[1].textContent.replace('$', '').replace(',', '');
+    const savingsPercentage = resultsContainer.querySelectorAll('.result-value')[2].textContent.replace('%', '');
+    
+    const whatsappNumber = "528130962602";
+    let message = `📊 *Resultados de Calculadora de Ahorros*\n\n`;
+    message += `*Datos del Cliente:*\n`;
+    message += `• Valor mensual de importaciones: $${monthlyImports} USD\n`;
+    message += `• Arancel actual promedio: ${currentTariff}%\n`;
+    message += `• Servicio seleccionado: ${selectedOption.textContent}\n`;
+    message += `• Tipo de importación: ${importType}\n\n`;
+    message += `*Resultados del Cálculo:*\n`;
+    message += `• Ahorro mensual: $${monthlySavings}\n`;
+    message += `• Ahorro anual: $${annualSavings}\n`;
+    message += `• Porcentaje de reducción: ${savingsPercentage}%\n\n`;
+    message += `*Solicito información detallada sobre este servicio.*\n\n`;
+    message += `📅 Fecha: ${new Date().toLocaleString('es-MX')}`;
+    
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+    
+    window.open(whatsappUrl, '_blank');
+    showNotification('¡Redirigiendo a WhatsApp con tus resultados!', 'success');
+}
 
 // ===== EFECTOS AVANZADOS DE SCROLL =====
 class AdvancedScrollEffects {
@@ -1867,7 +1866,7 @@ class LoadingScreen {
     }
     
     simulateLoading() {
-        const duration = 1500; // 1.5 seconds exact loading
+        const duration = 3000; // 3 seconds minimum loading
         const steps = 100;
         const interval = duration / steps;
         
@@ -1894,7 +1893,7 @@ class LoadingScreen {
                 this.messageIndex = (this.messageIndex + 1) % this.messages.length;
                 this.loadingSubtitle.textContent = this.messages[this.messageIndex];
             }
-        }, 600); // Faster rotation for 1.5-second loading
+        }, 2000);
     }
     
     updateProgress(percent) {
@@ -1922,12 +1921,8 @@ class LoadingScreen {
         // Show completion message
         this.loadingSubtitle.textContent = '¡Listo! Bienvenido a DACROM Asesores';
         
-        // Wait exactly 1.5 seconds before starting fade out (to complete 2 seconds total)
+        // Wait a moment then fade out
         setTimeout(() => {
-            // Mark body as loaded to show content
-            document.body.classList.add('loaded');
-            
-            // Start fade out
             this.loadingScreen.classList.add('fade-out');
             
             // Remove from DOM after transition
@@ -1945,8 +1940,8 @@ class LoadingScreen {
                         offset: 100
                     });
                 }
-            }, 500); // Quick removal after fade out
-        }, 1500); // 1.5 seconds to complete 2 seconds total
+            }, 800);
+        }, 500);
     }
     
     initializePageFeatures() {
