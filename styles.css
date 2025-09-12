@@ -5215,7 +5215,7 @@ img:not([src]) {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    transition: opacity 2s ease-in-out, visibility 2s ease-in-out;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
     opacity: 1;
     visibility: visible;
 }
@@ -5237,13 +5237,13 @@ body.loaded header,
 body.loaded section {
     opacity: 1;
     visibility: visible;
-    transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+    transition: opacity 0.8s ease-in-out, visibility 0.8s ease-in-out;
 }
 
 .loading-screen.fade-out {
     opacity: 0;
     visibility: hidden;
-    transition: opacity 2s ease-in-out, visibility 2s ease-in-out;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
 }
 
 .loading-container {
