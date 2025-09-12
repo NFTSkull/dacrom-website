@@ -6730,50 +6730,72 @@ img:not([src]) {
     margin-top: 2rem;
 }
 
-.import-services-list {
-    max-width: 900px;
+.import-services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
     margin: 0 auto 3rem auto;
-    text-align: left;
 }
 
-.services-offered {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.import-service-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding: 2rem;
     background: white;
     border-radius: 12px;
     box-shadow: 0 8px 32px rgba(15, 43, 91, 0.08);
-    overflow: hidden;
-}
-
-.services-offered li {
-    padding: 2rem;
-    border-bottom: 1px solid #F0F0F0;
+    border: 1px solid rgba(15, 43, 91, 0.05);
     transition: all 0.3s ease;
 }
 
-.services-offered li:last-child {
-    border-bottom: none;
+.import-service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 48px rgba(15, 43, 91, 0.12);
 }
 
-.services-offered li:hover {
-    background: #F8F9FA;
+.service-icon {
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #C1A264 0%, #D4B87A 100%);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 16px rgba(193, 162, 100, 0.2);
+    transition: all 0.3s ease;
 }
 
-.service-title {
-    display: block;
-    font-size: 1.1rem;
+.import-service-card:hover .service-icon {
+    transform: scale(1.1);
+    box-shadow: 0 8px 24px rgba(193, 162, 100, 0.3);
+}
+
+.service-icon i {
+    font-size: 1.8rem;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.service-content {
+    flex: 1;
+}
+
+.service-content h3 {
+    font-size: 1.2rem;
     font-weight: 600;
     color: #0F2B5B;
-    margin-bottom: 0.5rem;
-    line-height: 1.4;
+    margin-bottom: 0.75rem;
+    line-height: 1.3;
 }
 
-.service-description {
-    display: block;
+.service-content p {
     font-size: 1rem;
     color: #4B4B4B;
     line-height: 1.6;
+    margin: 0;
 }
 
 .import-conclusion {
@@ -6813,15 +6835,30 @@ img:not([src]) {
         font-size: 1.1rem;
     }
     
-    .services-offered li {
+    .import-services-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .import-service-card {
         padding: 1.5rem;
+        gap: 1.25rem;
     }
     
-    .service-title {
-        font-size: 1rem;
+    .service-icon {
+        width: 50px;
+        height: 50px;
     }
     
-    .service-description {
+    .service-icon i {
+        font-size: 1.5rem;
+    }
+    
+    .service-content h3 {
+        font-size: 1.1rem;
+    }
+    
+    .service-content p {
         font-size: 0.95rem;
     }
     
