@@ -1867,7 +1867,7 @@ class LoadingScreen {
     }
     
     simulateLoading() {
-        const duration = 2000; // 2 seconds exact loading
+        const duration = 1500; // 1.5 seconds exact loading
         const steps = 100;
         const interval = duration / steps;
         
@@ -1894,7 +1894,7 @@ class LoadingScreen {
                 this.messageIndex = (this.messageIndex + 1) % this.messages.length;
                 this.loadingSubtitle.textContent = this.messages[this.messageIndex];
             }
-        }, 800); // Faster rotation for 2-second loading
+        }, 600); // Faster rotation for 1.5-second loading
     }
     
     updateProgress(percent) {
