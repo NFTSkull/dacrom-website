@@ -1867,7 +1867,7 @@ class LoadingScreen {
     }
     
     simulateLoading() {
-        const duration = 3000; // 3 seconds minimum loading
+        const duration = 5000; // 5 seconds minimum loading
         const steps = 100;
         const interval = duration / steps;
         
@@ -1894,7 +1894,7 @@ class LoadingScreen {
                 this.messageIndex = (this.messageIndex + 1) % this.messages.length;
                 this.loadingSubtitle.textContent = this.messages[this.messageIndex];
             }
-        }, 2000);
+        }, 2500);
     }
     
     updateProgress(percent) {
@@ -1941,8 +1941,8 @@ class LoadingScreen {
                         offset: 100
                     });
                 }
-            }, 1500);
-        }, 2000);
+            }, 2000);
+        }, 3000);
     }
     
     initializePageFeatures() {
