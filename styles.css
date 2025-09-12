@@ -5215,12 +5215,35 @@ img:not([src]) {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    transition: opacity 0.8s ease-out, visibility 0.8s ease-out;
+    transition: opacity 2s ease-in-out, visibility 2s ease-in-out;
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Evitar que el contenido aparezca antes de tiempo */
+body:not(.loaded) {
+    overflow: hidden;
+}
+
+body:not(.loaded) main,
+body:not(.loaded) header,
+body:not(.loaded) section {
+    opacity: 0;
+    visibility: hidden;
+}
+
+body.loaded main,
+body.loaded header,
+body.loaded section {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
 }
 
 .loading-screen.fade-out {
     opacity: 0;
     visibility: hidden;
+    transition: opacity 2s ease-in-out, visibility 2s ease-in-out;
 }
 
 .loading-container {

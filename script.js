@@ -1867,7 +1867,7 @@ class LoadingScreen {
     }
     
     simulateLoading() {
-        const duration = 5000; // 5 seconds minimum loading
+        const duration = 6000; // 6 seconds minimum loading
         const steps = 100;
         const interval = duration / steps;
         
@@ -1922,8 +1922,12 @@ class LoadingScreen {
         // Show completion message
         this.loadingSubtitle.textContent = '¡Listo! Bienvenido a DACROM Asesores';
         
-        // Wait a moment then fade out
+        // Wait longer before starting fade out
         setTimeout(() => {
+            // Mark body as loaded to show content
+            document.body.classList.add('loaded');
+            
+            // Start fade out
             this.loadingScreen.classList.add('fade-out');
             
             // Remove from DOM after transition
@@ -1941,8 +1945,8 @@ class LoadingScreen {
                         offset: 100
                     });
                 }
-            }, 2000);
-        }, 3000);
+            }, 2500); // Increased from 2000 to 2500
+        }, 4000); // Increased from 3000 to 4000
     }
     
     initializePageFeatures() {
