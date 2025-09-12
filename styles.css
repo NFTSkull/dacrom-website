@@ -2227,6 +2227,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 120px 0;
     background: linear-gradient(135deg, #ffffff 0%, #E8E8E8 100%);
     position: relative;
+    z-index: 10;
 }
 
 .services::before {
@@ -6704,7 +6705,7 @@ img:not([src]) {
     position: relative;
     overflow: hidden;
     margin-top: -60px;
-    z-index: 1;
+    z-index: 5;
 }
 
 .port-background {
