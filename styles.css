@@ -6907,7 +6907,7 @@ body.loaded section {
 /* ===== SECCIÓN: IMPORTA CON CONFIANZA ===== */
 .import-confidence {
     padding: 120px 0;
-    background: #0F2B5B;
+    background: #0A1F3A;
     position: relative;
     margin-top: -60px;
     z-index: 5;
@@ -6923,7 +6923,7 @@ body.loaded section {
     left: 0;
     right: 0;
     bottom: 0;
-    background: #0F2B5B;
+    background: #0A1F3A;
     z-index: 0;
 }
 
@@ -6960,7 +6960,7 @@ body.loaded section {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(15, 43, 91, 0.7); /* Aumentar opacidad para que resalte más el texto */
+    background: rgba(10, 31, 58, 0.8); /* Color más oscuro para mejor contraste */
     z-index: 2;
     /* Extender más allá del padding para cubrir toda la sección */
     top: -120px;
