@@ -6764,7 +6764,7 @@ img:not([src]) {
     margin: 0;
 }
 
-.services-grid {
+.import-services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 2rem;
@@ -6772,7 +6772,7 @@ img:not([src]) {
     margin: 0 auto 3rem auto;
 }
 
-.service-item {
+.import-service-item {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -6782,14 +6782,14 @@ img:not([src]) {
     transition: all 0.3s ease;
 }
 
-.service-item:hover {
+.import-service-item:hover {
     transform: translateY(-5px);
     background: rgba(255, 255, 255, 0.15);
     border-color: rgba(255, 255, 255, 0.3);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
-.service-icon {
+.import-service-icon {
     width: 80px;
     height: 80px;
     background: rgba(255, 255, 255, 0.1);
@@ -6801,12 +6801,12 @@ img:not([src]) {
     border: 2px solid rgba(255, 255, 255, 0.2);
 }
 
-.service-icon i {
+.import-service-icon i {
     font-size: 2rem;
     color: white;
 }
 
-.service-item h3 {
+.import-service-item h3 {
     color: white;
     font-size: 1.3rem;
     font-weight: 600;
@@ -6814,7 +6814,7 @@ img:not([src]) {
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
-.service-item p {
+.import-service-item p {
     color: rgba(255, 255, 255, 0.85);
     font-size: 1rem;
     line-height: 1.6;
@@ -6854,27 +6854,27 @@ img:not([src]) {
         font-size: 1.1rem;
     }
     
-    .services-grid {
+    .import-services-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
         margin-bottom: 2rem;
     }
     
-    .service-item {
+    .import-service-item {
         padding: 1.5rem;
     }
     
-    .service-icon {
+    .import-service-icon {
         width: 70px;
         height: 70px;
         margin-bottom: 1rem;
     }
     
-    .service-icon i {
+    .import-service-icon i {
         font-size: 1.8rem;
     }
     
-    .service-item h3 {
+    .import-service-item h3 {
         font-size: 1.2rem;
     }
     
@@ -6902,29 +6902,29 @@ img:not([src]) {
         font-size: 1rem;
     }
     
-    .services-grid {
+    .import-services-grid {
         gap: 1rem;
         margin-bottom: 1.5rem;
     }
     
-    .service-item {
+    .import-service-item {
         padding: 1.25rem;
     }
     
-    .service-icon {
+    .import-service-icon {
         width: 60px;
         height: 60px;
     }
     
-    .service-icon i {
+    .import-service-icon i {
         font-size: 1.5rem;
     }
     
-    .service-item h3 {
+    .import-service-item h3 {
         font-size: 1.1rem;
     }
     
-    .service-item p {
+    .import-service-item p {
         font-size: 0.95rem;
     }
     
