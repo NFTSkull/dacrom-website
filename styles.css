@@ -23,7 +23,7 @@
 }
 
 .img-brand:hover {
-    transform: scale(1.02) translateZ(0);
+    transform: translateZ(0);
     object-fit: contain;
 }
 
@@ -6220,9 +6220,9 @@ img:not([src]) {
 }
 
 .logo-final-366x250:hover {
-    transform: scale(1.02);
-    filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.4));
-    opacity: 1;
+    transform: none;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+    opacity: 0.9;
     object-fit: contain;
 }
 
