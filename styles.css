@@ -6214,7 +6214,9 @@ img:not([src]) {
     display: block;
     margin: 0 auto;
     max-width: 100%;
-    border-radius: 8px;
+    border-radius: 0;
+    background: transparent;
+    padding: 0;
     image-rendering: -webkit-optimize-contrast;
     image-rendering: crisp-edges;
 }
