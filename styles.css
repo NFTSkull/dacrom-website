@@ -6901,14 +6901,19 @@ img:not([src]) {
     background: rgba(255, 255, 255, 0.1);
     padding: 2rem;
     border-radius: 12px;
-    border-left: 4px solid #FFFFFF;
+    border-left: 4px solid #C1A264;
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
 .import-solution h3 {
-    color: #FFFFFF;
-    font-size: 1.4rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
+    color: #C1A264;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0;
+    line-height: 1.3;
+    letter-spacing: -0.5px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .import-solution p {
@@ -7070,9 +7075,12 @@ img:not([src]) {
         padding: 1.5rem;
     }
     
-    .import-problem h3,
-    .import-solution h3 {
+    .import-problem h3 {
         font-size: 1.2rem;
+    }
+    
+    .import-solution h3 {
+        font-size: 1.6rem;
     }
     
     .import-services-grid {
@@ -7179,6 +7187,22 @@ img:not([src]) {
     
     .import-description p {
         font-size: 1rem;
+    }
+    
+    .import-problem,
+    .import-solution {
+        padding: 1.25rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .import-problem h3 {
+        font-size: 1.1rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .import-solution h3 {
+        font-size: 1.4rem;
+        margin-bottom: 0;
     }
     
     .import-services-grid {
