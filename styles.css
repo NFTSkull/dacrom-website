@@ -6688,149 +6688,107 @@ img:not([src]) {
     }
 }
 
-/* ===== NUEVA SECCIÓN: IMPORTA CON CONFIANZA ===== */
+/* ===== SECCIÓN: IMPORTA CON CONFIANZA ===== */
 .import-confidence {
-    padding: 100px 0;
+    padding: 120px 0;
+    background: #F8F9FA;
     position: relative;
-    overflow: hidden;
     margin-top: -60px;
     z-index: 5;
-    background: linear-gradient(135deg, #0F2B5B 0%, #1a3d6b 50%, #0F2B5B 100%);
-}
-
-.port-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    opacity: 0.15;
-}
-
-.port-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-}
-
-.port-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, 
-        rgba(15, 43, 91, 0.95) 0%, 
-        rgba(15, 43, 91, 0.90) 50%, 
-        rgba(15, 43, 91, 0.95) 100%);
-    z-index: 1;
 }
 
 .import-content {
-    position: relative;
-    z-index: 2;
-    color: white;
+    max-width: 1000px;
+    margin: 0 auto;
     text-align: center;
 }
 
 .import-header .section-title {
-    color: white;
+    color: #0F2B5B;
     font-size: 2.5rem;
     font-weight: 600;
     margin-bottom: 2rem;
-    text-shadow: none;
     letter-spacing: -0.5px;
 }
 
 .import-description {
     max-width: 900px;
-    margin: 0 auto 2.5rem auto;
+    margin: 0 auto 3rem auto;
 }
 
 .import-description p {
     font-size: 1.1rem;
-    line-height: 1.6;
-    color: rgba(255, 255, 255, 0.95);
-    margin: 0 0 1rem 0;
+    line-height: 1.7;
+    color: #4B4B4B;
+    margin: 0 0 1.5rem 0;
 }
 
 .import-intro {
-    font-size: 1.2rem !important;
-    font-weight: 600 !important;
-    color: white !important;
-    margin-top: 1.5rem !important;
-}
-
-.import-services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto 3rem auto;
-}
-
-.import-service-item {
-    background: rgba(255, 255, 255, 0.95);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 8px;
-    padding: 2.5rem 2rem;
-    text-align: left;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-}
-
-.import-service-item:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
-}
-
-.import-service-icon {
-    width: 60px;
-    height: 60px;
-    background: #0F2B5B;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 0 1.5rem 0;
-    border: none;
-}
-
-.import-service-icon i {
-    font-size: 1.5rem;
-    color: white;
-}
-
-.import-service-item h3 {
-    color: #0F2B5B;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 600;
-    margin-bottom: 1rem;
-    text-shadow: none;
-    line-height: 1.3;
+    color: #0F2B5B;
+    margin-top: 2rem;
 }
 
-.import-service-item p {
-    color: #4B4B4B;
-    font-size: 0.95rem;
-    line-height: 1.5;
+.import-services-list {
+    max-width: 900px;
+    margin: 0 auto 3rem auto;
+    text-align: left;
+}
+
+.services-offered {
+    list-style: none;
+    padding: 0;
     margin: 0;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(15, 43, 91, 0.08);
+    overflow: hidden;
+}
+
+.services-offered li {
+    padding: 2rem;
+    border-bottom: 1px solid #F0F0F0;
+    transition: all 0.3s ease;
+}
+
+.services-offered li:last-child {
+    border-bottom: none;
+}
+
+.services-offered li:hover {
+    background: #F8F9FA;
+}
+
+.service-title {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #0F2B5B;
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+
+.service-description {
+    display: block;
+    font-size: 1rem;
+    color: #4B4B4B;
+    line-height: 1.6;
 }
 
 .import-conclusion {
     max-width: 900px;
     margin: 3rem auto 0 auto;
-    padding: 2rem;
-    background: rgba(255, 255, 255, 0.95);
-    border-radius: 8px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 2.5rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(15, 43, 91, 0.08);
+    border-left: 4px solid #C1A264;
 }
 
 .import-conclusion p {
-    font-size: 1.1rem;
-    line-height: 1.6;
+    font-size: 1.2rem;
+    line-height: 1.7;
     color: #0F2B5B;
     margin: 0;
     font-weight: 500;
@@ -6841,31 +6799,39 @@ img:not([src]) {
 @media (max-width: 768px) {
     .import-confidence {
         padding: 80px 0;
-        margin-top: -40px;
     }
     
     .import-header .section-title {
-        font-size: 2.2rem;
-        margin-bottom: 1.5rem;
-    }
-    
-    .import-description {
-        margin-bottom: 2rem;
+        font-size: 2rem;
     }
     
     .import-description p {
+        font-size: 1rem;
+    }
+    
+    .import-intro {
         font-size: 1.1rem;
     }
     
-    .import-services-grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-        margin-bottom: 2rem;
+    .services-offered li {
+        padding: 1.5rem;
     }
     
-    .import-service-item {
-        padding: 2rem 1.5rem;
-        text-align: center;
+    .service-title {
+        font-size: 1rem;
+    }
+    
+    .service-description {
+        font-size: 0.95rem;
+    }
+    
+    .import-conclusion {
+        padding: 2rem;
+        margin: 2rem auto 0 auto;
+    }
+    
+    .import-conclusion p {
+        font-size: 1.1rem;
     }
     
     .import-service-icon {
