@@ -6950,7 +6950,7 @@ body.loaded section {
     height: 100%;
     object-fit: cover;
     object-position: center;
-    opacity: 0.4; /* Reducir más la opacidad para que resalte más el texto */
+    opacity: 0.25; /* Opacidad reducida para mejor legibilidad del texto */
     min-height: 100vh; /* Asegurar que cubra toda la altura */
 }
 
