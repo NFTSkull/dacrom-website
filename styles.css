@@ -1901,6 +1901,129 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+/* Philosophy Section */
+.philosophy {
+    padding: 6rem 0;
+    background: #FFFFFF;
+    position: relative;
+}
+
+.philosophy-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.philosophy-block {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 2.5rem;
+    background: #FFFFFF;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(15, 43, 91, 0.08);
+    border: 1px solid rgba(15, 43, 91, 0.05);
+    transition: all 0.3s ease;
+}
+
+.philosophy-block:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 48px rgba(15, 43, 91, 0.12);
+}
+
+.philosophy-icon {
+    flex-shrink: 0;
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #C1A264, #B8941F);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 24px rgba(193, 162, 100, 0.3);
+    transition: all 0.3s ease;
+}
+
+.philosophy-block:hover .philosophy-icon {
+    transform: scale(1.1);
+    box-shadow: 0 12px 32px rgba(193, 162, 100, 0.4);
+}
+
+.philosophy-icon i {
+    font-size: 2rem;
+    color: #FFFFFF;
+}
+
+.philosophy-content {
+    flex: 1;
+}
+
+.philosophy-content p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #4B4B4B;
+    font-weight: 400;
+    margin: 0;
+}
+
+/* Philosophy Section Responsive */
+@media (max-width: 768px) {
+    .philosophy {
+        padding: 4rem 0;
+    }
+    
+    .philosophy-grid {
+        gap: 2rem;
+    }
+    
+    .philosophy-block {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+        padding: 2rem;
+    }
+    
+    .philosophy-icon {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .philosophy-icon i {
+        font-size: 1.8rem;
+    }
+    
+    .philosophy-content p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .philosophy {
+        padding: 3rem 0;
+    }
+    
+    .philosophy-block {
+        padding: 1.5rem;
+        gap: 1.25rem;
+    }
+    
+    .philosophy-icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .philosophy-icon i {
+        font-size: 1.5rem;
+    }
+    
+    .philosophy-content p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+}
+
 /* About Section Mobile Optimization */
 @media (max-width: 768px) {
     .about {
