@@ -5270,7 +5270,7 @@ body.loaded section {
     width: 100%;
     height: 100%;
     transform-style: preserve-3d;
-    animation: globeRotate 25s linear infinite;
+    animation: globeRotate 2s linear infinite;
     filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
 }
 
@@ -5312,7 +5312,7 @@ body.loaded section {
     top: 35%;
     left: 30%;
     border-radius: 12px 25px 15px 8px;
-    animation: continentGlow 6s ease-in-out infinite;
+    animation: continentGlow 2s ease-in-out infinite;
 }
 
 .continent.europe {
@@ -5321,7 +5321,7 @@ body.loaded section {
     top: 30%;
     left: 58%;
     border-radius: 8px;
-    animation: continentGlow 6s ease-in-out infinite 2s;
+    animation: continentGlow 2s ease-in-out infinite 0.67s;
 }
 
 .continent.asia {
@@ -5330,7 +5330,7 @@ body.loaded section {
     top: 25%;
     left: 68%;
     border-radius: 15px 12px 20px 8px;
-    animation: continentGlow 6s ease-in-out infinite 4s;
+    animation: continentGlow 2s ease-in-out infinite 1.33s;
 }
 
 .globe-grid {
@@ -5343,7 +5343,7 @@ body.loaded section {
         linear-gradient(90deg, transparent 48%, rgba(255,255,255,0.15) 49%, rgba(255,255,255,0.15) 51%, transparent 52%);
     background-size: 25px 25px;
     opacity: 0.4;
-    animation: gridFloat 4s ease-in-out infinite;
+    animation: gridFloat 2s ease-in-out infinite;
 }
 
 .globe-shadow {
@@ -5355,7 +5355,7 @@ body.loaded section {
     height: 20px;
     background: radial-gradient(ellipse, rgba(0,0,0,0.4) 0%, transparent 70%);
     border-radius: 50%;
-    animation: shadowPulse 4s ease-in-out infinite;
+    animation: shadowPulse 2s ease-in-out infinite;
 }
 
 /* Trade Icons - Clean Grid Layout */
@@ -5389,7 +5389,7 @@ body.loaded section {
         0 8px 25px rgba(0, 0, 0, 0.2),
         inset 0 1px 0 rgba(255, 255, 255, 0.3);
     transition: all 0.3s ease;
-    animation: iconFloat 3s ease-in-out infinite;
+    animation: iconFloat 2s ease-in-out infinite;
 }
 
 .trade-icon::before {
@@ -5402,7 +5402,7 @@ body.loaded section {
     background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
     border-radius: 17px;
     z-index: -1;
-    animation: iconBorder 4s linear infinite;
+    animation: iconBorder 2s linear infinite;
 }
 
 .trade-icon.ship {
@@ -5412,17 +5412,17 @@ body.loaded section {
 
 .trade-icon.plane {
     background: linear-gradient(135deg, rgba(241, 196, 15, 0.4), rgba(241, 196, 15, 0.2));
-    animation-delay: 0.75s;
+    animation-delay: 0.5s;
 }
 
 .trade-icon.truck {
     background: linear-gradient(135deg, rgba(231, 76, 60, 0.4), rgba(231, 76, 60, 0.2));
-    animation-delay: 1.5s;
+    animation-delay: 1s;
 }
 
 .trade-icon.container {
     background: linear-gradient(135deg, rgba(155, 89, 182, 0.4), rgba(155, 89, 182, 0.2));
-    animation-delay: 2.25s;
+    animation-delay: 1.5s;
 }
 
 /* Loading Text */
@@ -5441,7 +5441,7 @@ body.loaded section {
         0 2px 4px rgba(0, 0, 0, 0.4),
         0 0 20px rgba(74, 144, 226, 0.3);
     letter-spacing: 1px;
-    animation: titlePulse 3s ease-in-out infinite;
+    animation: titlePulse 2s ease-in-out infinite;
 }
 
 .loading-subtitle {
