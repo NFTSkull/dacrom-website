@@ -6701,11 +6701,12 @@ img:not([src]) {
 
 /* ===== NUEVA SECCIÓN: IMPORTA CON CONFIANZA ===== */
 .import-confidence {
-    padding: 120px 0;
+    padding: 100px 0;
     position: relative;
     overflow: hidden;
     margin-top: -60px;
     z-index: 5;
+    background: linear-gradient(135deg, #0F2B5B 0%, #1a3d6b 50%, #0F2B5B 100%);
 }
 
 .port-background {
@@ -6715,6 +6716,7 @@ img:not([src]) {
     width: 100%;
     height: 100%;
     z-index: -1;
+    opacity: 0.15;
 }
 
 .port-image {
@@ -6731,9 +6733,9 @@ img:not([src]) {
     width: 100%;
     height: 100%;
     background: linear-gradient(135deg, 
-        rgba(15, 43, 91, 0.85) 0%, 
-        rgba(15, 43, 91, 0.75) 50%,
-        rgba(15, 43, 91, 0.85) 100%);
+        rgba(15, 43, 91, 0.95) 0%, 
+        rgba(15, 43, 91, 0.90) 50%, 
+        rgba(15, 43, 91, 0.95) 100%);
     z-index: 1;
 }
 
@@ -6746,22 +6748,30 @@ img:not([src]) {
 
 .import-header .section-title {
     color: white;
-    font-size: 2.8rem;
-    font-weight: 700;
+    font-size: 2.5rem;
+    font-weight: 600;
     margin-bottom: 2rem;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    text-shadow: none;
+    letter-spacing: -0.5px;
 }
 
 .import-description {
-    max-width: 800px;
-    margin: 0 auto 3rem auto;
+    max-width: 900px;
+    margin: 0 auto 2.5rem auto;
 }
 
 .import-description p {
-    font-size: 1.2rem;
-    line-height: 1.7;
-    color: rgba(255, 255, 255, 0.9);
-    margin: 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.95);
+    margin: 0 0 1rem 0;
+}
+
+.import-intro {
+    font-size: 1.2rem !important;
+    font-weight: 600 !important;
+    color: white !important;
+    margin-top: 1.5rem !important;
 }
 
 .import-services-grid {
@@ -6773,65 +6783,69 @@ img:not([src]) {
 }
 
 .import-service-item {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 16px;
-    padding: 2rem;
-    text-align: center;
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    padding: 2.5rem 2rem;
+    text-align: left;
     transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .import-service-item:hover {
-    transform: translateY(-5px);
-    background: rgba(255, 255, 255, 0.15);
-    border-color: rgba(255, 255, 255, 0.3);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
 }
 
 .import-service-icon {
-    width: 80px;
-    height: 80px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background: #0F2B5B;
+    border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto 1.5rem auto;
-    border: 2px solid rgba(255, 255, 255, 0.2);
+    margin: 0 0 1.5rem 0;
+    border: none;
 }
 
 .import-service-icon i {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: white;
 }
 
 .import-service-item h3 {
-    color: white;
-    font-size: 1.3rem;
+    color: #0F2B5B;
+    font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 1rem;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    text-shadow: none;
+    line-height: 1.3;
 }
 
 .import-service-item p {
-    color: rgba(255, 255, 255, 0.85);
-    font-size: 1rem;
-    line-height: 1.6;
+    color: #4B4B4B;
+    font-size: 0.95rem;
+    line-height: 1.5;
     margin: 0;
 }
 
 .import-conclusion {
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 900px;
+    margin: 3rem auto 0 auto;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .import-conclusion p {
-    font-size: 1.2rem;
-    line-height: 1.7;
-    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #0F2B5B;
     margin: 0;
     font-weight: 500;
+    text-align: center;
 }
 
 /* Responsive para Import Confidence */
@@ -6861,21 +6875,22 @@ img:not([src]) {
     }
     
     .import-service-item {
-        padding: 1.5rem;
+        padding: 2rem 1.5rem;
+        text-align: center;
     }
     
     .import-service-icon {
-        width: 70px;
-        height: 70px;
-        margin-bottom: 1rem;
+        width: 60px;
+        height: 60px;
+        margin: 0 auto 1rem auto;
     }
     
     .import-service-icon i {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
     
     .import-service-item h3 {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
     
     .import-conclusion p {
