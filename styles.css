@@ -464,7 +464,7 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     z-index: 2;
     padding: 2rem 1.5rem;
-    gap: 3rem;
+    gap: 1.5rem;
 }
 
 /* Logo central elegante */
@@ -1093,7 +1093,7 @@ h1, h2, h3, h4, h5, h6 {
     .hero-main {
         min-height: 80vh;
         padding: 2rem 1.5rem;
-        gap: 2.5rem;
+        gap: 1.2rem;
     }
     
     .hero-logo-section {
@@ -1245,7 +1245,7 @@ h1, h2, h3, h4, h5, h6 {
     .hero-main {
         min-height: 75vh;
         padding: 1.5rem 1rem;
-        gap: 2rem;
+        gap: 1rem;
     }
     
     .hero-logo-enhanced {
