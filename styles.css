@@ -5270,7 +5270,7 @@ body.loaded section {
     width: 100%;
     height: 100%;
     transform-style: preserve-3d;
-    animation: globeFloat 8s ease-in-out infinite;
+    animation: globeFloat 20s ease-in-out infinite;
     filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
 }
 
@@ -5389,7 +5389,7 @@ body.loaded section {
         0 8px 25px rgba(0, 0, 0, 0.2),
         inset 0 1px 0 rgba(255, 255, 255, 0.3);
     transition: all 0.3s ease;
-    animation: iconFloat 15s ease-in-out infinite;
+    animation: iconFloat 25s ease-in-out infinite;
 }
 
 .trade-icon::before {
@@ -5588,7 +5588,7 @@ body.loaded section {
 /* Loading Screen Animations */
 @keyframes globeFloat {
     0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
+    50% { transform: translateY(-5px); }
 }
 
 @keyframes continentGlow {
@@ -5626,8 +5626,8 @@ body.loaded section {
         box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
     }
     50% { 
-        transform: translateY(-5px) scale(1.02); 
-        box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
+        transform: translateY(-3px) scale(1.01); 
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
     }
 }
 
