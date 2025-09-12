@@ -6905,7 +6905,7 @@ img:not([src]) {
     height: 100%;
     object-fit: cover;
     object-position: center;
-    opacity: 0.6;
+    opacity: 0.8;
 }
 
 .port-overlay {
@@ -6914,7 +6914,7 @@ img:not([src]) {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(15, 43, 91, 0.6);
+    background: rgba(15, 43, 91, 0.3);
     z-index: 2;
 }
 
@@ -7038,6 +7038,8 @@ img:not([src]) {
     color: #FFFFFF !important;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     border: 2px solid rgba(255, 255, 255, 0.3);
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
 }
 
 .import-service-icon {
@@ -7068,6 +7070,8 @@ img:not([src]) {
     color: #FFFFFF !important;
     margin-bottom: 0.5rem;
     line-height: 1.2;
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
 }
 
 .service-subtitle {
@@ -7076,6 +7080,8 @@ img:not([src]) {
     color: #FFFFFF !important;
     margin-bottom: 1rem;
     font-style: italic;
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
 }
 
 .import-service-content p {
@@ -7083,6 +7089,8 @@ img:not([src]) {
     color: #FFFFFF !important;
     line-height: 1.6;
     margin: 0;
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
 }
 
 .import-conclusion {

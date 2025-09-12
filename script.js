@@ -1941,8 +1941,8 @@ class LoadingScreen {
                         offset: 100
                     });
                 }
-            }, 800);
-        }, 500);
+            }, 1500);
+        }, 2000);
     }
     
     initializePageFeatures() {
