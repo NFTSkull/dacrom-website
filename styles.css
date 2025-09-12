@@ -1968,65 +1968,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.7;
     color: #4B4B4B;
     font-weight: 400;
-    margin: 0 0 1rem 0;
-}
-
-.philosophy-content h3 {
-    color: #0F2B5B;
-    font-size: 1.4rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    text-align: left;
-}
-
-.philosophy-list {
-    list-style: none;
-    padding: 0;
-    margin: 1rem 0;
-}
-
-.philosophy-list li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 0.8rem;
-    color: #4B4B4B;
-    line-height: 1.6;
-}
-
-.philosophy-list li i {
-    color: #22c55e;
-    margin-right: 0.8rem;
-    font-size: 1rem;
-    flex-shrink: 0;
-}
-
-.specialization-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
-    margin-top: 1rem;
-}
-
-.specialization-item {
-    display: flex;
-    align-items: center;
-    background: rgba(15, 43, 91, 0.05);
-    padding: 1rem;
-    border-radius: 8px;
-    border-left: 4px solid #0F2B5B;
-}
-
-.specialization-item i {
-    color: #0F2B5B;
-    font-size: 1.2rem;
-    margin-right: 0.8rem;
-    flex-shrink: 0;
-}
-
-.specialization-item span {
-    color: #4B4B4B;
-    font-size: 0.9rem;
-    line-height: 1.4;
+    margin: 0;
 }
 
 /* Imagen de filosofía */
@@ -2080,23 +2022,6 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 1rem;
     }
     
-    .philosophy-content h3 {
-        font-size: 1.2rem;
-    }
-    
-    .specialization-grid {
-        grid-template-columns: 1fr;
-        gap: 0.8rem;
-    }
-    
-    .sector-highlights {
-        gap: 1rem;
-    }
-    
-    .sector-item {
-        padding: 0.8rem 1rem;
-    }
-    
     .philosophy-image {
         margin-top: 2rem;
     }
@@ -2129,29 +2054,6 @@ h1, h2, h3, h4, h5, h6 {
     .philosophy-content p {
         font-size: 0.95rem;
         line-height: 1.6;
-    }
-    
-    .philosophy-content h3 {
-        font-size: 1.1rem;
-    }
-    
-    .specialization-grid {
-        grid-template-columns: 1fr;
-        gap: 0.6rem;
-    }
-    
-    .sector-highlights {
-        gap: 0.8rem;
-        justify-content: center;
-    }
-    
-    .sector-item {
-        padding: 0.6rem 0.8rem;
-        font-size: 0.8rem;
-    }
-    
-    .sector-item i {
-        font-size: 1.2rem;
     }
     
     .philosophy-image {
@@ -6859,43 +6761,7 @@ img:not([src]) {
     font-size: 1.2rem;
     line-height: 1.7;
     color: rgba(255, 255, 255, 0.9);
-    margin: 0 0 1.5rem 0;
-}
-
-.sector-highlights {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin-top: 1.5rem;
-    flex-wrap: wrap;
-}
-
-.sector-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: rgba(255, 255, 255, 0.1);
-    padding: 1rem 1.5rem;
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    transition: all 0.3s ease;
-}
-
-.sector-item:hover {
-    background: rgba(255, 255, 255, 0.15);
-    transform: translateY(-2px);
-}
-
-.sector-item i {
-    font-size: 1.5rem;
-    color: white;
-    margin-bottom: 0.5rem;
-}
-
-.sector-item span {
-    color: white;
-    font-weight: 600;
-    font-size: 0.9rem;
+    margin: 0;
 }
 
 .import-services-grid {
@@ -6946,45 +6812,13 @@ img:not([src]) {
     font-weight: 600;
     margin-bottom: 1rem;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
 }
 
-.service-details {
-    margin-top: 1rem;
-}
-
-.service-details p {
-    color: rgba(255, 255, 255, 0.9);
+.import-service-item p {
+    color: rgba(255, 255, 255, 0.85);
     font-size: 1rem;
     line-height: 1.6;
-    margin-bottom: 1rem;
-    font-weight: 500;
-}
-
-.service-details ul {
-    list-style: none;
-    padding: 0;
     margin: 0;
-}
-
-.service-details li {
-    color: rgba(255, 255, 255, 0.85);
-    font-size: 0.95rem;
-    line-height: 1.6;
-    margin-bottom: 0.6rem;
-    padding-left: 0.5rem;
-    position: relative;
-}
-
-.service-details li:before {
-    content: "✓";
-    color: #22c55e;
-    font-weight: bold;
-    position: absolute;
-    left: -1.5rem;
-    top: 0;
 }
 
 .import-conclusion {
