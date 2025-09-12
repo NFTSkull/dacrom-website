@@ -1640,8 +1640,8 @@ h1, h2, h3, h4, h5, h6 {
     
     .logo-image {
         height: auto;
-        max-height: 40px;
-        max-width: 140px;
+        max-height: 50px;
+        max-width: 160px;
         margin-right: 8px;
         object-fit: contain;
     }
@@ -1803,8 +1803,8 @@ h1, h2, h3, h4, h5, h6 {
     
     .logo-image {
         height: auto;
-        max-height: 36px;
-        max-width: 120px;
+        max-height: 46px;
+        max-width: 140px;
         margin-right: 8px;
         object-fit: contain;
     }
