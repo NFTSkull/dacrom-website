@@ -1937,18 +1937,18 @@ h1, h2, h3, h4, h5, h6 {
     flex-shrink: 0;
     width: 80px;
     height: 80px;
-    background: linear-gradient(135deg, #C1A264, #B8941F);
+    background: #0F2B5B;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 8px 24px rgba(193, 162, 100, 0.3);
+    box-shadow: 0 8px 24px rgba(15, 43, 91, 0.3);
     transition: all 0.3s ease;
 }
 
 .philosophy-block:hover .philosophy-icon {
     transform: scale(1.1);
-    box-shadow: 0 12px 32px rgba(193, 162, 100, 0.4);
+    box-shadow: 0 12px 32px rgba(15, 43, 91, 0.4);
 }
 
 .philosophy-icon i {
