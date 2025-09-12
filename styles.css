@@ -6942,7 +6942,7 @@ img:not([src]) {
     justify-content: center;
     font-size: 1.2rem;
     font-weight: 700;
-    color: #FFFFFF;
+    color: #FFFFFF !important;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     border: 2px solid rgba(255, 255, 255, 0.3);
 }
@@ -6972,7 +6972,7 @@ img:not([src]) {
 .import-service-content h3 {
     font-size: 1.4rem;
     font-weight: 700;
-    color: #FFFFFF;
+    color: #FFFFFF !important;
     margin-bottom: 0.5rem;
     line-height: 1.2;
 }
@@ -6980,14 +6980,14 @@ img:not([src]) {
 .service-subtitle {
     font-size: 1rem;
     font-weight: 500;
-    color: #FFFFFF;
+    color: #FFFFFF !important;
     margin-bottom: 1rem;
     font-style: italic;
 }
 
 .import-service-content p {
     font-size: 1rem;
-    color: #FFFFFF;
+    color: #FFFFFF !important;
     line-height: 1.6;
     margin: 0;
 }
