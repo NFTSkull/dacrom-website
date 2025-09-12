@@ -6915,6 +6915,18 @@ body.loaded section {
     min-height: 100vh; /* Asegurar que cubra toda la altura de la pantalla */
 }
 
+/* Asegurar que el fondo azul marino se extienda a toda la sección */
+.import-confidence::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #0F2B5B;
+    z-index: 0;
+}
+
 /* Transiciones permitidas en la sección import-confidence */
 /* .import-confidence * - REGLA ELIMINADA - causaba problemas de visibilidad */
 
